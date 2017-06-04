@@ -4,13 +4,13 @@ node_js:
 
 branches:
   only:
-    - master
+    - development
 
 before_script:
   - npm install -g @angular/cli
 
-# script:
-#  - ng build --prod
+script:
+ - ng build --prod
 
 os: 
   - windows
