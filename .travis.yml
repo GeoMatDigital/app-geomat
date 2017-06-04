@@ -2,9 +2,9 @@ language: node_js
 node_js:
  - "node"
 
-branches:
-  only:
-    - development
+# branches:
+#   only:
+#     - development
 
 before_script:
   - npm install -g @angular/cli
