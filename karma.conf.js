@@ -22,6 +22,12 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+    customLaunchers: {  
+      Chrome_travis_ci: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
@@ -31,3 +37,6 @@ module.exports = function (config) {
     singleRun: false
   });
 };
+if(process.env.TRAVIS) {  
+  configuration.browsers = ['Chrome_travis_ci'];
+}
