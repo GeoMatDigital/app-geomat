@@ -2,10 +2,6 @@ language: node_js
 node_js:
  - "node"
 
-# branches:
-#   only:
-#     - development
-
 sudo: required  
 dist: trusty 
 
@@ -22,5 +18,5 @@ before_script:
 script:
  - ng build --prod
 
-os: 
-  - windows
+- npm run doc
+- bash ./deploy.sh
