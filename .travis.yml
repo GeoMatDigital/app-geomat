@@ -15,7 +15,7 @@ before_script:
   - sudo apt-get install -y libappindicator1 fonts-liberation
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo dpkg -i google-chrome*.deb
-  - compodoc
+  - compodoc -p tsonfig.json
   - bash ./deploy.sh
 
 script:
