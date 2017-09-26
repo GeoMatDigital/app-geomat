@@ -4,8 +4,19 @@ page-home {
     max-width: 400px;
   }
 
+  ion-icon {
+    margin: 0 auto;
+    text-align: center;
+    padding: 24px 0 0 0;
+    font-size: 15rem;
+  }
+
   ion-icon{
     display: block;
+  }
+
+  .card-title-md, .card-title-ios, .card-title-wp {
+    font-size: 2rem;
   }
 
   .card-md, .card-ions, .card-wp {
@@ -17,7 +28,7 @@ page-home {
     &:hover, &:active {
       cursor: pointer;
       background-color: color($colors, primary);
-      .card-title-md, .card-title-ios, .card-title-wp {
+      .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
         color: #fff;
       }
     }

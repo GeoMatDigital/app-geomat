@@ -12,10 +12,11 @@
 
 <ion-content>
   <ion-row>
-    <ion-col no-padding>
+    <ion-col no-padding col-6>
       <!--  col-md-4 offset-md-2 col-lg-3 offset-lg-3 col-xl-2 offset-xl-4 -->
       <ion-card no-margin [navPush]="profilesPage">
-        <img src="../../assets/quiz/book.jpg"/>
+        <!-- <img src="../../assets/quiz/book.jpg"/> -->
+        <ion-icon name="bookmarks"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
             STECKBRIEFE
@@ -23,9 +24,9 @@
         </ion-card-content>
       </ion-card>
     </ion-col>
-    <ion-col no-padding>
+    <ion-col no-padding col-6>
       <ion-card no-margin [navPush]="galleryPage">
-        <img src="../../assets/quiz/book.jpg"/>
+        <ion-icon name="images"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
             GALERIE
@@ -35,44 +36,44 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col no-padding>
-      <ion-card no-margin [navPush]="profilesPage">
-        <img src="../../assets/quiz/book.jpg"/>
+    <ion-col no-padding col-6>
+      <ion-card no-margin [navPush]="crystalsystemsPage">
+        <ion-icon name="cube"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
-            STECKBRIEFE
+            KRISTALL-<br>SYSTEME
           </ion-card-title>
         </ion-card-content>
       </ion-card>
     </ion-col>
-    <ion-col no-padding>
-      <ion-card no-margin [navPush]="galleryPage">
-        <img src="../../assets/quiz/book.jpg"/>
+    <ion-col no-padding col-6>
+      <ion-card no-margin [navPush]="helperPage">
+        <ion-icon name="checkbox-outline"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
-            GALERIE
+            BESTIMMUNGS<br>HELFER
           </ion-card-title>
         </ion-card-content>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col no-padding>
-      <ion-card no-margin [navPush]="profilesPage">
-        <img src="../../assets/quiz/book.jpg"/>
+    <ion-col no-padding col-6>
+      <ion-card no-margin [navPush]="quizPage">
+        <ion-icon name="help"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
-            STECKBRIEFE
+            SELBSTTEST
           </ion-card-title>
         </ion-card-content>
       </ion-card>
     </ion-col>
-    <ion-col no-padding>
-      <ion-card no-margin [navPush]="galleryPage">
-        <img src="../../assets/quiz/book.jpg"/>
+    <ion-col no-padding col-6>
+      <ion-card no-margin [navPush]="glossaryPage">
+        <ion-icon name="book"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
-            GALERIE
+            GLOSSAR
           </ion-card-title>
         </ion-card-content>
       </ion-card>
