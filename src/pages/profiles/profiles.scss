@@ -1,0 +1,45 @@
+page-profiles {
+  .item-md,
+  .item-ios,
+  .item-wp {
+    p {
+      font-size: 1.6rem;
+      padding-left: 16px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color:rgba(158,158,158,0.1);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color:rgba(158,158,158,0.1);
+    }
+
+    ion-thumbnail[item-start]{
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.disabled{
+      p {
+        color: #999;
+      }
+      ion-thumbnail[item-start]{
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+        color: #fff;
+        background-color: #ddd;
+      }
+      &:hover {
+        cursor: not-allowed;
+      }
+
+      background-color:rgba(158,158,158,0.1);
+    }
+  }
+}

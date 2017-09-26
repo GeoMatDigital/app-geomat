@@ -1,0 +1,89 @@
+<!--
+  Generated template for the ProfilesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>STECKBRIEFE</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!--
+  EL = Elemente
+  CN = Carbonate und Nitrate
+  SG = Silikate und Germanate
+  OH = Oxyde und Hydroxide
+  PV = Phosphate und Vanadate
+  SL = Sulfate
+  SF = Sulfide und Sulfosalze
+  HG = Halogenide
+-->
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-item no-padding (click)="onProfile('EL')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/elemente_80.jpg">
+      </ion-thumbnail>
+      <p>Elemente</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('SF')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/sulfide_80.jpg">
+      </ion-thumbnail>
+      <p>Sulfide und Sulfosalze</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('HG')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/halogenide_80.jpg">
+      </ion-thumbnail>
+      <p>Halogenide</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('OH')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/oxide_80.jpg">
+      </ion-thumbnail>
+      <p>Oxide und Hydroxide</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('CN')">
+        <ion-thumbnail item-start>
+            <img src="../../assets/profiles/karbonate_80.jpg">
+          </ion-thumbnail>
+          <p>Carbonate und Nitrate</p>
+    </ion-item>
+    <ion-item no-padding class="disabled">
+      <ion-thumbnail item-start>
+        X
+      </ion-thumbnail>
+      <p>Borate</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('SL')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/sulfate_80.jpg">
+      </ion-thumbnail>
+      <p>Sulfate</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('PV')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/phosphate_80.jpg">
+      </ion-thumbnail>
+      <p>Phosphate, Arsenate und Vanadate</p>
+    </ion-item>
+    <ion-item no-padding (click)="onProfile('SG')">
+      <ion-thumbnail item-start>
+        <img src="../../assets/profiles/silikate_80.jpg">
+      </ion-thumbnail>
+      <p>Silikate und Germanate</p>
+    </ion-item>
+    <ion-item no-padding class="disabled">
+      <ion-thumbnail item-start>
+        X
+      </ion-thumbnail>
+      <p>Organische Verbindungen</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title center>GEO-MAT</ion-title>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-card no-padding col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4>
+    <ion-card-content text-center no-padding>
+      <ion-row>
+        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="profilesPage">STECKBRIEFE</ion-col>
+        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="galleryPage">GALLERIE</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="crystalsystemsPage">KRISTALL-SYSTEME</ion-col>
+        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="helperPage">BESTIMMUNGSHELFER</ion-col>
+      </ion-row>
+      <ion-row><ion-col ion-button full clear col-12 col-sm-6 [navPush]="selftestPage">SELBSTTEST</ion-col>
+        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="glossaryPage">GLOSSAR</ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

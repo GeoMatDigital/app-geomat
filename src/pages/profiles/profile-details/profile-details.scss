@@ -1,0 +1,16 @@
+page-profile-details {
+  .item-md, .item-ios, .item-wp {
+    > div, .MathJax {
+      padding-left: 32px;
+    }
+
+
+  }
+
+  .item-divider-md {
+    padding-left: 0px;
+    > div {
+      padding-left: 16px;
+    }
+  }
+}

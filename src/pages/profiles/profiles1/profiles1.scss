@@ -1,0 +1,19 @@
+page-profiles1 {
+  .item-md,
+  .item-ios {
+    ion-thumbnail[item-start]{
+      margin: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color:rgba(158,158,158,0.1);
+    }
+  }
+
+  .item-md p,
+  .item-ios p {
+    font-size: 1.6rem;
+    padding-left: 16px;
+  }
+}

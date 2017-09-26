@@ -1,0 +1,17 @@
+page-helper {
+  .swiper-slide {
+    align-items: start;
+    -webkit-box-pack: start;
+    -webkit-align-items: start;
+    padding: 16px;
+    overflow-y: auto;
+    .slide-zoom {
+      max-width: 800px;
+    }
+
+    // img {
+    //   height: 200px;
+    //   width: 200px;
+    // }
+  }
+}
