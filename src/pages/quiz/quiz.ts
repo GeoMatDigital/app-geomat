@@ -10,10 +10,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-selftest',
-  templateUrl: 'selftest.html',
+  selector: 'page-quiz',
+  templateUrl: 'quiz.html',
 })
-export class SelftestPage {
+export class QuizPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

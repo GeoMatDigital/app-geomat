@@ -13,7 +13,7 @@ import { HelperPage } from '../pages/helper/helper';
 import { Profiles1Page } from '../pages/profiles/profiles1/profiles1';
 import { Profiles2Page } from '../pages/profiles/profiles2/profiles2';
 import { ProfilesPage } from '../pages/profiles/profiles';
-import { SelftestPage } from '../pages/selftest/selftest';
+import { QuizPage } from '../pages/quiz/quiz';
 import { CrystalsystemsPageModule } from '../pages/crystalsystems/crystalsystems.module';
 import { GalleryPageModule } from '../pages/gallery/gallery.module';
 import { GlossaryPage } from '../pages/glossary/glossary';
@@ -24,7 +24,7 @@ import { ProfilesPageModule } from '../pages/profiles/profiles.module';
 import { Profiles1PageModule } from '../pages/profiles/profiles1/profiles1.module';
 import { Profiles2PageModule } from '../pages/profiles/profiles2/profiles2.module';
 import { ProfilesService } from '../services/profiles';
-import { SelftestPageModule } from '../pages/selftest/selftest.module';
+import { QuizPageModule } from '../pages/quiz/quiz.module';
 import { MathJaxDirective } from '../directives/MathJax.directive';
 import { HelpersService } from '../services/helpers';
 
@@ -46,7 +46,7 @@ import { HelpersService } from '../services/helpers';
     ProfilesPageModule,
     Profiles1PageModule,
     Profiles2PageModule,
-    SelftestPageModule
+    QuizPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -60,7 +60,7 @@ import { HelpersService } from '../services/helpers';
     ProfilesPage,
     Profiles1Page,
     Profiles2Page,
-    SelftestPage
+    QuizPage
   ],
   providers: [
     StatusBar,
