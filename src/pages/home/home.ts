@@ -6,7 +6,7 @@ import { Profiles1Page } from '../profiles/profiles1/profiles1';
 import { Profiles2Page } from '../profiles/profiles2/profiles2';
 import { GlossaryPage } from '../glossary/glossary';
 import { GalleryPage } from '../gallery/gallery';
-import { SelftestPage } from '../selftest/selftest';
+import { QuizPage } from '../quiz/quiz';
 import { HelperPage } from '../helper/helper';
 
 @Component({
@@ -21,7 +21,7 @@ export class HomePage {
   glossaryPage = GlossaryPage;
   galleryPage = GalleryPage;
   helperPage = HelperPage;
-  selftestPage = SelftestPage;
+  quizPage = QuizPage;
 
   constructor(public navCtrl: NavController) {
     this.crystalsystemsPage = CrystalsystemsPage;
