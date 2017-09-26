@@ -19,7 +19,7 @@ export class QuizPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SelftestPage');
+
   }
 
 }

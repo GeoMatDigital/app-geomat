@@ -32,9 +32,17 @@ export class HelperPage {
 
   getIndexOfChapter(chapter:string) {
     switch(chapter) {
-      case "": 1;
-      case "crystalsystem": return 2;
+      case "abstrakt": 1;
+      case "allgemeines": 2;
+      case "kristallsystem": return 2;
       case "habitus": return 3;
+      case "tracht": return 4;
+      case "bruch": return 5;
+      case "spaltbarkeit": return 6;
+      case "glanz": return 7;
+      case "farbe": return 8;
+      case "transparenz": return 9;
+      case "besonderheiten": return 10;
       default: return 3
     }
   }

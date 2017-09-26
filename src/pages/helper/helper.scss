@@ -9,6 +9,11 @@ page-helper {
       max-width: 800px;
     }
 
+    p.image-header {
+      font-size: 15px;
+      background-color: color($colors, light);
+    }
+
     // img {
     //   height: 200px;
     //   width: 200px;
