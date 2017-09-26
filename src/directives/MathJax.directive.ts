@@ -1,4 +1,4 @@
-import {Directive, ElementRef, Input, Component} from '@angular/core';
+import {Directive, ElementRef, Input} from '@angular/core';
 @Directive({
     selector: '[MathJax]'
 })
