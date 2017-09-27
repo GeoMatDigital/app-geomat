@@ -1,4 +1,17 @@
 page-profile-details {
+  ion-row  {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .col {
+    padding: 0;
+  }
+
+  .card-md, .card-ios, .card-wp {
+    width: auto;
+  }
+
   .item-md, .item-ios, .item-wp {
     > div, .MathJax {
       padding-left: 32px;

@@ -8,30 +8,38 @@
 
 
 <ion-content>
-  <ion-list>
-    <ion-item-divider color="light">chemische Formel</ion-item-divider>
-    <ion-item no-padding [MathJax]="formulae">{{ formulae }}</ion-item>
-<!-- <ion-item no-padding>$\lim_{x\rightarrow 0}$</ion-item> -->
-    <ion-item-divider color="light">Trivialname</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.trivial_name }}</ion-item>
-    <ion-item-divider color="light">Kristallsystem</ion-item-divider>
-    <ion-item no-padding>{{ profile.crystal_system }}</ion-item>
-    <ion-item-divider color="light">Mohshärte</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.mohs_scale }}</ion-item>
-    <ion-item-divider color="light">Dichte</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.density }}</ion-item>
-    <ion-item-divider color="light">Spaltbarkeit</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.cleavage }}</ion-item>
-    <ion-item-divider color="light">Bruch</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.fracture }}</ion-item>
-    <ion-item-divider color="light">Farbe</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.normal_color }}</ion-item>
-    <ion-item-divider color="light">Glanz</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.lustre }}</ion-item>
-    <ion-item-divider color="light">Strichfarbe</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.streak }}</ion-item>
-    <ion-item-divider color="light">Modifikation</ion-item-divider>
-    <ion-item no-padding>{{ profile.mineral_type.variety }}</ion-item>
-  </ion-list>
+  <ion-row>
+    <ion-col>
+      <ion-card no-margin>
+        <ion-card-content no-padding>
+          <ion-list>
+            <ion-item-divider color="light">chemische Formel</ion-item-divider>
+            <ion-item no-padding [MathJax]="formulae">{{ formulae }}</ion-item>
+        <!-- <ion-item no-padding>$\lim_{x\rightarrow 0}$</ion-item> -->
+            <ion-item-divider color="light">Trivialname</ion-item-divider>
+            <ion-item no-padding>{{ profile.mineral_type.trivial_name }}</ion-item>
+            <ion-item-divider color="light">Kristallsystem</ion-item-divider>
+            <ion-item no-padding>{{ profile.crystal_system }}</ion-item>
+            <ion-item-divider color="light">Mohshärte</ion-item-divider>
+            <ion-item no-padding>{{ profile.mineral_type.mohs_scale }}</ion-item>
+            <ion-item-divider color="light">Dichte</ion-item-divider>
+            <ion-item no-padding>{{ profile.mineral_type.density }}</ion-item>
+            <ion-item-divider color="light">Spaltbarkeit</ion-item-divider>
+            <ion-item no-padding *ngFor="let cleavage of profile.mineral_type.cleavage">{{ cleavage }}</ion-item>
+            <ion-item-divider color="light">Bruch</ion-item-divider>
+            <ion-item no-padding *ngFor="let fracture of profile.mineral_type.fracture">{{ fracture }}</ion-item>
+            <ion-item-divider color="light">Farbe</ion-item-divider>
+            <ion-item no-padding>{{ profile.mineral_type.normal_color }}</ion-item>
+            <ion-item-divider color="light">Glanz</ion-item-divider>
+            <ion-item no-padding *ngFor="let lustre of profile.mineral_type.lustre">{{ lustre }}</ion-item>
+            <ion-item-divider color="light">Strichfarbe</ion-item-divider>
+            <ion-item no-padding>{{ profile.mineral_type.streak }}</ion-item>
+            <ion-item-divider color="light">Modifikation</ion-item-divider>
+            <ion-item no-padding>{{ profile.mineral_type.variety }}</ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
   <!-- {{ profile | json }} -->
 </ion-content>

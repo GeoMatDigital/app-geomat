@@ -14,13 +14,21 @@
 
 
 <ion-content>
-  <ion-list no-lines>
-    <ion-item no-padding ripple *ngFor="let profile of profiles" (click)="onProfiles(profile)">
-      <ion-thumbnail item-start>
-        <img src="../../assets/profiles/elemente_80.jpg">
-      </ion-thumbnail>
-      <!-- <p>{{profile | json }}</p> -->
-      <p>{{profile.mineral_type.trivial_name }}</p>
-    </ion-item>
-  </ion-list>
+  <ion-row>
+      <ion-col>
+        <ion-card no-margin>
+          <ion-card-content no-padding>
+            <ion-list no-lines>
+              <ion-item no-padding ripple *ngFor="let profile of profiles" (click)="onProfiles(profile)">
+                <ion-thumbnail item-start>
+                  <img src="../../assets/profiles/elemente_80.jpg">
+                </ion-thumbnail>
+                <!-- <p>{{profile | json }}</p> -->
+                <p>{{profile.mineral_type.trivial_name }}</p>
+              </ion-item>
+            </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>

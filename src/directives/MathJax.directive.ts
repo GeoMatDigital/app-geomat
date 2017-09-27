@@ -7,11 +7,7 @@ export class MathJaxDirective {
     constructor(private el: ElementRef) {
     }
     ngOnChanges() {
-      console.log('>> ngOnChanges');
-      //let MathJax : any;
-       //this.el.nativeElement.style.backgroundColor = 'yellow';
-       this.el.nativeElement.innerHTML = this.MathJaxInput;
-       console.log(this.MathJaxInput);
+      this.el.nativeElement.innerHTML = this.MathJaxInput;
       eval('MathJax.Hub.Queue(["Typeset",MathJax.Hub, this.el.nativeElement])');
       eval('MathJax.Hub.Queue(["Typeset",MathJax.Hub, this.el.nativeElement])');
     }

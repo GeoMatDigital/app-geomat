@@ -31,11 +31,8 @@ export class Profiles2Page implements OnInit{
 
   onProfileGroup(group: string) {
     let profiles = this.profiles.filter((profile: Profile): boolean => {
-      console.log(profile.mineral_type.classification.classification_name + '==' + group);
-      console.log(profile.mineral_type.classification.classification_name == group);
       return profile.mineral_type.classification.classification_name == group;
     });
-    console.log(profiles);
     this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: this.header });
   }
 }
