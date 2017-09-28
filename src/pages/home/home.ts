@@ -24,12 +24,12 @@ export class HomePage {
   quizPage = QuizPage;
 
   constructor(public navCtrl: NavController) {
-    this.crystalsystemsPage = CrystalsystemsPage;
-    this.profilesPage = ProfilesPage;
-    this.profiles1Page = Profiles1Page;
-    this.profiles2Page = Profiles2Page;
-    this.glossaryPage = GlossaryPage;
-    this.galleryPage = GalleryPage;
+    // this.crystalsystemsPage = CrystalsystemsPage;
+    // this.profilesPage = ProfilesPage;
+    // this.profiles1Page = Profiles1Page;
+    // this.profiles2Page = Profiles2Page;
+    // this.glossaryPage = GlossaryPage;
+    // this.galleryPage = GalleryPage;
   }
 
 }

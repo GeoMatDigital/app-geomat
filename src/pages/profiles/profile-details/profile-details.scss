@@ -13,11 +13,13 @@ page-profile-details {
   }
 
   .item-md, .item-ios, .item-wp {
-    > div, .MathJax {
+    > div  {
       padding-left: 32px;
     }
 
-
+    .MathJax {
+      padding: 13px 0 13px 32px;
+    }
   }
 
   .item-divider-md {

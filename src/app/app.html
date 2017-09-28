@@ -11,17 +11,17 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <button ion-item>
-        <ion-icon name="settings" item-start></ion-icon>
-        Einstellungen
+      <button ion-item (click)="onLoad(homePage)">
+        <ion-icon name="home" item-start></ion-icon>
+        Startseite
       </button>
-      <button ion-item>
+      <!-- <button ion-item>
+        <ion-icon name="settings" item-start (click)="onLoad(infoPage)"></ion-icon>
+        Einstellungen
+      </button> -->
+      <button ion-item (click)="onLoad(infoPage)">
         <ion-icon name="information-circle" item-start></ion-icon>
         Infos
-      </button>
-      <button ion-item>
-          <ion-icon name="help" item-start></ion-icon>
-        FAQ
       </button>
     </ion-list>
   </ion-content>

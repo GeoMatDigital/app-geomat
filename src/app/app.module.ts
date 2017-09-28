@@ -27,6 +27,8 @@ import { ProfilesService } from '../services/profiles';
 import { QuizPageModule } from '../pages/quiz/quiz.module';
 import { MathJaxDirective } from '../directives/MathJax.directive';
 import { HelpersService } from '../services/helpers';
+import { InfoPage } from '../pages/info/info';
+import { InfoPageModule } from '../pages/info/info.module';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { HelpersService } from '../services/helpers';
     ProfilesPageModule,
     Profiles1PageModule,
     Profiles2PageModule,
-    QuizPageModule
+    QuizPageModule,
+    InfoPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -60,7 +63,8 @@ import { HelpersService } from '../services/helpers';
     ProfilesPage,
     Profiles1Page,
     Profiles2Page,
-    QuizPage
+    QuizPage,
+    InfoPage
   ],
   providers: [
     StatusBar,
