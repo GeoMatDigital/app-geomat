@@ -17,3 +17,23 @@
 .content .scroll-content {
   overflow-y: auto;
 }
+
+// .split-pane-md, .split-pane-ios, .split-pane-wp {
+//   &.split-pane-visible{
+//     > .split-pane-site {
+//       max-width: 100%;
+//     }
+//   }
+// }
+
+.split-pane-md, .split-pane-ios, .split-pane-wp {
+  &.split-pane-visible  {
+    > .split-pane-side {
+      max-width: 100%;
+    }
+
+    > ion-menu.split-pane-side {
+      max-width: 300px;
+    }
+  }
+}
