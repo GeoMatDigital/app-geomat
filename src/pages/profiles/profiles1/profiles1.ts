@@ -22,7 +22,9 @@ export class Profiles1Page implements OnInit{
   header:string;
   activeMenu: string;
 
-  constructor(private navParams: NavParams, public navCtrl: NavController, private menuCtrl: MenuController) { }
+  constructor(private navParams: NavParams, public navCtrl: NavController, private menuCtrl: MenuController) {
+    this.profileDetailsPage = ProfileDetailsPage;
+  }
 
   ngOnInit() {
     this.profiles = this.navParams.get('profiles');

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { IonicPage, MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the InfoPage page.
@@ -16,7 +16,7 @@ import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angul
 export class InfoPage {
   activeMenu: string;
 
-  constructor(public navCtrl: NavController, private menuCtrl: MenuController) { }
+  constructor(private menuCtrl: MenuController) { }
 
   mainMenuActive() {
     this.menuCtrl.close();
