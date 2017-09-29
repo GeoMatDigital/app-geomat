@@ -3,7 +3,7 @@ It is built by Ionic 3, debugged by Sentry and documented by Compodoc.
 
 ## How to use this template
 
-TO get started follow the [ionic instructions](http://ionicframework.com/docs/intro/installation/)
+To get started follow the [ionic instructions](http://ionicframework.com/docs/intro/installation/)
 
 ### Prerequisities
 
