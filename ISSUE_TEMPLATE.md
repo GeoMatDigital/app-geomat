@@ -8,9 +8,9 @@
 2. [Second Step]
 3. [and so on...]
 
-**Platforms** [Where the issue appears, like Android,iOS, Windows Platform, Chrome, Firefox]
+**Platforms:** [Where the issue appears, like Android,iOS, Windows Platform, Chrome, Firefox]
 
-**App version** [Productive or Development build? ]
+**App version:** [Productive or Development build? ]
 
 **Expected behavior:** [What you expect to happen]
 
