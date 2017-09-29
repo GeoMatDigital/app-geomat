@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Ionic App</title>
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- enable this for mobile-device support -->
+  <!-- <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+  <meta name="viewport" content=" width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
 
@@ -12,21 +14,34 @@
   <meta name="theme-color" content="#4e8ef7">
 
   <!-- cordova.js required for cordova apps -->
-  <!-- <script src="cordova.js"></script> -->
 
+  <!-- https://stackoverflow.com/questions/41159763/how-to-integrate-mathjax-with-ionic2 -->
+  <!-- <script src="cordova.js"></script> -->
   <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+     showProcessingMessages: false,
+     tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+    });
+</script>
+
+<!-- <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+</script> -->
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+</script>
+  <!-- <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
     showProcessingMessages: false,
     tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
     });
-  </script>
+  </script> -->
 
-  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML">
-  </script>
+  <!-- <script type="text/javascript" async src="assets/profiles/mathjax.js"></script> -->
+  <!-- <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script> -->
 
   <script src="assets/crystalsystems/processing.js"></script>
   <!-- un-comment this code to enable service worker
-  <script>
+  <!-- <script> -->
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log('service worker installed'))
