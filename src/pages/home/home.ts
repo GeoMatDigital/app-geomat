@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, MenuController } from 'ionic-angular';
 import { CrystalsystemsPage } from '../crystalsystems/crystalsystems';
 import { ProfilesPage } from '../profiles/profiles';
 import { Profiles1Page } from '../profiles/profiles1/profiles1';
@@ -22,14 +22,31 @@ export class HomePage {
   galleryPage = GalleryPage;
   helperPage = HelperPage;
   quizPage = QuizPage;
+  activeMenu: string;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private menuCtrl: MenuController) {
     // this.crystalsystemsPage = CrystalsystemsPage;
     // this.profilesPage = ProfilesPage;
     // this.profiles1Page = Profiles1Page;
     // this.profiles2Page = Profiles2Page;
     // this.glossaryPage = GlossaryPage;
     // this.galleryPage = GalleryPage;
+  }
+
+  mainMenuActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'glossar');
+    this.menuCtrl.open();
+  }
+
+  glossarActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'glossar';
+    this.menuCtrl.enable(false, 'mainMenu');
+    this.menuCtrl.enable(true, 'glossar');
+    this.menuCtrl.open();
   }
 
 }

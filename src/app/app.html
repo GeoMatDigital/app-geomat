@@ -1,5 +1,5 @@
-<ion-split-pane>
-  <ion-menu [content]="gmApp">
+<ion-split-pane when="lg">
+  <ion-menu [content]="gmApp" id="mainMenu">
     <ion-header>
       <ion-toolbar>
         <ion-title>Menu</ion-title>
@@ -27,6 +27,28 @@
       </ion-list>
     </ion-content>
   </ion-menu>
+
+  <ion-menu side="right" [content]="gmApp" id="glossar">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Glossar</ion-title>
+        <!-- <ion-buttons right>
+          <button ion-button clear icon-only [menuClose]>
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-buttons> -->
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item-divider color="light">A</ion-item-divider>
+          <ion-list-header>
+              Adamantin
+            </ion-list-header>
+          <ion-item text-wrap>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein idiomorpher oder ein xenomorpher Kristall ist.  Einen idiomorphen Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen) konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als xenomorph bezeichnet. Der Übergang zwischen diesen beiden Formen wird hypidiomorph genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
 
   <ion-nav [root]="rootPage" main #gmApp></ion-nav>
 </ion-split-pane>

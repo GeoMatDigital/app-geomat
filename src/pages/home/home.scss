@@ -4,7 +4,7 @@ page-home {
     max-width: 400px;
   }
 
-  ion-icon {
+  ion-row ion-icon {
     margin: 0 auto;
     text-align: center;
     padding: 24px 0 0 0;
@@ -31,6 +31,12 @@ page-home {
       .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
         color: #fff;
       }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .hidden-lg-up {
+      display: none !important;
     }
   }
 }

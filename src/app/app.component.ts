@@ -12,6 +12,7 @@ export class MyApp {
   rootPage:any = HomePage;
   infoPage = InfoPage;
   homePage = HomePage;
+  activeMenu: string;
 
   @ViewChild('gmApp') nav: NavController;
 
@@ -33,6 +34,18 @@ export class MyApp {
     console.log(page);
     this.nav.setRoot(page);
     this.menuCtrl.close();
+  }
+
+  mainMenuActive() {
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'glossar');
+  }
+
+  glossarActive() {
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(false, 'mainMenu');
+    this.menuCtrl.enable(true, 'glossar');
   }
 }
 
