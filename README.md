@@ -7,13 +7,13 @@ It is built by Ionic 3, debugged by Sentry and documented by Compodoc.
 $ sudo npm install
 ```
 
-## Using a bug tracker
+## Sentry - Bug-Tracking
 The GeoMat-app uses [Sentry](https://sentry.io) to report bugs.
+### Installation
+Follow the instructions of [Sentry](https://gonehybrid.com/how-to-log-errors-in-your-ionic-2-app-with-sentry/) to get started with bug tracker.
 
-### Install
-Follow the instructions of [Compodoc](https://gonehybrid.com/how-to-log-errors-in-your-ionic-2-app-with-sentry/) to get started with bug tracker.
-
-## Using the doc
+## Compodoc - Documentation
+### Installation
 This project documentation is run by [compodoc](https://compodoc.github.io/website/)
 
 ## Demo-App
