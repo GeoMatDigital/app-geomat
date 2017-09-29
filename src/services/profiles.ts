@@ -8,7 +8,7 @@ export class ProfilesService {
 
   getProfiles() {
     return this.http.get(`https://geomat.uni-frankfurt.de/api/crystalsystem_list/`)
-    // return this.http.get(`../assets/profiles/profiles.ts`)
+    // return this.http.get(`../pages/profiles/profiles.json`)
     .map((res:Response) => res.json());
   }
 

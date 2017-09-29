@@ -26,14 +26,13 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
-      splashScreen.hide();
+      // statusBar.styleDefault();
+      // splashScreen.hide();
     });
     // throw new Error('I am a bug... 🐛');
   }
 
   onLoad(page: any) {
-    console.log(page);
     this.nav.setRoot(page);
     this.menuCtrl.close();
   }
