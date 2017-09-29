@@ -8,7 +8,7 @@
 2. [Second Step]
 3. [and so on...]
 
-**Platforms:** [Where the issue appears, like Android,iOS, Windows Platform, Chrome, Firefox]
+**Platforms:** [Where the issue appears: Android, iOS, Windows, Chrome, Firefox]
 
 **App version:** [Productive or Development build? ]
 
