@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, MenuController } from 'ionic-angular';
 import { ProfilesService } from '../../services/profiles';
 import { Profiles1Page } from './profiles1/profiles1';
 import { Profiles2Page } from './profiles2/profiles2';
@@ -15,8 +15,9 @@ export class ProfilesPage {
   profiles1Page;
   profiles2Page;
   header: string = "?";
+  activeMenu: string;
 
-  constructor(public navCtrl: NavController, private profilesService: ProfilesService) {
+  constructor(public navCtrl: NavController, private profilesService: ProfilesService, private menuCtrl: MenuController) {
     this.profiles1Page = Profiles1Page;
     this.profiles2Page = Profiles2Page;
   }
@@ -48,4 +49,19 @@ export class ProfilesPage {
       this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: this.header });
     }
 
+    mainMenuActive() {
+      this.menuCtrl.close();
+      this.activeMenu = 'mainMenu';
+      this.menuCtrl.enable(true, 'mainMenu');
+      this.menuCtrl.enable(false, 'glossar');
+      this.menuCtrl.open();
+    }
+
+    glossarActive() {
+      this.menuCtrl.close();
+      this.activeMenu = 'glossar';
+      this.menuCtrl.enable(false, 'mainMenu');
+      this.menuCtrl.enable(true, 'glossar');
+      this.menuCtrl.open();
+    }
 }

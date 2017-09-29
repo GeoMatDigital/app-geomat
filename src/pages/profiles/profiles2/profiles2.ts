@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { Profiles1Page } from '../profiles1/profiles1';
 import { Profile } from '../../../models/profile';
 
@@ -19,8 +19,9 @@ export class Profiles2Page implements OnInit{
   profiles1Page;
   profiles: Profile[];
   header: string;
+  activeMenu: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private menuCtrl: MenuController) {
     this.profiles1Page = Profiles1Page;
   }
 
@@ -34,5 +35,21 @@ export class Profiles2Page implements OnInit{
       return profile.mineral_type.classification.classification_name == group;
     });
     this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: this.header });
+  }
+
+  mainMenuActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'glossar');
+    this.menuCtrl.open();
+  }
+
+  glossarActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'glossar';
+    this.menuCtrl.enable(false, 'mainMenu');
+    this.menuCtrl.enable(true, 'glossar');
+    this.menuCtrl.open();
   }
 }

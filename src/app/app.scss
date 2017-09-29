@@ -36,4 +36,23 @@
       max-width: 300px;
     }
   }
+
+  @media (min-width: 992px) {
+    .hidden-lg-up {
+      display: none !important;
+    }
+
+    .sidemenu-enabled{
+      display: block;
+      > .menu-inner {
+        left: 0;
+        right: 0;
+        width: auto;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+      }
+    }
+  }
 }

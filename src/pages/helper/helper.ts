@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, Slides } from 'ionic-angular';
+import { IonicPage, Slides, MenuController } from 'ionic-angular';
 import { HelpersService } from '../../services/helpers';
 
 /**
@@ -16,10 +16,11 @@ import { HelpersService } from '../../services/helpers';
 })
 export class HelperPage {
   public helpers;
+  activeMenu: string;
+
   @ViewChild(Slides) slides: Slides;
 
-  constructor(private helperService: HelpersService) {
-  }
+  constructor(private helperService: HelpersService, private menuCtrl: MenuController) {}
 
   ionViewDidLoad(){
     this.helperService.getHelpers().subscribe(data => {this.helpers = data; console.log(data)});
@@ -45,6 +46,22 @@ export class HelperPage {
       case "besonderheiten": return 10;
       default: return 3
     }
+  }
+
+  mainMenuActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'glossar');
+    this.menuCtrl.open();
+  }
+
+  glossarActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'glossar';
+    this.menuCtrl.enable(false, 'mainMenu');
+    this.menuCtrl.enable(true, 'glossar');
+    this.menuCtrl.open();
   }
 
 }

@@ -5,11 +5,20 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>glossary</ion-title>
+    <ion-buttons left class="hidden-lg-up">
+      <button ion-button icon-only (click)="mainMenuActive()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Glossar</ion-title>
+    <ion-buttons right class="hidden-lg-up">
+      <button ion-button icon-start icon-only (click)="glossarActive()">
+        <ion-icon name="book"></ion-icon>
+        Glossar
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 

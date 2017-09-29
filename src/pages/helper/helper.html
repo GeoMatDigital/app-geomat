@@ -5,13 +5,21 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
+    <ion-buttons left class="hidden-lg-up">
+      <button ion-button icon-only (click)="mainMenuActive()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Bestimmungsschlüssel Minerale GeoMat</ion-title>
+    <ion-buttons right class="hidden-lg-up">
+      <button ion-button icon-start icon-only (click)="glossarActive()">
+        <ion-icon name="book"></ion-icon>
+        Glossar
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content>
     <ion-slides pager>
@@ -166,21 +174,21 @@
         <ion-row>
           <ion-col col-6>
             <p no-margin padding class="image-header">Metallglanz</p>
-            <img src="../assets/helper/metall_glanz.jpg" alt="Metall-Glanz">
+            <img src="assets/helper/metall_glanz.jpg" alt="Metall-Glanz">
           </ion-col>
           <ion-col col-6>
             <p no-margin padding class="image-header">Glasglanz</p>
-            <img src="../assets/helper/glas_glanz.jpg" alt="">
+            <img src="assets/helper/glas_glanz.jpg" alt="">
           </ion-col>
         <ion-row>
         </ion-row>
           <ion-col col-6>
             <p no-margin padding class="image-header">Perlmutglanz</p>
-            <img src="../assets/helper/perlmut_glanz.jpg" alt="">
+            <img src="assets/helper/perlmut_glanz.jpg" alt="">
           </ion-col>
           <ion-col col-6>
             <p no-margin padding class="image-header">stumpf-erdiger Glanz</p>
-            <img src="../assets/helper/stumpf-erdiger_glanz.jpg" alt="">
+            <img src="assets/helper/stumpf-erdiger_glanz.jpg" alt="">
           </ion-col>
         </ion-row>
       </ion-slide>
@@ -196,10 +204,10 @@
         </ion-row>
         <ion-row>
           <ion-col col-6>
-            <img src="../assets/helper/farbe1.jpg" alt="">
+            <img src="assets/helper/farbe1.jpg" alt="">
           </ion-col>
           <ion-col col-6>
-            <img src="../assets/helper/farbe2.jpg" alt="">
+            <img src="assets/helper/farbe2.jpg" alt="">
           </ion-col>
         </ion-row>
       </ion-slide>
@@ -237,11 +245,11 @@
         <ion-row>
           <ion-col col-6>
             <p no-margin padding class="image-header">Durchkreuzungszwillinge</p>
-            <img src="../assets/helper/durchkreuzungszwillinge.jpg" alt="">
+            <img src="assets/helper/durchkreuzungszwillinge.jpg" alt="">
           </ion-col>
           <ion-col col-6>
             <p no-margin padding class="image-header">Paragenese</p>
-            <img src="../assets/helper/paragenese.jpg" alt="">
+            <img src="assets/helper/paragenese.jpg" alt="">
           </ion-col>
         </ion-row>
       </ion-slide>

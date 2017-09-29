@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the SelftestPage page.
@@ -14,12 +14,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'quiz.html',
 })
 export class QuizPage {
+  activeMenu: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private menuCtrl: MenuController) {}
+
+  mainMenuActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'glossar');
+    this.menuCtrl.open();
   }
 
-  ionViewDidLoad() {
-
+  glossarActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'glossar';
+    this.menuCtrl.enable(false, 'mainMenu');
+    this.menuCtrl.enable(true, 'glossar');
+    this.menuCtrl.open();
   }
 
 }

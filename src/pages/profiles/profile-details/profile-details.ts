@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavParams } from 'ionic-angular';
+import { NavParams, MenuController } from 'ionic-angular';
 import { Profile } from '../../../models/profile';
 
 @Component({
@@ -9,8 +9,9 @@ import { Profile } from '../../../models/profile';
 export class ProfileDetailsPage implements OnInit {
   profile: Profile;
   public formulae: string = '';
+  activeMenu: string;
 
-  constructor(public navParams: NavParams) { }
+  constructor(public navParams: NavParams, private menuCtrl: MenuController) { }
 
   ionViewDidEnter() {
   }
@@ -89,11 +90,20 @@ export class ProfileDetailsPage implements OnInit {
       default: return '';
     }
   }
-    // switch(fracture) {
-    //   case 'CF': return 'muschelig';
-    //   case 'EF': return 'erdig';
-    //   case 'HF': return 'zerhackt';
-    //   case 'SF': return 'splittrig';
-    //   case 'UF': return 'ungleichmäßig';
-    // }
+
+  mainMenuActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'mainMenu';
+    this.menuCtrl.enable(true, 'mainMenu');
+    this.menuCtrl.enable(false, 'glossar');
+    this.menuCtrl.open();
+  }
+
+  glossarActive() {
+    this.menuCtrl.close();
+    this.activeMenu = 'glossar';
+    this.menuCtrl.enable(false, 'mainMenu');
+    this.menuCtrl.enable(true, 'glossar');
+    this.menuCtrl.open();
+  }
 }

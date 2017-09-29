@@ -24,14 +24,7 @@ export class HomePage {
   quizPage = QuizPage;
   activeMenu: string;
 
-  constructor(public navCtrl: NavController, private menuCtrl: MenuController) {
-    // this.crystalsystemsPage = CrystalsystemsPage;
-    // this.profilesPage = ProfilesPage;
-    // this.profiles1Page = Profiles1Page;
-    // this.profiles2Page = Profiles2Page;
-    // this.glossaryPage = GlossaryPage;
-    // this.galleryPage = GalleryPage;
-  }
+  constructor(public navCtrl: NavController, private menuCtrl: MenuController) { }
 
   mainMenuActive() {
     this.menuCtrl.close();
@@ -48,5 +41,4 @@ export class HomePage {
     this.menuCtrl.enable(true, 'glossar');
     this.menuCtrl.open();
   }
-
 }
