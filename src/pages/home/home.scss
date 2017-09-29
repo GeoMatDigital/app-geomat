@@ -32,5 +32,14 @@ page-home {
         color: #fff;
       }
     }
+    &.disabled {
+      background-color: color($colors, semi-light);
+      .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
+        color: #fff;
+      }
+    }
+    &.disabled:hover, &.disabled:active {
+      cursor: not-allowed;
+    }
   }
 }

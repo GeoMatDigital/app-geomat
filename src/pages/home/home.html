@@ -6,10 +6,9 @@
       </button>
     </ion-buttons>
     <ion-title>GeoMat</ion-title>
-    <ion-buttons right class="hidden-lg-up">
+    <ion-buttons right class="hidden-lg-up" padding-right>
       <button ion-button icon-start icon-only (click)="glossarActive()">
         <ion-icon name="book"></ion-icon>
-        Glossar
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -30,7 +29,8 @@
       </ion-card>
     </ion-col>
     <ion-col no-padding col-6>
-      <ion-card no-margin [navPush]="galleryPage">
+      <!-- [navPush]="galleryPage" -->
+      <ion-card no-margin class="disabled">
         <ion-icon name="images"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -42,7 +42,8 @@
   </ion-row>
   <ion-row>
     <ion-col no-padding col-6>
-      <ion-card no-margin [navPush]="crystalsystemsPage">
+      <!-- [navPush]="crystalsystemsPage" -->
+      <ion-card no-margin class="disabled">
         <ion-icon name="cube"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -64,7 +65,8 @@
   </ion-row>
   <ion-row>
     <ion-col no-padding col-6>
-      <ion-card no-margin [navPush]="quizPage">
+      <!-- [navPush]="quizPage" -->
+      <ion-card no-margin class="disabled">
         <ion-icon name="help"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -74,7 +76,8 @@
       </ion-card>
     </ion-col>
     <ion-col no-padding col-6>
-      <ion-card no-margin [navPush]="glossaryPage">
+      <!-- [navPush]="glossaryPage" -->
+      <ion-card no-margin class="disabled">
         <ion-icon name="book"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
