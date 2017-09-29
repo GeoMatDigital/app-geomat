@@ -3,9 +3,29 @@ It is built by Ionic 3, debugged by Sentry and documented by Compodoc.
 
 ## How to use this template
 
-```bash
-$ sudo npm install
-```
+TO get started follow the [ionic instructions](http://ionicframework.com/docs/intro/installation/)
+
+### Prerequisities
+
+
+cli-packages:
+
+     ionic (Ionic CLI) : 3.12.0
+
+global packages:
+
+    cordova (Cordova CLI) : 7.0.1
+
+local packages:
+
+    @ionic/app-scripts : 2.1.4
+    Cordova Platforms  : browser 4.1.0
+    Ionic Framework    : ionic-angular 3.6.1
+
+System:
+
+    Node : v8.4.0
+    npm  : 5.3.0
 
 ## Sentry - Bug-Tracking
 The GeoMat-app uses [Sentry](https://sentry.io) to report bugs.
