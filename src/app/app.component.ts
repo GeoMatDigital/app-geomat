@@ -29,7 +29,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
-    throw new Error('I am a bug... 🐛');
+    // throw new Error('I am a bug... 🐛');
   }
 
   onLoad(page: any) {
