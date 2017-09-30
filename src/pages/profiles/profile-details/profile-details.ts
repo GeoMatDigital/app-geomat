@@ -64,7 +64,6 @@ export class ProfileDetailsPage implements OnInit {
   }
 
   getCleavage(cleavage: string) {
-    console.log(cleavage);
     switch(cleavage) {
       case 'PE': return 'perfekt';
       case 'LP': return 'weniger perfekt';
