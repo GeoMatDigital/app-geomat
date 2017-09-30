@@ -23,11 +23,10 @@ export class HelperPage {
   constructor(private helperService: HelpersService, private menuCtrl: MenuController) {}
 
   ionViewDidLoad(){
-    this.helperService.getHelpers().subscribe(data => {this.helpers = data; console.log(data)});
+    this.helperService.getHelpers().subscribe(data => this.helpers = data);
   }
 
   onLink(chapter:string) {
-    console.log(this.getIndexOfChapter(chapter));
     this.slides.slideTo(this.getIndexOfChapter(chapter), 500);
   }
 
@@ -63,5 +62,4 @@ export class HelperPage {
     this.menuCtrl.enable(true, 'glossar');
     this.menuCtrl.open();
   }
-
 }
