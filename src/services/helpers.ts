@@ -7,7 +7,7 @@ export class HelpersService {
   constructor (private http: Http) {}
 
   getHelpers() {
-    return this.http.get('pages/helper/helper.json')
+    return this.http.get('assets/helper/helper.json')
     .map((res:Response) => res.json());
   }
 
