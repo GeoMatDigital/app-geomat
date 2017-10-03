@@ -31,22 +31,22 @@ export class ProfilesPage {
       return profile.mineral_type.systematics == systematics;
     });
 
-    if(systematics === 'SG'){
-      this.header = "Silikate und Germanat";
-      this.navCtrl.push(this.profiles2Page, {profiles: profiles, header: this.header });
-      return;
-    } else {
-      // to be changed to switch maybe?
-      if(systematics === "EL") { this.header = "Elemente"; }
-      else if(systematics === "CN") { this.header = "Carbonate und Nitrate"; }
-      else if(systematics === "OH") { this.header = "Oxide und Hydroxide"; }
-      else if(systematics === "PV") { this.header = "Phosphate und Vanadate"; }
-      else if(systematics === "SL") { this.header = "Sulfate"}
-      else if(systematics === "SF") { this.header = "Sulfide und Sulfosalze"}
-      else if(systematics === "HG") { this.header = "Halogenide"; }
-      }
+    // if(systematics === 'SG'){
+    //   this.header = "Silikate und Germanat";
+    //   this.navCtrl.push(this.profiles2Page, {profiles: profiles, header: systematics });
+    //   return;
+    // } else {
+    //   // to be changed to switch maybe?
+    //   if(systematics === "EL") { this.header = "Elemente"; }
+    //   else if(systematics === "CN") { this.header = "Carbonate und Nitrate"; }
+    //   else if(systematics === "OH") { this.header = "Oxide und Hydroxide"; }
+    //   else if(systematics === "PV") { this.header = "Phosphate und Vanadate"; }
+    //   else if(systematics === "SL") { this.header = "Sulfate"}
+    //   else if(systematics === "SF") { this.header = "Sulfide und Sulfosalze"}
+    //   else if(systematics === "HG") { this.header = "Halogenide"; }
+    //   }
 
-      this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: this.header });
+      this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: systematics });
     }
 
     mainMenuActive() {
