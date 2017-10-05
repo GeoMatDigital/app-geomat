@@ -17,6 +17,22 @@ export class ProfilesPage {
   header: string = "?";
   activeMenu: string;
 
+  /**
+ * @param {string} target  The target to process see {@link Todo}
+ *
+ * @example
+ * This is a good example
+ * processTarget('yo')
+ *
+ * * ```
+ * &lt;mwl-calendar-day-view
+ *  [viewDate]="viewDate"
+ *  [events]="events"&gt;
+ * &lt;/mwl-calendar-day-view&gt;
+ * ```
+ *
+ * @returns      void
+ */
   constructor(public navCtrl: NavController, private profilesService: ProfilesService, private menuCtrl: MenuController) {
     this.profiles1Page = Profiles1Page;
     this.profiles2Page = Profiles2Page;

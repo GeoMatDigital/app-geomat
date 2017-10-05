@@ -3,26 +3,53 @@ import { IonicPage, Slides, MenuController, PopoverController } from 'ionic-angu
 import { HelpersService } from '../../services/helpers';
 import { GlossaryPopoverPage } from '../glossary-popover/glossary-popover';
 
+/**
+ * Page of Helper (Bestimmungshelfer)
+ */
 @IonicPage()
 @Component({
   selector: 'page-helper',
   templateUrl: 'helper.html',
 })
 export class HelperPage {
+  /**
+   * Stores helper entries of all slide-pages
+   */
   public helpers;
+  /**
+   * Stores current active menu
+   */
   public activeMenu: string;
-
+  /**
+   * Stores slide-content
+   */
   @ViewChild(Slides) slides: Slides;
 
+  /**
+   * constructor()
+   * @param {HelperService} helperService
+   * @param {MenuController} menuCtrl
+   * @param {PopoverController} popoverCtrl
+   */
   constructor(
     private helperService: HelpersService,
     private menuCtrl: MenuController,
     public popoverCtrl: PopoverController) {}
 
+  /**
+   * Loads the helper-service
+   *
+   * For more info, see: [HelperService]{@link HelperService}
+   */
   ionViewDidLoad(){
     this.helperService.getHelpers().subscribe(data => this.helpers = data);
   }
 
+  /**
+   * Gets glossary entry by id and shows it in popover
+   * @param event
+   * @param glossaryEntryId
+   */
   showGlossaryEntry(event, glossaryEntryId) {
     // this.glossaryEntry = this.glossaryService.getGlossaryEntry(glossaryEntryId).subscribe(item => { return item; });
 
@@ -32,12 +59,23 @@ export class HelperPage {
     });
   }
 
+  /**
+   * Slides to requested page within helper-page (currently not used anymore, replaced with popover feature)
+   * @param {string} chapter
+   */
   onLink(chapter:string) {
     this.slides.slideTo(this.getIndexOfChapter(chapter), 500);
   }
 
-  // TODO: Changing getting helper-page-index dynamically
-  getIndexOfChapter(chapter:string) {
+  //
+  /**
+   * Gets index of requested chapter
+   *
+   * TODO: Changing getting helper-page-index dynamically
+   * @param {string} chapter
+   * @returns {number} chapter id
+   */
+  private getIndexOfChapter(chapter:string) {
     switch(chapter) {
       case "abstrakt": 1;
       case "allgemeines": 2;
@@ -54,6 +92,10 @@ export class HelperPage {
     }
   }
 
+  /**
+   * Sets side-menu 'main-menu' as active
+   * and sets 'glossar' inactive if on mobile view
+   */
   mainMenuActive() {
     this.menuCtrl.close();
     this.activeMenu = 'mainMenu';
@@ -62,6 +104,10 @@ export class HelperPage {
     this.menuCtrl.open();
   }
 
+  /**
+   * Sets side-menu 'glossar' as active
+   * and sets 'main-menu' inactive if on mobile view
+   */
   glossarActive() {
     this.menuCtrl.close();
     this.activeMenu = 'glossar';

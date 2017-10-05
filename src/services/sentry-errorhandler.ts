@@ -24,8 +24,15 @@ Raven
 })
 .install();
 
+/**
+ * Extends IonicErrorhandler
+ * Sends errors to sentry.io for debugging-tracking
+ */
 export class SentryErrorHandler extends IonicErrorHandler {
-
+  /**
+   * Handle recently thrown errors
+   * @param error
+   */
   handleError(error) {
       super.handleError(error);
 
