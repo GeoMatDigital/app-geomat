@@ -25,7 +25,6 @@ import { Profiles1PageModule } from '../pages/profiles/profiles1/profiles1.modul
 import { Profiles2PageModule } from '../pages/profiles/profiles2/profiles2.module';
 import { ProfilesService } from '../services/profiles';
 import { QuizPageModule } from '../pages/quiz/quiz.module';
-import { MathJaxDirective } from '../directives/MathJax.directive';
 import { HelpersService } from '../services/helpers';
 import { InfoPage } from '../pages/info/info';
 import { InfoPageModule } from '../pages/info/info.module';
@@ -38,7 +37,6 @@ import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-po
     MyApp,
     HomePage,
     ProfileDetailsPage,
-    MathJaxDirective,
     GlossaryPage
   ],
   imports: [
