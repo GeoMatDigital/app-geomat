@@ -1,10 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, NavController, MenuController } from 'ionic-angular';
+import { Platform, NavController, MenuController, Content } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { InfoPage } from '../pages/info/info';
+import { GlossaryPage } from '../pages/glossary/glossary';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -13,8 +15,11 @@ export class MyApp {
   infoPage = InfoPage;
   homePage = HomePage;
   activeMenu: string;
+  groupedEntries;
+  glossaryPage = GlossaryPage;
 
   @ViewChild('gmApp') nav: NavController;
+  @ViewChild(Content) glossary: Content;
 
   constructor(
     platform: Platform,
@@ -22,7 +27,6 @@ export class MyApp {
     splashScreen: SplashScreen,
     private menuCtrl: MenuController
   ) {
-
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

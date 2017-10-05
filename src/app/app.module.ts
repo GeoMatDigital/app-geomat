@@ -18,7 +18,6 @@ import { QuizPage } from '../pages/quiz/quiz';
 import { CrystalsystemsPageModule } from '../pages/crystalsystems/crystalsystems.module';
 import { GalleryPageModule } from '../pages/gallery/gallery.module';
 import { GlossaryPage } from '../pages/glossary/glossary';
-import { GlossaryPageModule } from '../pages/glossary/glossary.module';
 import { HelperPageModule } from '../pages/helper/helper.module';
 import { ProfileDetailsPage } from '../pages/profiles/profile-details/profile-details';
 import { ProfilesPageModule } from '../pages/profiles/profiles.module';
@@ -30,13 +29,17 @@ import { MathJaxDirective } from '../directives/MathJax.directive';
 import { HelpersService } from '../services/helpers';
 import { InfoPage } from '../pages/info/info';
 import { InfoPageModule } from '../pages/info/info.module';
+import { GlossaryService } from '../services/glossary';
+import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
+import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProfileDetailsPage,
-    MathJaxDirective
+    MathJaxDirective,
+    GlossaryPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,7 @@ import { InfoPageModule } from '../pages/info/info.module';
     IonicModule.forRoot(MyApp),
     CrystalsystemsPageModule,
     GalleryPageModule,
-    GlossaryPageModule,
+    GlossaryPopoverPageModule,
     HelperPageModule,
     ProfilesPageModule,
     Profiles1PageModule,
@@ -59,6 +62,7 @@ import { InfoPageModule } from '../pages/info/info.module';
     CrystalsystemsPage,
     GalleryPage,
     GlossaryPage,
+    GlossaryPopoverPage,
     HelperPage,
     ProfileDetailsPage,
     ProfilesPage,
@@ -72,7 +76,8 @@ import { InfoPageModule } from '../pages/info/info.module';
     SplashScreen,
     {provide: ErrorHandler, useClass: SentryErrorHandler},
     ProfilesService,
-    HelpersService
+    HelpersService,
+    GlossaryService
   ]
 })
 export class AppModule {}

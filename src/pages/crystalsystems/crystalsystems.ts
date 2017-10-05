@@ -33,5 +33,4 @@ export class CrystalsystemsPage {
     this.menuCtrl.enable(true, 'glossar');
     this.menuCtrl.open();
   }
-
 }
