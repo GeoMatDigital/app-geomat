@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
 import { CrystalsystemsPage } from '../crystalsystems/crystalsystems';
 import { ProfilesPage } from '../profiles/profiles';
-import { Profiles1Page } from '../profiles/profiles1/profiles1';
-import { Profiles2Page } from '../profiles/profiles2/profiles2';
+
 import { GlossaryPage } from '../glossary/glossary';
 import { GalleryPage } from '../gallery/gallery';
 import { QuizPage } from '../quiz/quiz';
