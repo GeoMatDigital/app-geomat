@@ -1,0 +1,16 @@
+page-glossary-popover {
+  .card-header{
+      background-color: color($colors, light);
+      border-bottom: 1px solid #dedede;
+  }
+  .card-md, .card-ios, .card-wp {
+    width: auto;
+  }
+
+  .card-header-md ,
+  .card-md .item{
+    &+ .card-content-md{
+      padding-top: 16px;
+    }
+  }
+}

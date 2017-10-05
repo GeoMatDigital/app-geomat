@@ -14,9 +14,11 @@ page-helper {
       background-color: color($colors, light);
     }
 
-    // img {
-    //   height: 200px;
-    //   width: 200px;
-    // }
+    .internLink {
+      text-decoration: underline;
+      &:hover, &:active{
+        cursor: pointer;
+      }
+    }
   }
 }

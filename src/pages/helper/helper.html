@@ -13,6 +13,7 @@
 </ion-header>
 
 <ion-content>
+
   <ion-slides pager>
     <ion-slide>
       <h2>Abstrakt</h2>
@@ -23,10 +24,10 @@
       <h2>Allgemeines Aussehen</h2>
       <ion-row>
         <ion-col col-12 col-sm-6>
-          <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein idiomorpher oder ein xenomorpher Kristall ist.  Einen idiomorphen Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen) konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als xenomorph bezeichnet. Der Übergang zwischen diesen beiden Formen wird hypidiomorph genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</p>
+          <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein idiomorpher oder ein xenomorpher Kristall ist.  Einen <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorphen</a> <a class="internLink" (click)="showGlossaryEntry($event, 'kristall')">Kristall</a> erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen) konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorph</a> bezeichnet. Der Übergang zwischen diesen beiden Formen wird hypidiomorph genannt und liegt vor, wenn ein Kristall teilweise <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorph</a> und teilweise <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorph</a> gewachsen ist.</p>
         </ion-col>
         <ion-col col-12 col-sm-6>
-          <p text-justify>Wenn es sich um einen <b>idiomorphen</b> Kristall handelt, kann man über die äußere Form meist die <a href="#" (click)="onLink('tracht')">Tracht</a>, den <a href="#" (click)="onLink('habitus')">Habitus</a> und das <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b>hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls üebr die äußere Form, die Tracht und den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt, ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a href="#" (click)="onLink('bruch')">Bruch</a> des Minerals.</p>
+          <p text-justify>Wenn es sich um einen <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorphen</a> Kristall handelt, kann man über die äußere Form meist die <a class="internLink" (click)="onLink('tracht')">Tracht</a>, den <a href="#" (click)="onLink('habitus')">Habitus</a> und das <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b >hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls üebr die äußere Form, die Tracht und den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt, ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a href="#" (click)="onLink('bruch')">Bruch</a> des Minerals.</p>
         </ion-col>
       </ion-row>
       <ion-row>

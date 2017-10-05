@@ -33,5 +33,4 @@ export class GalleryPage {
     this.menuCtrl.enable(true, 'glossar');
     this.menuCtrl.open();
   }
-
 }

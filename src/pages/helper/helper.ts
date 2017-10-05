@@ -1,13 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, Slides, MenuController } from 'ionic-angular';
+import { IonicPage, Slides, MenuController, PopoverController } from 'ionic-angular';
 import { HelpersService } from '../../services/helpers';
-
-/**
- * Generated class for the HelperPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { GlossaryPopoverPage } from '../glossary-popover/glossary-popover';
 
 @IonicPage()
 @Component({
@@ -16,20 +10,33 @@ import { HelpersService } from '../../services/helpers';
 })
 export class HelperPage {
   public helpers;
-  activeMenu: string;
+  public activeMenu: string;
 
   @ViewChild(Slides) slides: Slides;
 
-  constructor(private helperService: HelpersService, private menuCtrl: MenuController) {}
+  constructor(
+    private helperService: HelpersService,
+    private menuCtrl: MenuController,
+    public popoverCtrl: PopoverController) {}
 
   ionViewDidLoad(){
     this.helperService.getHelpers().subscribe(data => this.helpers = data);
+  }
+
+  showGlossaryEntry(event, glossaryEntryId) {
+    // this.glossaryEntry = this.glossaryService.getGlossaryEntry(glossaryEntryId).subscribe(item => { return item; });
+
+    let popover = this.popoverCtrl.create(GlossaryPopoverPage, {id:glossaryEntryId});
+    popover.present({
+      ev: event
+    });
   }
 
   onLink(chapter:string) {
     this.slides.slideTo(this.getIndexOfChapter(chapter), 500);
   }
 
+  // TODO: Changing getting helper-page-index dynamically
   getIndexOfChapter(chapter:string) {
     switch(chapter) {
       case "abstrakt": 1;
