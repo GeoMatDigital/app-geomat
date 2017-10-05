@@ -9,23 +9,54 @@ import { GalleryPage } from '../gallery/gallery';
 import { QuizPage } from '../quiz/quiz';
 import { HelperPage } from '../helper/helper';
 
+/**
+ * Page for initial view
+ */
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  /**
+   * Stores page for crystal-system page
+   */
   crystalsystemsPage = CrystalsystemsPage;
+  /**
+   * Stores page for initial view of profiles
+   */
   profilesPage = ProfilesPage;
-  profiles1Page = Profiles1Page;
-  profiles2Page = Profiles2Page;
+  /**
+   * Stores page for glossary (not yet imlemented, because glossary viewable via sidemenu and popover)
+   */
   glossaryPage = GlossaryPage;
+  /**
+   * Stores page for gallery (not yet implemented)
+   */
   galleryPage = GalleryPage;
+  /**
+   * Stores page for helperpage ('Bestimmungshelfer')
+   */
   helperPage = HelperPage;
+  /**
+   * Stores page for quiz (not yet implemented)
+   */
   quizPage = QuizPage;
+  /**
+   * Stores info which menu is currently active
+   */
   activeMenu: string;
 
+  /**
+   * constructor()
+   * @param navCtrl
+   * @param menuCtrl
+   */
   constructor(public navCtrl: NavController, private menuCtrl: MenuController) { }
 
+  /**
+   * Sets side-menu 'main-menu' as active
+   * and sets 'glossar' inactive if on mobile view
+   */
   mainMenuActive() {
     this.menuCtrl.close();
     this.activeMenu = 'mainMenu';
@@ -34,6 +65,10 @@ export class HomePage {
     this.menuCtrl.open();
   }
 
+  /**
+   * Sets side-menu 'glossar' as active
+   * and sets 'main-menu' inactive if on mobile view
+   */
   glossarActive() {
     this.menuCtrl.close();
     this.activeMenu = 'glossar';

@@ -27,7 +27,7 @@
           <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein idiomorpher oder ein xenomorpher Kristall ist.  Einen <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorphen</a> <a class="internLink" (click)="showGlossaryEntry($event, 'kristall')">Kristall</a> erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen) konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorph</a> bezeichnet. Der Übergang zwischen diesen beiden Formen wird hypidiomorph genannt und liegt vor, wenn ein Kristall teilweise <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorph</a> und teilweise <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorph</a> gewachsen ist.</p>
         </ion-col>
         <ion-col col-12 col-sm-6>
-          <p text-justify>Wenn es sich um einen <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorphen</a> Kristall handelt, kann man über die äußere Form meist die <a class="internLink" (click)="onLink('tracht')">Tracht</a>, den <a href="#" (click)="onLink('habitus')">Habitus</a> und das <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b >hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls üebr die äußere Form, die Tracht und den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt, ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a href="#" (click)="onLink('bruch')">Bruch</a> des Minerals.</p>
+          <p text-justify>Wenn es sich um einen <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorphen</a> Kristall handelt, kann man über die äußere Form meist die <a class="internLink" (click)="showGlossaryEntry($event, 'tracht')">Tracht</a>, den <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> und das <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b>hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls üebr die äußere Form, die Tracht und den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt, ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a class="internLink" (click)="showGlossaryEntry($event, 'bruch')">Bruch</a> des Minerals.</p>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -47,7 +47,7 @@
       <ion-row>
         <ion-col>
           <p text-justify>
-            Bei einem <b>idiomorphem</b> Kristall ist an der Ausbildung der Flächen zueinander schnell das Kirstallsystem erkennbar. Durch Suchen und Finden verschiedener Symmetrieoperationen (Rotationsachsen, Spiegelachsen, ...) in dne definierten kristallographischen Richtungen und durch die Betrachtung des Habitus können die verschiedenen Kristallsysteme unterschieden werden. Das kubische Kristallsystem hat drei gleich lange Achsen a=b=c und drei gleich große Winkel (&alpha;=&beta;=&gamma;=90 Grad). die Blickrichtungen sind:
+            Bei einem <b>idiomorphem</b> Kristall ist an der Ausbildung der Flächen zueinander schnell das Kirstallsystem erkennbar. Durch Suchen und Finden verschiedener Symmetrieoperationen (Rotationsachsen, Spiegelachsen, ...) in dne definierten kristallographischen Richtungen und durch die Betrachtung des Habitus können die verschiedenen Kristallsysteme unterschieden werden. Das kubische Kristallsystem hat drei gleich lange Achsen a=b=c und drei gleich große Winkel (&alpha;=&beta;=&gamma;=90°). die Blickrichtungen sind:
             </p><p text-center>&lt;100&gt;, &lt;110&gt;, &lt;111&gt;.</p><p>Entlang der 3. Blickrichtung ist immer eine dreizählige Rotationsachse zu finden.</p>
         </ion-col>
       </ion-row>
@@ -68,7 +68,7 @@
       <ion-row>
         <ion-col>
           <p text-justify>
-            Der Habitus beschreibt das Größenverhältnis der verschiedenen Kristallflächen eines Kristalls zueinander. Der Habitus kann innerhalb einer Mineralar stark variieren.<br>Das kubische <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> beispielsweise weist stets einen isometrischen Habitus auf, da die Achsen alle gleich lang sind. Während das tetragonale Kristallsystem einen stängeligen, tafeligen oder prismatischen Habitus zeigt, da eine Achse länger ist (a=b&ne;c).
+            Der Habitus beschreibt das Größenverhältnis der verschiedenen Kristallflächen eines Kristalls zueinander. Der Habitus kann innerhalb einer Mineralar stark variieren.<br>Das kubische <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> beispielsweise weist stets einen isometrischen Habitus auf, da die Achsen alle gleich lang sind. Während das tetragonale Kristallsystem einen stängeligen, tafeligen oder prismatischen Habitus zeigt, da eine Achse länger ist (a=b&ne;c).
           </p>
         </ion-col>
       </ion-row>
@@ -89,7 +89,7 @@
       <ion-row>
         <ion-col>
           <p text-justify>
-              Die Tracht beschreibt die Gesamtheit der ausgebildeten Flächen eines Kristalls, also die Kombination der einzelnen Kristallflächen zueinander. Sie stellt einen gewissen Gegensatz zum Habitus, der die Größenverhältnisse beschreibt, dar. Tracht und <a href="#" (click)="onLink('habitus')">Habitus</a> zusammen bilden die Kristallgestalt.
+              Die Tracht beschreibt die Gesamtheit der ausgebildeten Flächen eines Kristalls, also die Kombination der einzelnen Kristallflächen zueinander. Sie stellt einen gewissen Gegensatz zum Habitus, der die Größenverhältnisse beschreibt, dar. Tracht und <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> zusammen bilden die Kristallgestalt.
           </p>
         </ion-col>
       </ion-row>
@@ -100,7 +100,7 @@
       <ion-row>
         <ion-col>
           <p text-justify>
-            Der Bruch ist ein wichtiges Merkmal von Mineralen udn ist klar vo nder <a href="#" (click)="onLink('spaltbarkeit')">Spaltbarkeit</a> zu trennen! Während die Spaltbarkeit einer kristallographischen Ricthung folgt, folgt der Bruch keiner kristallographischen Richtung. Es können folgende Brucharten unterschieden werden:</p>
+            Der Bruch ist ein wichtiges Merkmal von Mineralen udn ist klar vo nder <a class="internLink" (click)="showGlossaryEntry($event, 'spaltbarkeit')">Spaltbarkeit</a> zu trennen! Während die Spaltbarkeit einer kristallographischen Ricthung folgt, folgt der Bruch keiner kristallographischen Richtung. Es können folgende Brucharten unterschieden werden:</p>
           <ion-list>
             <ion-item><b>muschelig</b></ion-item>
             <ion-item><b>uneben</b></ion-item>
@@ -131,7 +131,7 @@
       <ion-row>
         <ion-col>
           <p text-justify>
-              Um die Spaltbarkeit zu untersuchen ist es wichtig deutliche Spaltwinkel oder -formen am Mineralhandstück zu entdecken. Da diese nicht in allen Handstücken deutlich zu sehen sind, ist es auch wichtig die vorhandenen idiomorph ausgebildeten Flächen im Verhältnis zu anderen idiomorph ausgebildeten Flächen zu untersuchen und die Winkel zwischen den Flächen festzustellen. Druch die unterschiedlichen Spaltwinkel lassen sich Minerale meist gut unterscheiden wie zum Beispiel Amphibole (120° Winkel) und Pyroxene (90° Winkel).<br>Allein durch die Betrachtung der äußeren Form und des Verwitterungsverhaltens des Minerals kann man gute Spaltbarkeit erkennen, da diese Minerale stets in typischen Formen verwittern, die das <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> zeigen, wie beispielsweise Calcit, der typische Spaltrhomboeder aufweist.
+              Um die Spaltbarkeit zu untersuchen ist es wichtig deutliche Spaltwinkel oder -formen am Mineralhandstück zu entdecken. Da diese nicht in allen Handstücken deutlich zu sehen sind, ist es auch wichtig die vorhandenen idiomorph ausgebildeten Flächen im Verhältnis zu anderen idiomorph ausgebildeten Flächen zu untersuchen und die Winkel zwischen den Flächen festzustellen. Druch die unterschiedlichen Spaltwinkel lassen sich Minerale meist gut unterscheiden wie zum Beispiel Amphibole (120° Winkel) und Pyroxene (90° Winkel).<br>Allein durch die Betrachtung der äußeren Form und des Verwitterungsverhaltens des Minerals kann man gute Spaltbarkeit erkennen, da diese Minerale stets in typischen Formen verwittern, die das <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> zeigen, wie beispielsweise Calcit, der typische Spaltrhomboeder aufweist.
           </p>
         </ion-col>
       </ion-row>
