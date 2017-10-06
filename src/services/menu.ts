@@ -11,6 +11,10 @@ export class MenuService {
    */
   private _activeMenu: string = 'mainMenu';
 
+  /**
+   * constructor()
+   * @param _menuCtrl
+   */
   constructor(private _menuCtrl: MenuController) {}
   /**
    * Opens requested Sidemenu and deactivates others
