@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
+
 /**
  * Managing Helperpage information
  */
@@ -8,9 +9,9 @@ import 'rxjs/add/operator/map';
 export class HelpersService {
   /**
    * constructor()
-   * @param http
+   * @param _http
    */
-  constructor (private http: Http) {}
+  constructor (private _http: Http) {}
 
   /**
    * Retrieves all information of helper.json
@@ -18,8 +19,7 @@ export class HelpersService {
    * @returns {Observable<Response} Helperitems
    */
   getHelpers() {
-    return this.http.get('assets/helper/helper.json')
+    return this._http.get('assets/helper/helper.json')
     .map((res:Response) => res.json());
   }
-
 }

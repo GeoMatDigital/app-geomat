@@ -1,7 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, Slides, MenuController, PopoverController } from 'ionic-angular';
+import { IonicPage, Slides, PopoverController } from 'ionic-angular';
 import { HelpersService } from '../../services/helpers';
 import { GlossaryPopoverPage } from '../glossary-popover/glossary-popover';
+import { MenuService } from '../../services/menu';
 
 /**
  * Page of Helper (Bestimmungshelfer)
@@ -16,10 +17,7 @@ export class HelperPage {
    * Stores helper entries of all slide-pages
    */
   public helpers;
-  /**
-   * Stores current active menu
-   */
-  public activeMenu: string;
+
   /**
    * Stores slide-content
    */
@@ -32,9 +30,9 @@ export class HelperPage {
    * @param {PopoverController} popoverCtrl
    */
   constructor(
-    private helperService: HelpersService,
-    private menuCtrl: MenuController,
-    public popoverCtrl: PopoverController) {}
+    private _helperService: HelpersService,
+    private _menuService: MenuService,
+    public _popoverCtrl: PopoverController) {}
 
   /**
    * Loads the helper-service
@@ -42,7 +40,7 @@ export class HelperPage {
    * For more info, see: [HelperService]{@link HelperService}
    */
   ionViewDidLoad(){
-    this.helperService.getHelpers().subscribe(data => this.helpers = data);
+    this._helperService.getHelpers().subscribe(data => this.helpers = data);
   }
 
   /**
@@ -51,9 +49,7 @@ export class HelperPage {
    * @param glossaryEntryId
    */
   showGlossaryEntry(event, glossaryEntryId) {
-    // this.glossaryEntry = this.glossaryService.getGlossaryEntry(glossaryEntryId).subscribe(item => { return item; });
-
-    let popover = this.popoverCtrl.create(GlossaryPopoverPage, {id:glossaryEntryId});
+    let popover = this._popoverCtrl.create(GlossaryPopoverPage, {id:glossaryEntryId});
     popover.present({
       ev: event
     });
@@ -93,26 +89,10 @@ export class HelperPage {
   }
 
   /**
-   * Sets side-menu 'main-menu' as active
-   * and sets 'glossar' inactive if on mobile view
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
    */
-  mainMenuActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'mainMenu';
-    this.menuCtrl.enable(true, 'mainMenu');
-    this.menuCtrl.enable(false, 'glossar');
-    this.menuCtrl.open();
-  }
-
-  /**
-   * Sets side-menu 'glossar' as active
-   * and sets 'main-menu' inactive if on mobile view
-   */
-  glossarActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'glossar';
-    this.menuCtrl.enable(false, 'mainMenu');
-    this.menuCtrl.enable(true, 'glossar');
-    this.menuCtrl.open();
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
   }
 }

@@ -31,6 +31,7 @@ import { InfoPageModule } from '../pages/info/info.module';
 import { GlossaryService } from '../services/glossary';
 import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
 import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
+import { MenuService } from '../services/menu';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-po
     {provide: ErrorHandler, useClass: SentryErrorHandler},
     ProfilesService,
     HelpersService,
-    GlossaryService
+    GlossaryService,
+    MenuService
   ]
 })
 export class AppModule {}

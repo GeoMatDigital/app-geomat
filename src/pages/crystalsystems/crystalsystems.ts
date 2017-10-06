@@ -1,36 +1,27 @@
 import { Component } from '@angular/core';
-import { IonicPage, MenuController } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
+import { MenuService } from '../../services/menu';
 
 /**
- * Generated class for the CrystalsystemsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Crystal-systems page for users to play around with the 7 crystalsystems
  */
-
 @IonicPage()
 @Component({
   selector: 'page-crystalsystems',
   templateUrl: 'crystalsystems.html',
 })
 export class CrystalsystemsPage {
-  activeMenu: string;
+  /**
+   * constructor()
+   * @param _menuService
+   */
+  constructor(private _menuService: MenuService) {}
 
-  constructor(private menuCtrl: MenuController) { }
-
-  mainMenuActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'mainMenu';
-    this.menuCtrl.enable(true, 'mainMenu');
-    this.menuCtrl.enable(false, 'glossar');
-    this.menuCtrl.open();
-  }
-
-  glossarActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'glossar';
-    this.menuCtrl.enable(false, 'mainMenu');
-    this.menuCtrl.enable(true, 'glossar');
-    this.menuCtrl.open();
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
   }
 }

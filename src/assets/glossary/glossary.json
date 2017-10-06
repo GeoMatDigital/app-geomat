@@ -216,7 +216,8 @@
   {
     "id": "haerte",
     "header": "Mohs'sche Härte / Mohs Härte",
-    "description": "Die Mohssche Härte beschreibt die relative Ritzhärte eines Minerals im Vergleich zu den Mineralen der logarithmisch aufgetragenen Skala.<ion-list><ion-item>1 Talk</ion-item><ion-item>2 Gips</ion-item><ion-item>3 Calcit</ion-item><ion-item>4 Fluorit</ion-item><ion-item>5 Apatit</ion-item><ion-item>6 Orthoklas</ion-item><ion-item>7 Quarz</ion-item><ion-item>8 Topas</ion-item><ion-item>9 Korund</ion-item>, </ion-item><ion-item>10 Diamant</ion-item></ion-list>"
+    "description": "Die Mohssche Härte beschreibt die relative Ritzhärte eines Minerals im Vergleich zu den Mineralen der logarithmisch aufgetragenen Skala.",
+    "list": ["Talk", "Gips", "Calcit", "Fluorit", "APatit", "Orthoklas", "Quarz", "Topas", "Kurond", "Diamant"]
   },
   {
     "id": "mophologie",

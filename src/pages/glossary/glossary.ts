@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 /**
  * stores current glossary entries
+ * manages content of sidemenu
  */
 @Component({
   selector: 'page-glossary',
@@ -16,10 +17,11 @@ export class GlossaryPage {
   glossary$: Observable<any[]>;
 
   /**
-   * constructor() (not used anymore, replaced by sidemenu and popover)
+   * constructor()
+   * @param glossaryService
    */
-  constructor(private glossaryService: GlossaryService) {
-    this.glossary$ = this.glossaryService.getGlossary();
+  constructor(private _glossaryService: GlossaryService) {
+    this.glossary$ = this._glossaryService.getGlossary();
   }
 
 }

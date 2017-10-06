@@ -1,16 +1,40 @@
 page-glossary-popover {
-  .card-header{
+  ion-card {
+    &.card-md, &.card-ios, &.card-wp {
+      width: auto;
+    }
+
+    .card-header{
       background-color: color($colors, light);
       border-bottom: 1px solid #dedede;
-  }
-  .card-md, .card-ios, .card-wp {
-    width: auto;
-  }
+    }
 
-  .card-header-md ,
-  .card-md .item{
-    &+ .card-content-md{
-      padding-top: 16px;
+    .card-header-md,
+    .card-md .item{
+      &+ .card-content-md{
+        padding-top: 16px;
+      }
+    }
+
+    .card-content-md, .card-content-ios, .card-content-wp {
+      padding-bottom: 0;
+    }
+
+    .list {
+      padding-bottom: 16px;
+    }
+
+    .item-block{
+      min-height: 2.4rem;
+    }
+
+    .item-md, .item-ios, .item-wp {
+      font-size: 1.4rem;
+    }
+
+    .label-md, .label-ios, .label-wp {
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }

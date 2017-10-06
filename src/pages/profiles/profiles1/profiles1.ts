@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProfileDetailsPage } from '../../profiles/profile-details/profile-details';
 import { Profile } from '../../../models/profile';
+import { MenuService } from '../../../services/menu';
 
 /**
- * Generated class for the Profile1Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Shows of the profile-page before profile-details gets shown
  */
-
 @IonicPage()
 @Component({
   selector: 'page-profiles1',
@@ -18,43 +15,46 @@ import { Profile } from '../../../models/profile';
 export class Profiles1Page implements OnInit{
   profile: Profile;
   profiles;
-  profileDetailsPage;
+  profileDetailsPage = ProfileDetailsPage;
   header:string;
-  activeMenu: string;
 
-  constructor(private navParams: NavParams, public navCtrl: NavController, private menuCtrl: MenuController) {
-    this.profileDetailsPage = ProfileDetailsPage;
+  /**
+   * constructor()
+   * @param navParams
+   * @param navCtrl
+   * @param _menuService
+   */
+  constructor(
+    private _navParams: NavParams,
+    public _navCtrl: NavController,
+    private _menuService: MenuService) {
   }
 
+  /**
+   * Initializes profile-page and gets data by nav-controller
+   */
   ngOnInit() {
-    this.profiles = this.navParams.get('profiles');
-    this.header = this.navParams.get('header');
+    this.profiles = this._navParams.get('profiles');
+    this.header = this._navParams.get('header');
   }
 
+  /**
+   * Navigates to the profile-details page
+   * @param mineral
+   */
   onProfiles(mineral) {
-    // to be improved: replace this.profile with profile as returned value
-
     this.profile = this.profiles.filter((profile: Profile):boolean => {
       return profile.mineral_type.id == mineral.mineral_type.id;
     })[0];
 
-    this.navCtrl.push(this.profileDetailsPage, { profile: this.profile });
+    this._navCtrl.push(this.profileDetailsPage, { profile: this.profile });
   }
 
-  mainMenuActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'mainMenu';
-    this.menuCtrl.enable(true, 'mainMenu');
-    this.menuCtrl.enable(false, 'glossar');
-    this.menuCtrl.open();
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
   }
-
-  glossarActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'glossar';
-    this.menuCtrl.enable(false, 'mainMenu');
-    this.menuCtrl.enable(true, 'glossar');
-    this.menuCtrl.open();
-  }
-
 }
