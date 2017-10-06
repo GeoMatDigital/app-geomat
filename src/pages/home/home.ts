@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, MenuController } from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
 import { CrystalsystemsPage } from '../crystalsystems/crystalsystems';
 import { ProfilesPage } from '../profiles/profiles';
 
@@ -47,10 +47,9 @@ export class HomePage {
 
   /**
    * constructor()
-   * @param navCtrl
    * @param menuCtrl
    */
-  constructor(public navCtrl: NavController, private menuCtrl: MenuController) { }
+  constructor(private menuCtrl: MenuController) { }
 
   /**
    * Sets side-menu 'main-menu' as active
