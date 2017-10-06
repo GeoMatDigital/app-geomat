@@ -2,10 +2,10 @@
   <ion-navbar>
     <ion-title>STECKBRIEFE</ion-title>
     <ion-buttons right class="hidden-lg-up" padding-right>
-      <button ion-button icon-start icon-only (click)="glossarActive()">
+      <button ion-button icon-start icon-only (click)="openSidemenu('mainMenu')">
         <ion-icon name="book"></ion-icon>
       </button>
-      <button ion-button icon-only (click)="mainMenuActive()">
+      <button ion-button icon-only (click)="openSidemenu('glossaryMenu')">
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>

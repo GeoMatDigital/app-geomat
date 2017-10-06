@@ -1,37 +1,28 @@
 import { Component } from '@angular/core';
-import { IonicPage, MenuController } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
+import { MenuService } from '../../services/menu';
 
 /**
- * Generated class for the SelftestPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Managing the quiz-modul
  */
-
 @IonicPage()
 @Component({
   selector: 'page-quiz',
   templateUrl: 'quiz.html',
 })
 export class QuizPage {
-  activeMenu: string;
 
-  constructor(private menuCtrl: MenuController) {}
+  /**
+   * cosntructor()
+   * @param _menuService
+   */
+  constructor(private _menuService: MenuService) {}
 
-  mainMenuActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'mainMenu';
-    this.menuCtrl.enable(true, 'mainMenu');
-    this.menuCtrl.enable(false, 'glossar');
-    this.menuCtrl.open();
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
   }
-
-  glossarActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'glossar';
-    this.menuCtrl.enable(false, 'mainMenu');
-    this.menuCtrl.enable(true, 'glossar');
-    this.menuCtrl.open();
-  }
-
 }

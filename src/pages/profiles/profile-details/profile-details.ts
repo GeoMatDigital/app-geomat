@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NavParams, MenuController } from 'ionic-angular';
+import { NavParams } from 'ionic-angular';
 import { Profile } from '../../../models/profile';
+import { MenuService } from '../../../services/menu';
 
 /**
  * Page for mineral-details
@@ -16,16 +17,11 @@ export class ProfileDetailsPage implements OnInit {
   profile: Profile;
 
   /**
-   * stores current active menu (main-menu or glossar)
-   */
-  activeMenu: string;
-
-  /**
    * constructor()
    * @param navParams - stores parameters of navigation
    * @param menuCtrl - stores controller for handling the menus
    */
-  constructor(public navParams: NavParams, private menuCtrl: MenuController) { }
+  constructor(public navParams: NavParams, private _menuService: MenuService) { }
 
   /**
    * fired if profile-detail page is initialized
@@ -86,26 +82,10 @@ export class ProfileDetailsPage implements OnInit {
   }
 
   /**
-   * Sets side-menu 'main-menu' as active
-   * and sets 'glossar' inactive if on mobile view
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
    */
-  mainMenuActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'mainMenu';
-    this.menuCtrl.enable(true, 'mainMenu');
-    this.menuCtrl.enable(false, 'glossar');
-    this.menuCtrl.open();
-  }
-
-  /**
-   * Sets side-menu 'glossar' as active
-   * and sets 'main-menu' inactive if on mobile view
-   */
-  glossarActive() {
-    this.menuCtrl.close();
-    this.activeMenu = 'glossar';
-    this.menuCtrl.enable(false, 'mainMenu');
-    this.menuCtrl.enable(true, 'glossar');
-    this.menuCtrl.open();
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
   }
 }

@@ -1,70 +1,62 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, MenuController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import { ProfilesService } from '../../services/profiles';
 import { Profiles1Page } from './profiles1/profiles1';
 import { Profiles2Page } from './profiles2/profiles2';
 import { Profile } from '../../models/profile';
+import { MenuService } from '../../services/menu';
 
+/**
+ * Initial view of profiles list
+ */
 @IonicPage()
 @Component({
   selector: 'page-profiles',
   templateUrl: 'profiles.html',
 })
 export class ProfilesPage {
-  profiles: Profile[];
-  profiles1Page;
-  profiles2Page;
-  header: string = "?";
-  activeMenu: string;
+  _profiles: Profile[];
+  _profiles1Page = Profiles1Page;;
+  _profiles2Page = Profiles2Page;;
+  _header: string = "?";
+  _activeMenu: string;
 
   /**
- * @param {string} target  The target to process see {@link Todo}
- *
- * @example
- * This is a good example
- * processTarget('yo')
- *
- * * ```
- * &lt;mwl-calendar-day-view
- *  [viewDate]="viewDate"
- *  [events]="events"&gt;
- * &lt;/mwl-calendar-day-view&gt;
- * ```
- *
- * @returns      void
- */
-  constructor(public navCtrl: NavController, private profilesService: ProfilesService, private menuCtrl: MenuController) {
-    this.profiles1Page = Profiles1Page;
-    this.profiles2Page = Profiles2Page;
-  }
+   * constructor()
+   * @param _navCtrl
+   * @param _profilesService
+   * @param _menuService
+   */
+  constructor(
+    public _navCtrl: NavController,
+    private _profilesService: ProfilesService,
+    private _menuService: MenuService) {}
 
+  /**
+   * Initializing profiles
+   */
   ionViewDidLoad() {
-    this.profilesService.getProfiles().subscribe(data => this.profiles = data);
+    this._profilesService.getProfiles().subscribe(data => this._profiles = data);
   }
 
+  /**
+   * Navigates to specific profile-group (e.g. minerals of "elements")
+   */
   onProfile(systematics: string) {
-    let profiles = this.profiles.filter((profile: Profile): boolean => {
+    let profiles = this._profiles.filter((profile: Profile): boolean => {
       return profile.mineral_type.systematics == systematics;
     });
 
     (systematics === 'Silikate und Germanate') ?
-      this.navCtrl.push(this.profiles2Page, {profiles: profiles, header: systematics }) :
-      this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: systematics });
+      this._navCtrl.push(this._profiles2Page, {profiles: profiles, header: systematics }) :
+      this._navCtrl.push(this._profiles1Page, { profiles: profiles, header: systematics });
     }
 
-    mainMenuActive() {
-      this.menuCtrl.close();
-      this.activeMenu = 'mainMenu';
-      this.menuCtrl.enable(true, 'mainMenu');
-      this.menuCtrl.enable(false, 'glossar');
-      this.menuCtrl.open();
-    }
-
-    glossarActive() {
-      this.menuCtrl.close();
-      this.activeMenu = 'glossar';
-      this.menuCtrl.enable(false, 'mainMenu');
-      this.menuCtrl.enable(true, 'glossar');
-      this.menuCtrl.open();
-    }
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
+  }
 }

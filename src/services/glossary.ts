@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/map';
 /**
  * Managing GlossaryEntries
  */
@@ -10,16 +9,16 @@ import 'rxjs/add/operator/do';
 export class GlossaryService {
   /**
    * constructor()
-   * @param http
+   * @param _http
    */
-  constructor (private http: Http) {}
+  constructor (private _http: Http) {}
 
   /**
    * Get all glossary entries
    * @returns {Obserable<any[]>} GlossaryEntries
    */
   getGlossary(): Observable<any[]> {
-    return this.http.get('assets/glossary/glossary.json')
+    return this._http.get('assets/glossary/glossary.json')
     .map((res:Response) => res.json());
   }
 

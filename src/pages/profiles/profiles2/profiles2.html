@@ -2,10 +2,10 @@
   <ion-navbar>
     <ion-title>{{ header | uppercase }}</ion-title>
     <ion-buttons right class="hidden-lg-up" padding-right>
-      <button ion-button icon-start icon-only (click)="glossarActive()">
+      <button ion-button icon-start icon-only (click)="openSidemenu('mainMenu')">
         <ion-icon name="book"></ion-icon>
       </button>
-      <button ion-button icon-only (click)="mainMenuActive()">
+      <button ion-button icon-only (click)="openSidemenu('glossaryMenu')">
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
@@ -19,9 +19,6 @@
         <ion-card-content no-padding>
           <ion-list no-lines>
             <ion-item-divider color="light">Silikate</ion-item-divider>
-            <!-- <ion-list-header no-margin>
-                Silikate
-              </ion-list-header> -->
             <ion-item no-padding (click)="onProfileGroup('Inselsilikat')">
               <ion-thumbnail item-start>
                 <img src="assets/profiles/elemente_80.jpg">
@@ -72,9 +69,6 @@
               <p>Gerüstsilikate</p>
             </ion-item>
             <ion-item-divider color="light">Germanate</ion-item-divider>
-            <!-- <ion-list-header no-margin>
-                Germanate
-              </ion-list-header> -->
             <ion-item no-padding class="disabled">
               <ion-thumbnail item-start>
                 <ion-icon name="close"></ion-icon>
