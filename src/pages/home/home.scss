@@ -15,6 +15,12 @@ page-home {
     display: block;
   }
 
+  .bar-button-md[icon-only]{
+    padding: 0 5px;
+    min-width: 44px;
+    margin: 0 6px;
+  }
+
   .card-title-md, .card-title-ios, .card-title-wp {
     font-size: 1.9rem;
   }
@@ -22,15 +28,24 @@ page-home {
   .card-md, .card-ions, .card-wp {
     border-radius: 0;
     width: auto;
+    box-shadow: none;
+  }
+
+  .card-content-md, .card-content-ios, .card-content-wp {
+    padding-top: 8px;
   }
 
   ion-card{
+    border-right: 1px solid color($colors, semi-light);
+    border-left: 1px solid color($colors, semi-light);
     &:hover, &:active {
       cursor: pointer;
       background-color: color($colors, primary);
       .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
         color: #fff;
       }
+      border-right: 1px solid color($colors, primary);
+      border-left: 1px solid color($colors, primary);
     }
     &.disabled {
       background-color: color($colors, semi-light);
