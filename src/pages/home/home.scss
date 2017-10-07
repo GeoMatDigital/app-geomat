@@ -55,6 +55,8 @@ page-home {
     }
     &.disabled:hover, &.disabled:active {
       cursor: not-allowed;
+      border-right: 1px solid color($colors, semi-light);
+      border-left: 1px solid color($colors, semi-light);
     }
   }
 }
