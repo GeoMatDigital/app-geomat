@@ -1,8 +1,9 @@
 import { IonicErrorHandler } from 'ionic-angular';
 import Raven from 'raven-js';
+import { sentry } from '../environments/data';
 // https://gonehybrid.com/how-to-log-errors-in-your-ionic-2-app-with-sentry/
 Raven
-.config('***REMOVED***',
+.config(sentry.url,
 {
   release: '1.0.0',
   dataCallback: data => {

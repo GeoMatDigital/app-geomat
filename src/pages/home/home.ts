@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CrystalsystemsPage } from '../crystalsystems/crystalsystems';
 import { ProfilesPage } from '../profiles/profiles';
-
-import { GlossaryPage } from '../glossary/glossary';
 import { GalleryPage } from '../gallery/gallery';
 import { QuizPage } from '../quiz/quiz';
 import { HelperPage } from '../helper/helper';
