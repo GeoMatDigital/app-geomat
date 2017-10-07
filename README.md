@@ -35,7 +35,7 @@ Sentry is working by default.
 ## Compodoc - Documentation
 ### Installation
 This project documentation is run by [compodoc](https://compodoc.github.io/website/)
-To create teh static documentation website, run:
+To create the static documentation website, run:
 ```
 npm run compodoc
 ```
@@ -43,5 +43,57 @@ This will store all files needed in the `documentation`-folder. You can watch yo
 ```
 compodoc -s
 ```
+## Preventing github from storing sensitive data
+As an example, store the connection string of [sentry.io](##%20Preventing%20github%20from%20storing%20sensitive%20data) in an external file in `src/environments/data.ts`:
+```
+export const sentry = {
+  url: 'https://{sensitive_connection_string}@sentry.io/{ID}'
+};
+```
+This constant can be imported in the `src/services/sentry-errorhandler.ts` here
+```
+...
+import { sentry } from '../environments/data';
+
+Raven
+.config(sentry.url,
+{
+   ...  
+})
+.install();
+```
+Don't forget to add the folders which should be excluded in the `.gitignore`folder. by adding a new line:
+```
+src/environments
+```
+You can save other sensitive data analogously.
+## BFG - For sensitive data
+Let's assume you have uploaded sensitive data to the github repository. It is not done by easily delete the sensitive since it is stored in all related commits aswell.
+It can be a pain to search and delete all the data. For this purpose you can use [BFG](https://rtyley.github.io/bfg-repo-cleaner/)
+
+### Installation
+In general here you get a good [installation-guide](https://medium.com/@rhoprhh/removing-keys-passwords-and-other-sensitive-data-from-old-github-commits-on-osx-2fb903604a56)
+#### Windows
+
+ - Clone a mirror-repository just for bfg-access:
+```
+$ git clone --mirror git@github.com:GeoMatDigital/app-geomat.git
+```
+Git will clone just the meta-files within a `app-geomat.git`-folder. Staying where you are, add the bfg.jar file and a passwords.txt here. You can enter all sensitive data, which should be replaced with next command. Each data has to be in a new line (dont add anything to this data.
+ 
+ - Execute the bfg.jar using `java` so bfg is available:
+```
+$ bfg --replace-text passwords.txt  app-geomat.git
+```
+Now all commits should be replaced with `**REMOVED**`
+ To  update the online reposity just push it:
+```
+git push 
+```
+Check the online repository visiting [github.com/GeoMatDigital/app-geomat](https://github.com/GeoMatDigital/app-geomat/commits/development).
+
+In the regular project you can `git pull` to retrieve the new data.
+
+If every thing went well, you can delete the project `app-geomat.git`
 ## Demo-App
 A Demo-App is hosted by [PhysikOnline](https://physikonline.uni-frankfurt.de) at [physikonline.uni-frankfurt.de/geomat/](https://physikonline.uni-frankfurt.de/geomat/)
