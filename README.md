@@ -35,6 +35,8 @@ Sentry is working by default.
 ## Compodoc - Documentation
 ### Installation
 This project documentation is run by [compodoc](https://compodoc.github.io/website/)
+Installation guide can be found on this [page](https://compodoc.github.io/website/guides/installation.html).
+
 To create the static documentation website, run:
 ```
 npm run compodoc
