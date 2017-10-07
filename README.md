@@ -29,7 +29,7 @@ npm  : 5.3.0
 ## Sentry - Bug-Tracking
 The GeoMat-app uses [Sentry](https://sentry.io) to report bugs.
 ### Installation
-Follow the instructions of [Sentry](https://gonehybrid.com/how-to-log-errors-in-your-ionic-2-app-with-sentry/) to get started with bug tracker.
+Follow the instructions of [sentry.io/bastian/geomat](https://sentry.io/bastian/geomat/) `=> Account => API` to get started with bug tracker.
 Sentry is working by default.
 
 ## Compodoc - Documentation
