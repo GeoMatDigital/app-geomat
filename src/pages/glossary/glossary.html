@@ -5,7 +5,7 @@
     <h2>{{entry.header}}</h2>
     <p [innerHTML]="entry.description"></p>
     <ion-list>
-      <ion-item *ngFor="let list of entry.list; let j = index">{{j + 1}}. {{list}}</ion-item>
+      <ion-item *ngFor="let list of entry.list; let j = index">{{j + 1}}. <span [innerHTML]="list"></span></ion-item>
     </ion-list>
   </ion-item>
 </ion-item-group>

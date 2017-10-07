@@ -77,11 +77,11 @@
     </ion-col>
     <ion-col no-padding col-6>
       <!-- [navPush]="glossaryPage" -->
-      <ion-card no-margin class="disabled">
-        <ion-icon name="book"></ion-icon>
+      <ion-card no-margin [navPush]="infoPage">
+        <ion-icon name="information-circle"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
-            GLOSSAR
+            INFORMATION
           </ion-card-title>
         </ion-card-content>
       </ion-card>
