@@ -12,7 +12,7 @@
   {
     "id": "allochromatisch",
     "header": "Allochromatisch",
-    "description": "fremdfarbig. Gegenteil von idiochromatisch. Die Farbe entsteht durch das Vorhandensein von Spurenelementen auf (Zwischen-)Gitterplätzen, sowie durch Gitterdefekte. Farbgebende Elemente sind meistens Übergangsmetalle beziehungsweise deren Ionen, wie zum Beispiel: Fe2+, Fe3+, Mn2+, Cr3+. Die Mehrzahl der Minerale ist allochromatisch."
+    "description": "fremdfarbig. Gegenteil von idiochromatisch. Die Farbe entsteht durch das Vorhandensein von Spurenelementen auf (Zwischen-)Gitterplätzen, sowie durch Gitterdefekte. Farbgebende Elemente sind meistens Übergangsmetalle beziehungsweise deren Ionen, wie zum Beispiel: Fe<sup>2+</sup>, Fe<sup>3+</sup>, Mn<sup>2+</sup>, Cr<sup>3+</sup>. Die Mehrzahl der Minerale ist allochromatisch."
   },
   {
     "id": "amorph",
@@ -27,7 +27,7 @@
   {
     "id": "bandsilikate",
     "header": "Bandsilikate/Kettensilikate/Inosilikate",
-    "description": "Band- oder Kettensilikate sind Silikate, deren SiO4-Tetraeder so eckenverknüpft sind, dass sie lange Ketten bilden. Dabei kann es zu relativ komplexen Prozessen und zu einfach- oder mehrfachverzweigten Ketten kommen. Die chemische Formel zeigt dies durch das Vorhandensein von Si2O6."
+    "description": "Band- oder Kettensilikate sind Silikate, deren SiO<sub>4</sub>-Tetraeder so eckenverknüpft sind, dass sie lange Ketten bilden. Dabei kann es zu relativ komplexen Prozessen und zu einfach- oder mehrfachverzweigten Ketten kommen. Die chemische Formel zeigt dies durch das Vorhandensein von Si<sub>2</sub>O<sub>6</sub>."
   },
   {
     "id": "bruch",
@@ -206,7 +206,8 @@
   {
     "id": "mischkristallreihe",
     "header": "Mischkristallreihe",
-    "description": "Zwei oder mehr Substanzen beziehungsweise Mineralschmelzen bilden eine Mischkristallreihe, wenn sie ähnliche chemische Zusammensetzungen, Kristallformen & Achsenverhältnisse haben und im gleichen Kristallsystem auskristallisieren. Voraussetzung für die Ausbildung einer Mischkristallreihe ist der unbegrenzte Austausch von Ionen, der nur bei ähnlichen Ionenradien und Ladungszahlen der Hauptelemente möglich ist. z.B. Na+ <<Ca2+, Fe2+ <<Mg2+."
+    "description": "Zwei oder mehr Substanzen beziehungsweise Mineralschmelzen bilden eine Mischkristallreihe, wenn sie ähnliche chemische Zusammensetzungen, Kristallformen & Achsenverhältnisse haben und im gleichen Kristallsystem auskristallisieren. Voraussetzung für die Ausbildung einer Mischkristallreihe ist der unbegrenzte Austausch von Ionen, der nur bei ähnlichen Ionenradien und Ladungszahlen der Hauptelemente möglich ist. z.B.",
+    "list": ["Na<sup>+</sup> &lt;&lt; Ca<sup>2+</sup>", "Fe<sup>2+</sup> &lt;&lt; Mg<sup>2+</sup>."]
   },
   {
     "id": "modifikation",
@@ -322,7 +323,7 @@
   {
     "id": "schichtsilikate",
     "header": "Schichtsilikate",
-    "description": "Schichtsilikate sind Silikate, deren eckenverknüpfte SiO4-Tetraeder Schichten ausbilden. Sie sind dabei nur zweidimensional verknüpft und sind daher anhand der chemischen Formel an der Si4O10-Gruppe zu erkennen. Beispiele sind Muskovit und Biotit."
+    "description": "Schichtsilikate sind Silikate, deren eckenverknüpfte SiO<sub>4</sub>-Tetraeder Schichten ausbilden. Sie sind dabei nur zweidimensional verknüpft und sind daher anhand der chemischen Formel an der Si4O10-Gruppe zu erkennen. Beispiele sind Muskovit und Biotit."
   },
   {
     "id": "spaltbarkeit",
@@ -382,12 +383,14 @@
   {
     "id": "transparenz",
     "header": "Transparenz",
-    "description": "Die Transparenz beschreibt die Lichtdurchlässigkeit eines Minerals und wird in 4 Stufen unterschieden: <br>durchsichtig: Das Licht scheint durch das Mineral (z.B.: Bergkristall).<br> durchscheinend: Das Licht scheint diffus durch das Mineral durch(z.B.: heller Rauchquarz). <br> undurchsichtig: Das Licht scheint nicht durch das Mineral (z.B.: Tigerauge).<br> und opak: Das Mineral ist auch im Dünnschliff (30 10^-6 m) Licht undurchlässig (z.B.: Bleiglanz)."
+    "description": "Die Transparenz beschreibt die Lichtdurchlässigkeit eines Minerals und wird in 4 Stufen unterschieden: <br>durchsichtig: Das Licht scheint durch das Mineral (z.B.: Bergkristall).<br> durchscheinend: Das Licht scheint diffus durch das Mineral durch(z.B.: heller Rauchquarz). <br> undurchsichtig: Das Licht scheint nicht durch das Mineral (z.B.: Tigerauge).<br> und opak: Das Mineral ist auch im Dünnschliff (30 10^-6 m) Licht undurchlässig z.B.: ",
+    "list": ["Bleiglanz"]
   },
   {
     "id": "varietaet",
     "header": "Varietät",
-    "description": "Verschiedene Handstücke einer Mineralart haben grundsätzlich den gleichen atomaren Gitterbau und den gleichen Chemismus, unterscheiden sich aber in ihrer Farbe und Transparenz. Varietäten entstehen durch den Einbau von Fremdionen und durch ionisierende Strahlung. Ein Beispiel ist Quarz mit mehr als 3 Variationen: 1. Bergkristall, 2. Tigerauge, 3. Ametyst (etc.)."
+    "description": "Verschiedene Handstücke einer Mineralart haben grundsätzlich den gleichen atomaren Gitterbau und den gleichen Chemismus, unterscheiden sich aber in ihrer Farbe und Transparenz. Varietäten entstehen durch den Einbau von Fremdionen und durch ionisierende Strahlung. Ein Beispiel ist Quarz mit mehr als 3 Variationen:",
+    "list": ["Bergkristall", "Tigerauge", "Ametyst", "etc."]
   },
   {
     "id": "verwachsung",
