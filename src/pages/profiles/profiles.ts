@@ -43,15 +43,16 @@ export class ProfilesPage {
    * Navigates to specific profile-group (e.g. minerals of "elements")
    */
   onProfile(systematics: string) {
-    let profiles = this._profiles.filter((profile: Profile): boolean => {
-      return profile.mineral_type.systematics == systematics;
-    });
+    if(this._profiles){
+      let profiles = this._profiles.filter((profile: Profile): boolean => {
+        return profile.mineral_type.systematics == systematics;
+      });
 
     (systematics === 'Silikate und Germanate') ?
       this._navCtrl.push(this._profiles2Page, {profiles: profiles, header: systematics }) :
       this._navCtrl.push(this._profiles1Page, { profiles: profiles, header: systematics });
     }
-
+  }
   /**
    * Opens requested sidemenu, deactivates others
    * @param activeMenu
