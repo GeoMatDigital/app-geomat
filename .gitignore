@@ -19,6 +19,7 @@ documentation/
 .tmp/
 .versions/
 coverage/
+src/environments
 dist/
 node_modules/
 tmp/
