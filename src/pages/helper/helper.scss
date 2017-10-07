@@ -1,4 +1,8 @@
 page-helper {
+  .swiper-container{
+    padding-bottom: 32px;
+  }
+
   .swiper-slide {
     align-items: start;
     -webkit-box-pack: start;
@@ -20,5 +24,14 @@ page-helper {
         cursor: pointer;
       }
     }
+  }
+
+  .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: color($colors, primary);
   }
 }
