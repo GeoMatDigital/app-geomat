@@ -23,6 +23,12 @@
               <!-- <p>{{profile | json }}</p> -->
               <p>{{profile.mineral_type.trivial_name }}</p>
             </ion-item>
+            <ion-item *ngIf="profiles !== []" no-padding class="disabled">
+              <ion-thumbnail item-start>
+                <ion-icon name="close"></ion-icon>
+              </ion-thumbnail>
+              <p>keine {{header}} vorhanden</p>
+            </ion-item>
           </ion-list>
         </ion-card-content>
       </ion-card>
