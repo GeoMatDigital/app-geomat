@@ -25,7 +25,6 @@
 //     }
 //   }
 // }
-
 .split-pane-md, .split-pane-ios, .split-pane-wp {
   &.split-pane-visible  {
     > .split-pane-side {
@@ -38,6 +37,7 @@
   }
 
   @media (min-width: 992px) {
+
     .hidden-lg-up {
       display: none !important;
     }

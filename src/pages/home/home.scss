@@ -1,4 +1,5 @@
 page-home {
+
   ion-row {
     margin: 0 auto;
     max-width: 400px;
@@ -35,17 +36,25 @@ page-home {
     padding-top: 8px;
   }
 
+  .card-md, .card-ios, .card-wp{
+    margin: 0;
+  }
+
   ion-card{
     border-right: 1px solid color($colors, semi-light);
     border-left: 1px solid color($colors, semi-light);
+    border-bottom: 1px solid color($colors, semi-light);
+
     &:hover, &:active {
       cursor: pointer;
       background-color: color($colors, primary);
       .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
         color: #fff;
       }
+      // border: 1px solid color($colors, primary);
       border-right: 1px solid color($colors, primary);
       border-left: 1px solid color($colors, primary);
+      border-bottom: 1px solid color($colors, primary);
     }
     &.disabled {
       background-color: color($colors, semi-light);
@@ -57,6 +66,36 @@ page-home {
       cursor: not-allowed;
       border-right: 1px solid color($colors, semi-light);
       border-left: 1px solid color($colors, semi-light);
+      border-bottom: 1px solid color($colors, semi-light);
+    }
+  }
+
+  @media (min-width: 992px) {
+    ion-row {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    ion-card {
+      border: 1px solid color($colors, semi-light);
+      &:hover, &:active {
+        border: 1px solid color($colors, primary);
+      }
+      &.disabled:hover, &.disabled:active {
+        cursor: not-allowed;
+        border: 1px solid color($colors, semi-light);
+      }
+    }
+
+    .scroll-content {
+      padding-top: 60px;
+    }
+    .card-md, .card-ios, .card-wp{
+      margin: 10px;
+    }
+
+    .card-content-md, .card-content-ios, .card-content-wp {
+      padding: 8px 12px 20px 12px;
     }
   }
 }
