@@ -54,6 +54,7 @@ export class Profiles2Page implements OnInit{
       let profiles = this.profiles.filter((profile: Profile): boolean => {
         return profile.mineral_type.classification.classification_name == group;
       });
+      this.header = group
       this._navCtrl.push(this.profiles1Page, { profiles: profiles, header: this.header });
     }
   }
