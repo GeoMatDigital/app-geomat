@@ -50,7 +50,11 @@ export interface MineralType  {
     /**
      * fracture of mineral
      */
-    fracture: string[],
+    fracture: [{
+      fracture: string,
+      fracture_full: string,
+      coordinates:string
+    }],
     /**
      * cleavage of mineral
      */
