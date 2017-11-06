@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController, ToastController } from 'ionic-angular';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-
-/**
- * Generated class for the FeedbackPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-feedback',
@@ -16,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class FeedbackPage implements OnInit {
   feedbackForm: FormGroup;
 
-  constructor(public viewCtrl: ViewController, public navParams: NavParams) {
+  constructor(public viewCtrl: ViewController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
 
   ngOnInit() {
@@ -29,8 +22,15 @@ export class FeedbackPage implements OnInit {
   }
 
   sendFeedback() {
-    console.log(this.feedbackForm.value);
     this.viewCtrl.dismiss(this.feedbackForm.value);
+    let toast = this.toastCtrl.create({
+      message: 'Feedback wurde hypotetisch an den Server gesendet.',
+      duration: 3000,
+      position: 'botton',
+      showCloseButton: true,
+      closeButtonText: 'Schließen'
+    });
+    toast.present();
   }
 
   closeFeedback() {

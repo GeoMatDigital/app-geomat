@@ -7,6 +7,7 @@ import { HelperPage } from '../helper/helper';
 import { MenuService } from '../../services/menu';
 import { InfoPage } from '../info/info';
 import { ModalController } from 'ionic-angular';
+import { FeedbackPage } from '../feedback/feedback';
 
 /**
  * Page for initial view
@@ -62,7 +63,7 @@ export class HomePage {
   }
 
   onFeedback() {
-    const modal = this.modalCtrl.create('FeedbackPage');
+    const modal = this.modalCtrl.create(FeedbackPage);
     modal.present();
   }
 }

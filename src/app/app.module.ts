@@ -26,6 +26,7 @@ import { Profiles2PageModule } from '../pages/profiles/profiles2/profiles2.modul
 import { ProfilesService } from '../services/profiles';
 import { QuizPageModule } from '../pages/quiz/quiz.module';
 import { HelpersService } from '../services/helpers';
+import { D3Service } from 'd3-ng2-service';
 import { InfoPage } from '../pages/info/info';
 import { InfoPageModule } from '../pages/info/info.module';
 import { GlossaryService } from '../services/glossary';
@@ -80,7 +81,8 @@ import { FeedbackPage } from '../pages/feedback/feedback';
     ProfilesService,
     HelpersService,
     GlossaryService,
-    MenuService
+    MenuService,
+    D3Service
   ]
 })
 export class AppModule {}
