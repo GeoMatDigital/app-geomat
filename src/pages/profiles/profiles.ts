@@ -12,13 +12,13 @@ import { MenuService } from '../../services/menu';
 @IonicPage()
 @Component({
   selector: 'page-profiles',
-  templateUrl: 'profiles.html',
+  templateUrl: 'profiles.html'
 })
 export class ProfilesPage {
   _profiles: Profile[];
-  _profiles1Page = Profiles1Page;;
-  _profiles2Page = Profiles2Page;;
-  _header: string = "?";
+  _profiles1Page = Profiles1Page;
+  _profiles2Page = Profiles2Page;
+  _header: string = '?';
   _activeMenu: string;
 
   /**
@@ -30,27 +30,36 @@ export class ProfilesPage {
   constructor(
     public _navCtrl: NavController,
     private _profilesService: ProfilesService,
-    private _menuService: MenuService) {}
+    private _menuService: MenuService
+  ) {}
 
   /**
    * Initializing profiles
    */
   ionViewDidLoad() {
-    this._profilesService.getProfiles().subscribe(data => this._profiles = data);
+    this._profilesService
+      .getProfiles()
+      .subscribe(data => (this._profiles = data));
   }
 
   /**
    * Navigates to specific profile-group (e.g. minerals of "elements")
    */
   onProfile(systematics: string) {
-    if(this._profiles){
+    if (this._profiles) {
       let profiles = this._profiles.filter((profile: Profile): boolean => {
         return profile.mineral_type.systematics == systematics;
       });
 
-    (systematics === 'Silikate und Germanate') ?
-      this._navCtrl.push(this._profiles2Page, {profiles: profiles, header: systematics }) :
-      this._navCtrl.push(this._profiles1Page, { profiles: profiles, header: systematics });
+      systematics === 'Silikate und Germanate'
+        ? this._navCtrl.push(this._profiles2Page, {
+            profiles: profiles,
+            header: systematics
+          })
+        : this._navCtrl.push(this._profiles1Page, {
+            profiles: profiles,
+            header: systematics
+          });
     }
   }
   /**

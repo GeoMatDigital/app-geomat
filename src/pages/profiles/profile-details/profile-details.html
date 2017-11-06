@@ -15,11 +15,8 @@
       <ion-card no-margin>
         <ion-card-content no-padding>
           <ion-list>
-            <!-- <ion-item-divider color="light">chemische Formel (MathJax)</ion-item-divider>
-            <ion-item no-padding [MathJax]="formulae">{{ formulae }}</ion-item> -->
-            <ion-item-divider color="light">chemische Formel (html)</ion-item-divider>
-            <ion-item no-padding [innerHTML]="profile.mineral_type.chemical_formula"></ion-item>
-        <!-- <ion-item no-padding>$\lim_{x\rightarrow 0}$</ion-item> -->
+            <ion-item-divider color="light">chemische Formel</ion-item-divider>
+            <ion-item no-padding [innerHTML]="chemical_formula"></ion-item>
             <ion-item-divider color="light">Trivialname</ion-item-divider>
             <ion-item no-padding>{{ profile.mineral_type.trivial_name }}</ion-item>
             <ion-item-divider color="light">Kristallsystem</ion-item-divider>
