@@ -32,13 +32,15 @@ import { GlossaryService } from '../services/glossary';
 import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
 import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
 import { MenuService } from '../services/menu';
+import { FeedbackPage } from '../pages/feedback/feedback';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProfileDetailsPage,
-    GlossaryPage
+    GlossaryPage,
+    FeedbackPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import { MenuService } from '../services/menu';
     Profiles1Page,
     Profiles2Page,
     QuizPage,
-    InfoPage
+    InfoPage,
+    FeedbackPage
   ],
   providers: [
     StatusBar,

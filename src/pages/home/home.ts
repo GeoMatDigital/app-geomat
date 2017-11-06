@@ -6,6 +6,7 @@ import { QuizPage } from '../quiz/quiz';
 import { HelperPage } from '../helper/helper';
 import { MenuService } from '../../services/menu';
 import { InfoPage } from '../info/info';
+import { ModalController } from 'ionic-angular';
 
 /**
  * Page for initial view
@@ -48,7 +49,9 @@ export class HomePage {
    * constructor()
    * @param menuCtrl
    */
-  constructor(private _menuService: MenuService) { }
+  constructor(private _menuService: MenuService, private modalCtrl: ModalController) {
+
+  }
 
   /**
    * Opens requested sidemenu
@@ -56,5 +59,10 @@ export class HomePage {
    */
   openSidemenu(activeMenu) {
     this._menuService.openSidemenu(activeMenu);
+  }
+
+  onFeedback() {
+    const modal = this.modalCtrl.create('FeedbackPage');
+    modal.present();
   }
 }

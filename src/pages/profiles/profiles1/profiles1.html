@@ -23,11 +23,11 @@
               <!-- <p>{{profile | json }}</p> -->
               <p>{{profile.mineral_type.trivial_name }}</p>
             </ion-item>
-            <ion-item *ngIf="profiles !== []" no-padding class="disabled">
+            <ion-item *ngIf="profiles.length == 0" no-padding class="disabled">
               <ion-thumbnail item-start>
                 <ion-icon name="close"></ion-icon>
               </ion-thumbnail>
-              <p>keine '{{header}}' vorhanden</p>
+              <p>Wir haben leider keine <i>{{header}}</i> in unserer Datenbank</p>
             </ion-item>
           </ion-list>
         </ion-card-content>
