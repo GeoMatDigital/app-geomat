@@ -33,15 +33,15 @@ import { GlossaryService } from '../services/glossary';
 import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
 import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
 import { MenuService } from '../services/menu';
-import { FeedbackPage } from '../pages/feedback/feedback';
+// import { FeedbackPage } from '../pages/feedback/feedback';
+import { FeedbackPageModule } from '../pages/feedback/feedback.module';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProfileDetailsPage,
-    GlossaryPage,
-    FeedbackPage
+    GlossaryPage
   ],
   imports: [
     BrowserModule,
@@ -50,6 +50,7 @@ import { FeedbackPage } from '../pages/feedback/feedback';
     CrystalsystemsPageModule,
     GalleryPageModule,
     GlossaryPopoverPageModule,
+    FeedbackPageModule,
     HelperPageModule,
     ProfilesPageModule,
     Profiles1PageModule,
@@ -71,8 +72,7 @@ import { FeedbackPage } from '../pages/feedback/feedback';
     Profiles1Page,
     Profiles2Page,
     QuizPage,
-    InfoPage,
-    FeedbackPage
+    InfoPage
   ],
   providers: [
     StatusBar,

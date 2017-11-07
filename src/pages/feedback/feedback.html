@@ -12,12 +12,29 @@
 <ion-content padding>
  <form [formGroup]="feedbackForm" (ngSubmit)="sendFeedback()">
    <ion-list>
+    <ion-item>
+      <ion-label stacked>Dein Name:</ion-label>
+      <ion-input type="text" formControlName="name">Name</ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Deine Email:</ion-label>
+      <ion-input type="text" formControlName="email">Email</ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Art Deiner Nachricht:</ion-label>
+      <ion-select formControlName="typeOfEmail">
+        <ion-option value="support">Supportanfrage</ion-option>
+        <ion-option value="error">Fehlermeldung</ion-option>
+        <ion-option value="feature">Neues Feature</ion-option>
+        <ion-option value="other">Etwas anderes</ion-option>
+      </ion-select>
+    </ion-item>
      <ion-item>
-       <ion-label>Betreff:</ion-label>
+       <ion-label stacked>Betreff:</ion-label>
        <ion-input type="text" formControlName="title">Betreff</ion-input>
      </ion-item>
      <ion-item>
-       <ion-label>Anmerkungen:</ion-label>
+       <ion-label stacked>Anmerkungen:</ion-label>
        <ion-textarea formControlName="description"></ion-textarea>
      </ion-item>
    </ion-list>

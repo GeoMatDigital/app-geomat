@@ -17,6 +17,7 @@ export class Profiles1Page implements OnInit{
   profiles;
   profileDetailsPage = ProfileDetailsPage;
   header:string;
+  imagePath: string;
 
   /**
    * constructor()
@@ -36,6 +37,7 @@ export class Profiles1Page implements OnInit{
   ngOnInit() {
     this.profiles = this._navParams.get('profiles');
     this.header = this._navParams.get('header');
+    this.imagePath = this._navParams.get('imagePath');
   }
 
   /**

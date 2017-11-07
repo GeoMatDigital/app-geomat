@@ -45,7 +45,7 @@ export class ProfilesPage {
   /**
    * Navigates to specific profile-group (e.g. minerals of "elements")
    */
-  onProfile(systematics: string) {
+  onProfile(systematics: string, imagePath: string = null) {
     if (this._profiles) {
       let profiles = this._profiles.filter((profile: Profile): boolean => {
         return profile.mineral_type.systematics == systematics;
@@ -58,7 +58,8 @@ export class ProfilesPage {
           })
         : this._navCtrl.push(this._profiles1Page, {
             profiles: profiles,
-            header: systematics
+            header: systematics,
+            imagePath: imagePath
           });
     }
   }

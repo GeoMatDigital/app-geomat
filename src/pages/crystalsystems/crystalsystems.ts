@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 import { MenuService } from '../../services/menu';
-import { D3Service, D3, RGBColor, Selection } from 'd3-ng2-service';
+import { D3Service, D3 } from 'd3-ng2-service';
+// import { RGBColor, Selection } from 'd3-ng2-service';
 
 /**
  * Crystal-systems page for users to play around with the 7 crystalsystems
