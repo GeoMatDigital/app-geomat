@@ -7,13 +7,12 @@ branches:
     - development
 
 before_script:
-  - npm install -g firebase-tools
-  - npm install -g @angular/cli
+  - npm install -g cordova ionic
 
 script:
   - ionic build --prod
 
-deploy
+deploy:
   provider: pages
   skip_cleanup: true
   github_token: GEOMAT_APP_GITHUB_TOKEN
