@@ -20,6 +20,10 @@ export interface MineralType  {
      */
     trivial_name: string,
     /**
+     * stores value to displayon header of view
+     */
+    display_name: string,
+    /**
      * main category of minerals (e.g. 'Silikate und Germanate' or 'Carbonate und Nitrate', etc.)
      */
     systematics: string,

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title class="selectable">{{ profile.mineral_type.trivial_name | uppercase }}</ion-title>
+    <ion-title class="selectable">{{ profile.mineral_type.display_name | uppercase }}</ion-title>
     <ion-buttons right class="hidden-lg-up" padding-right>
       <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
         <ion-icon name="book"></ion-icon>
