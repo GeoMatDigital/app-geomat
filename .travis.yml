@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "8.9"
+
+branches:
+  only:
+    - development
+
+before_script:
+  - npm install -g firebase-tools
+  - npm install -g @angular/cli
+
+script:
+  - ionic build --prod
+
+deploy
+  provider: pages
+  skip_cleanup: true
+  github_token: GEOMAT_APP_GITHUB_TOKEN
+  on:
+    branch: development
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
