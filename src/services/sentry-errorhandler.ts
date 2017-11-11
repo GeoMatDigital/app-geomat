@@ -1,6 +1,6 @@
 import { IonicErrorHandler } from 'ionic-angular';
 import Raven from 'raven-js';
-// import { GEOMAT_SENTRY_URL } from '../environments/data';
+import { GEOMAT_SENTRY_URL } from '../environments/data';
 // https://gonehybrid.com/how-to-log-errors-in-your-ionic-2-app-with-sentry/
 Raven
 .config(GEOMAT_SENTRY_URL,
