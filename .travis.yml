@@ -1,26 +1,24 @@
 language: node_js
 node_js:
-  - "8.9"
-
+- '8.9'
 branches:
   only:
-    - development
-
+  - development
 before_script:
-  - npm install typescript
-  - npm install -g cordova ionic
-
+- npm install typescript
+- npm install -g cordova ionic
 script:
-  - ionic build --prod
-
+- ionic build --prod
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: GEOMAT_APP_GITHUB_TOKEN
   on:
     branch: development
-
 notifications:
   email:
     on_failure: change
     on_success: change
+before_install:
+  - openssl aes-256-cbc -K $encrypted_ba963b946576_key -iv $encrypted_ba963b946576_iv
+  -in src/encrypted/data.enc -out src/environments/data.ts -d

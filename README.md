@@ -99,3 +99,12 @@ In the regular project you can `git pull` to retrieve the new data.
 If every thing went well, you can delete the project `app-geomat.git`
 ## Demo-App
 A Demo-App is hosted by [PhysikOnline](https://physikonline.uni-frankfurt.de) at [physikonline.uni-frankfurt.de/geomat/](https://physikonline.uni-frankfurt.de/geomat/)
+
+## Travis-CI
+To get started follow the instructions on [Travis-CI](https://travis-ci.org/)
+
+Follow these instructions to prepare for handling sensitive data with [Travis-CI:Encryption](https://docs.travis-ci.com/user/encryption-keys)
+
+### Adding 
+If not done 
+```travis encrypt-file src/environments/data.ts src/encrypted/data.enc --add```
