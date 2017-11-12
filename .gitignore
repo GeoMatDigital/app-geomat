@@ -13,7 +13,7 @@ log.txt
 npm-debug.log*
 
 .travis.yml.backup
-*.enc
+env/*.ts
 .idea/
 .sourcemaps/
 documentation/
