@@ -21,4 +21,4 @@ notifications:
     on_success: change
 before_install:
 - openssl aes-256-cbc -K $encrypted_ba963b946576_key -iv $encrypted_ba963b946576_iv
-  -in src/.env/data.ts.enc -out src/.env/data.ts -d
+  -in ./src/.env/data.ts.enc -out ./src/.env/data.ts -d
