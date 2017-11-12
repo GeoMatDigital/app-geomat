@@ -13,6 +13,7 @@ log.txt
 npm-debug.log*
 
 .travis.yml.backup
+*.enc
 .idea/
 .sourcemaps/
 documentation/
@@ -20,7 +21,6 @@ documentation/
 .tmp/
 .versions/
 coverage/
-src/environments
 dist/
 node_modules/
 tmp/
