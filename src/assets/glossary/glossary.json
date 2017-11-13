@@ -7,22 +7,22 @@
   {
     "id": "aggregat",
     "header": "Aggregat",
-    "description": "Aus mehreren, teilweise unterschiedlichen Kristallen bestehend."
+    "description": "Aggregate bestehen aus mehreren, teilweise unterschiedlichen Kristallen."
   },
   {
     "id": "allochromatisch",
-    "header": "Allochromatisch",
-    "description": "fremdfarbig. Gegenteil von idiochromatisch. Die Farbe entsteht durch das Vorhandensein von Spurenelementen auf (Zwischen-)Gitterplätzen, sowie durch Gitterdefekte. Farbgebende Elemente sind meistens Übergangsmetalle beziehungsweise deren Ionen, wie zum Beispiel: Fe<sup>2+</sup>, Fe<sup>3+</sup>, Mn<sup>2+</sup>, Cr<sup>3+</sup>. Die Mehrzahl der Minerale ist allochromatisch."
+    "header": "allochromatisch",
+    "description": "fremdfarbig. Gegenteil von <i>idiochromatisch</i>. Die Farbe entsteht durch das Vorhandensein von Spurenelementen auf (Zwischen-)Gitterplätzen, sowie durch Gitterdefekte. Farbgebende Elemente sind meistens Übergangsmetalle beziehungsweise deren Ionen, wie zum Beispiel: Fe<sup>2+</sup>, Fe<sup>3+</sup>, Mn<sup>2+</sup>, Cr<sup>3+</sup>. Die Mehrzahl der Minerale ist allochromatisch."
   },
   {
     "id": "amorph",
     "header": "Amorph",
-    "description": "Als amoprh wird ein Mineral bezeichnet, wenn keine kristalline Struktur vorhanden ist. Das heißt, es gibt kristallographisch eine Nahordnung, aber keine periodische Fernordnung. Dies tritt zum Beispiel bei sehr schnellem Abkühlen von Schmelzen auf."
+    "description": "Ein Mineral wird als <i>amorph</i> bezeichnet, wenn keine kristalline Struktur vorhanden ist. Das heißt, es gibt kristallographisch eine <i>Nahordnung</i>, aber keine periodische <i>Fernordnung</i>. Dies tritt zum Beispiel bei sehr schnellem Abkühlen von Schmelzen auf."
   },
   {
     "id": "anisotropie",
     "header": "Anisotropie",
-    "description": "Die Beträge einer physikalischen Eigenschaft, zum Beispiel die Wärmeleitfähigkeit, sind in verschiedene kristallographische Richtungen unterschiedlich. "
+    "description": "Die Beträge einer physikalischen Eigenschaft, zum Beispiel der Wärmeleitfähigkeit, sind in verschiedene kristallographische Richtungen unterschiedlich."
   },
   {
     "id": "bandsilikate",
@@ -32,7 +32,7 @@
   {
     "id": "bruch",
     "header": "Bruch",
-    "description": "Der Bruch beschreibt das Verhalten von Mineralen bei Druckeinwirkung. Der Kristall wird im Unterschied zur Spaltbarkeit an kristallographisch nicht orientierten Flächen getrennt. Es werden folgende Brucharten unterschieden: muschelig, uneben, glatt, hakig und splittrig (selten auch faserig und erdig)."
+    "description": "Der Bruch beschreibt das Verhalten von Mineralen bei Druckeinwirkung. Der Kristall wird im Unterschied zur Spaltung an kristallographisch nicht orientierten Flächen getrennt. Es werden folgende Brucharten unterschieden: muschelig, uneben, glatt, hakig und splittrig (selten auch faserig und erdig)."
   },
   {
     "id": "diamantglanz",
@@ -42,7 +42,7 @@
   {
     "id": "drehachse",
     "header": "Drehachse",
-    "description": "= Rotationsachse."
+    "description": "&rarr; Rotationsachse."
   },
   {
     "id": "durchkreuzungszwilling",
@@ -67,7 +67,7 @@
   {
     "id": "fernordnung",
     "header": "Fernordnung",
-    "description": "Fernordnung beschreibt die periodische Anordnung von Atomen im Kristallgitter und umfasst dabei einen Bereich von ?? bis cm oder der entsprechenden Kristallgröße.Gibt es eine genaue Definition der Grenze?"
+    "description": "Fernordnung beschreibt die periodische Anordnung von Atomen im Kristallgitter über einen weiteren Bereich als die direkte Nachbarschaft der Atome."
   },
   {
     "id": "fettglanz",
@@ -103,6 +103,11 @@
     "id": "harzglanz",
     "header": "Harzglanz",
     "description": "Diesen Glanz weisen Mineralien auf, die an Harz beziehungweise Kerzenwachs erinnern. Beispiele sind einige Opaleund Schwefel."
+  },
+  {
+    "id": "hypidiomorph",
+    "header": "Hypidiomorph",
+    "description": "=teilweise eigengestaltig. Der Kristall wächst teilweise unbeeinflusst und teilweise beeinflusst von äußeren Störfaktoren, sodass sich die natürliche Gestalt nur eingeschränkt entwickeln kann."
   },
   {
     "id": "idiochromatisch",
@@ -150,185 +155,169 @@
     "description": "Ein Kristall ist ein anisotroper, homogener Festkörper, dessen Bestandteile dreidimensional periodisch angeordnet sind. Es gibt sehr seltene Ausnahmen, bei denen auch mehrdimensional eine Fernordnung im Kristall mathematisch bestimmbar ist."
   },
   {
+    "id": "kristallgestalt",
+    "header": "Kristallgestalt",
+    "description": "Die äußere Form eines Kristalls, die durch die Kombination von Habitus und Tracht entsteht."
+  },
+  {
     "id": "kristallsystem",
     "header": "Kristallsystem",
-    "description": "Es gibt 7 Systeme, in die das Wachstum von Kristallen einzuordnen ist.  Sie unterscheiden sich durch die Achsenlängen (a, b &amp; c) sowie durch die 3 Winkel (&alpha;, &beta; &amp; &gamma;). Wie geben wir das an? Einfach alles auflisten?",
-    "list": [
-      "triklin",
-      "monoklin",
-      "orthorombisch",
-      "tetragonal",
-      "kubisch",
-      "hexagonal",
-      "trigonal"
-    ]
+    "description": "Es gibt 7 Systeme, in die das Wachstum von Kristallen einzuordnen ist.  Sie unterscheiden sich durch die Achsenlängen (a, b &amp; c) sowie durch die 3 Winkel (&alpha;, &beta; &amp; &gamma;). Die Systeme sind <i>triklin</i>, <i>monoklin</i>, <i>orthorombisch</i>, <i>tetragonal</i>, <i>kubisch</i>, <i>hexagonal</i> und <i>trigonal</i>."
   },
   {
     "id": "kryptokristallin",
-    "header": "Kryptokristallin",
-    "description": "Kryptokristallin bezeichnet die Größe von Kristallen, die unter dem Lichtmikropskop nicht mehr zu erkennen sind, da sie zu klein sind. Um diese Kristalle sichtbar zu machen, muss man mit anderen Geräten wie zum Beispiel dem Rasterelektronenmikroskop arbeiten."
+    "header": "kryptokristallin",
+    "description": "Kristalle werden als <i>kryptokristallin</i> bezeichnet, wenn sie unter dem Lichtmikropskop aufgrund ihrer geringen Größe nicht mehr zu erkennen sind. Um diese Kristalle sichtbar zu machen, muss man anderere Technik, wie zum Beispiel Rasterelektronenmikroskopie, einsetzen."
   },
   {
     "id": "makrokristallin",
-    "header": "Makrokristallin",
-    "description": "Makrokristallin bezeichnet die Größe von Kristallen, die mit dem bloßen Auge oder mit der Einschlaglupe zu sehen sind."
+    "header": "makrokristallin",
+    "description": "Kristalle werden als <i>makrokristallin</i> bezeichnet, wenn sie ausreichend groß sind, um mit dem bloßen Auge oder mit der Einschlaglupe gesehen werden zu können."
   },
   {
     "id": "matterglanz",
-    "header": "Matter Glanz",
-    "description": "Dieser Glanz entpricht fast oder keinem Glanz. Ein Beispiel ist Rhodochrosit."
+    "header": "Mattglanz",
+    "description": "Dieser Glanz entpricht einem sehr schwachen bzw. kaum vorhandenen Glanz."
   },
   {
     "id": "metallglanz",
     "header": "Metallglanz",
-    "description": "Dieser Glanz entspricht dem Glanz von poliertem Metall. Beispiele sind Galenit, Hämatit, Pyrit und Antimonit."
+    "description": "Dieser Glanz entspricht dem Glanz von poliertem Metall."
   },
   {
     "id": "mikrokristallin",
     "header": "Mikrokristallin",
-    "description": "Mikrokristallin bezeichnet die Größe von Kristallen, die mit dem bloßen Auge nicht mehr, aber unter dem Lichtmikropskop noch zu erkennen sind."
+    "description": "Kristalle werden als <i>mikrokristallin</i> bezeichnet, wenn sie mit dem bloßen Auge nicht mehr, aber unter dem Lichtmikropskop noch zu erkennen sind."
   },
   {
     "id": "millerscheIndizes",
     "header": "Millersche Indizes",
-    "description": "(h k l), die kleinsten gemeinsamen Vielfache der reziproken Achsenabschnitte."
+    "description": "Die Millerschen Indizes entsprechen den kleinsten gemeinsamen Vielfachen der reziproken Achsenabschnitte. Sie werden mit den Positionen (h k l) bezeichnet und immer als Zahlentripel angegeben."
   },
   {
     "id": "mineral",
     "header": "Mineral",
-    "description": "Ein Mineral ist ein homogener Festkörper, der abiotisch gebildet wurde und eine periodische Anordnung (Nah- und Fernordnung) der Atome aufweist."
+    "description": "Ein Mineral ist ein homogener Festkörper, der <i>abiotisch</i> gebildet wurde und eine periodische Anordnung (Nah- und Fernordnung) der Atome aufweist."
   },
   {
     "id": "mischkristall",
     "header": "Mischkristall",
-    "description": "Ein Mischkristall ist ein Kristall, der sich chemisch aus zwei eigenständigen Mineralen zusammensetzt und deshalb einer bestimmten Mischkristallreihe zugeordnet werden kann. "
+    "description": "Mischkristalle sind chemisch aus zwei eigenständigen Mineralen zusammengesetzt und können einer bestimmten <i>Mischkristallreihe</i> zugeordnet werden. "
   },
   {
     "id": "mischkristallreihe",
     "header": "Mischkristallreihe",
-    "description": "Zwei oder mehr Substanzen beziehungsweise Mineralschmelzen bilden eine Mischkristallreihe, wenn sie ähnliche chemische Zusammensetzungen, Kristallformen & Achsenverhältnisse haben und im gleichen Kristallsystem auskristallisieren. Voraussetzung für die Ausbildung einer Mischkristallreihe ist der unbegrenzte Austausch von Ionen, der nur bei ähnlichen Ionenradien und Ladungszahlen der Hauptelemente möglich ist. z.B.",
-    "list": ["Na<sup>+</sup> &lt;&lt; Ca<sup>2+</sup>", "Fe<sup>2+</sup> &lt;&lt; Mg<sup>2+</sup>."]
+    "description": "Zwei oder mehr Substanzen bilden eine Mischkristallreihe, wenn sie ähnliche chemische Zusammensetzungen, Kristallformen & Achsenverhältnisse haben und im gleichen Kristallsystem auskristallisieren. Voraussetzung für die Ausbildung einer Mischkristallreihe ist der unbegrenzte Austausch von Ionen, der nur bei ähnlichen Ionenradien und Ladungszahlen der Hauptelemente möglich ist. z.B. Na<sup>+</sup> &lt;&lt; Ca<sup>2+</sup>; Fe<sup>2+</sup> &lt;&lt; Mg<sup>2+</sup>."
   },
   {
     "id": "modifikation",
     "header": "Modifikation",
-    "description": "Eine Modifikation eines Minerals hat dieselbe chemische Zusammensetzung, aber eine andere Struktur. So kommt beispielsweise TiO<sub>2</sub> in drei verschiedenen Strukturen in der Natur vor: Rutil, Brookit und Anatas."
+    "description": "Eine Modifikation eines Minerals hat dieselbe chemische Zusammensetzung, aber eine andere Struktur."
   },
   {
     "id": "haerte",
-    "header": "Mohs'sche Härte / Mohs Härte",
-    "description": "Die Mohssche Härte beschreibt die relative Ritzhärte eines Minerals im Vergleich zu den Mineralen der logarithmisch aufgetragenen Skala.",
-    "list": ["Talk", "Gips", "Calcit", "Fluorit", "APatit", "Orthoklas", "Quarz", "Topas", "Kurond", "Diamant"]
+    "header": "Mohssche Härte",
+    "description": "Die Härteskala nach Mohs (auch Mohs-Härte, Ritzhärte) beschreibt die relative Härte eines Minerals im Vergleich zu den Mineralen der Skala: Talk (1), Gips (2), Calcit (3), Fluorit (4), Apatit (5), Orthoklas (6), Quarz (7), Topas (8), Korund (9), Diamant (10)."
   },
   {
-    "id": "mophologie",
+    "id": "morphologie",
     "header": "Morphologie",
-    "description": "Die Morphologie beschreibt die Form eines Kristalls, also die Lage von Flächen und Kanten zueinander und im Raum. Auf mathematischer Ebene verwendet man dazu in der Kristallographie und Mineralogie die Millerschen Indizes."
+    "description": "Die Morphologie beschreibt die Form eines Kristalls über die Lage von Flächen und Kanten zueinander bzw. im Raum. In  Kristallographie und Mineralogie verwendet man zur Beschreibung der Morphologie die Millerschen Indizes."
   },
   {
     "id": "nadelig",
-    "header": "Nadelig",
-    "description": "= strahlig, extrem gestrecktes, sehr dünnes Kristallwachstum bzw. - Kristallausbildung"
+    "header": "nadelig",
+    "description": "Das Wachstum findet in Richtung der c-Achse schneller statt; so entstehen extrem gestreckte, sehr dünne Kristalle."
   },
   {
     "id": "nahordnung",
     "header": "Nahordnung",
-    "description": "Nahordnung  beschreibt die periodische Anordnung von Atomen im Kristallgitter und  umfasst dabei einen Bereich bis einigen µm.?? Gibt es eine genaue Definition der Grenze? "
+    "description": "Nahordnung beschreibt die periodische Anordnung von Atomen im Kristallgitter in der direkten Nachbarschaft."
   },
   {
     "id": "oxide",
     "header": "Oxide",
-    "description": "Als Oxide werden Minerale bezeichnet, wenn sie auf chemischer Ebene eine Verbindung von Metallen oder Nichtmetallen mit Sauerstoff darstellen."
+    "description": "Als Oxide werden Minerale bezeichnet, wenn sie eine chemische Verbindung von Metallen oder Nichtmetallen mit Sauerstoff darstellen."
   },
   {
     "id": "opalisieren",
     "header": "Opalisieren",
-    "description": "Opalisieren beschreibt das schillernde Farbenspiel wie es typischerweise bei dem Mineral Opal auftritt. Der Begriff kann aber verallgemeinert auch für andere Minerale verwendet werden."
+    "description": "Opalisieren beschreibt ein schillerndes Farbenspiel wie es typischerweise bei dem Mineral Opal auftritt. Der Begriff wird verallgemeinert auch für andere Minerale verwendet."
   },
   {
     "id": "phantombildung",
     "header": "Phantombildung",
-    "description": "Als Phantom werden Kristalle bezeichnet, bei denen im Inneren die äußere Kristallform erneut sichtbar ist Dies kann möglich sein durch Veränderungen der chemischen Zusammensetzung, sodass es zu Variationen in der Farbe kommt (z.B.: Flourit), Einschluss von anderen Materialien (z.B.: Staub, Asche) oder durch Wachstumspausen und anschließendes erneutes Wachstum, wodurch lichtbrechende Schichten (sogenannte Wachstumsstreifen) entstehen."
+    "description": "Als Phantom werden transparente Kristalle bezeichnet, bei denen im Inneren die Kristallform erneut sichtbar ist. Phantome entstehen durch Veränderungen der chemischen Zusammensetzung und sind z.B. als Farbvariationen oder verschiedene Zonen zu erkennen."
   },
   {
     "id": "perlmuttglanz",
     "header": "Perlmuttglanz",
-    "description": "Dieser Glanz erinnert an die Innenseite von Muschelschalen (Perlmutt), die einen weißlichen Schimmer mit farbigem Lichtschein zeigen. Beispiel: Hellglimmer (Muskovit, Lepidolith), z.T. Gips. Abgrenzung zu Irisierend? Keine direkte Abgrenzung möglich. Perlmuttglanz beschreibt den Glanz und Irisieren eher allgemein den Effekt. "
+    "description": "Dieser Glanz entspricht einem weißlichen Schimmer mit farbigem Lichtschein, wie er im Inneren von Muschelschalen (Perlmutt) zu sehen ist. Perlmuttglanz beschreibt den Glanz an sich während der Effekt als <i>Irisieren</i> bezeichnet wird."
   },
   {
     "id": "pechlanz",
     "header": "Pechglanz",
-    "description": "Diesen Glanz haben z.B. frisch zerschlagenen Teerbrocken. Beispiele sind  Uraninit (Pechblende) und Gadolinit."
+    "description": "Dieser Glanz entspricht dem Oberflächenglanz frisch zerschlagenen Teerbrocken."
   },
   {
     "id": "piezoelektrizitaet",
     "header": "Piezoelektrizität",
-    "description": "Durch Druck auf die Kristallflächen kommt es zur Verformung des Kristalles und dadruch zu einer Ladungsverschiebung innerhalb des Kristalles, wodurch an der Oberfläche des Minerals ein elektrisches Potenzial erzeugt wird. Anwendung findet dieses Prinzip in vielen technischen Prozessen."
+    "description": "Bei piezoelektrischen Kristallen kommt es unter Druckeinwirkung zu einer Verformung des Kristalls und dadurch zu einer Ladungsverschiebung im Inneren, wodurch an der Oberfläche eine elektrische Spannung erzeugt wird. Anwendung findet dieses Prinzip in vielen technischen Prozessen."
   },
   {
     "id": "pleochroismus",
     "header": "Pleochroismus",
-    "description": "Plechroismus beschreibt den Effekt, der durch das unterschiedliche Absorptionsverhalten eines Kristalls in verschiedene Richtungen entsteht. Dadurch erscheint die Farbe des Kristalls aus verschiedenen Richtungen entsprechend des unterschiedlichen Absorptionsverhaltes anders. Beispiele sind Tigerauge, Labradorit und Cordierit."
+    "description": "Pleochroismus beschreibt den Effekt, der durch das unterschiedliche Absorptionsverhalten eines Kristalls in verschiedenen Richtungen entsteht. Dadurch erscheint die Farbe des Kristalls aus verschiedenen Blickrichtungen unterschiedlich."
   },
   {
     "id": "polymorphie",
     "header": "Polymorphie",
-    "description": "=Vielgestaltigkeit. Zwei Minerale weisen den gleichen allgemeinen Chemismus auf, treten aber in verschiedenen Modifikationen auf. "
+    "description": "Auch Vielgestaltigkeit: Zwei Minerale sind chemisch gleich, treten aber in verschiedenen Modifikationen auf. "
   },
   {
     "id": "prismatisch",
-    "header": "Prismatisch",
-    "description": "=säulig, =stängelig. Prismatisch beschreibt eine Wachstumsform von Kristallen."
+    "header": "prismatisch",
+    "description": "Das Wachstum findet in Richtung der c-Achse schneller statt, so dass die Prismenflächen deutlich hervortreten. Prismatisches Wachstum kann auch als <i>säulig</i> oder <i>stängelig</i> bezeichnet werden."
   },
   {
     "id": "pseudochromatisch",
-    "header": "Pseudochromatisch",
-    "description": "Als pseudochromatisch wird ein Mineral bezeichnet, wenn es nur scheinbar gefärbt ist. Beispiele sind Anlauffarben, Opalisieren oder Irisieren."
+    "header": "pseudochromatisch",
+    "description": "Pseudochromatische Minerale sind nur scheinbar gefärbt. Der beobachtete Farbeindruck ist keine Folge der Zusammensetzung sondern z.B. ein Brechungseffekt (Opalisieren, Irisieren) oder eine Veränderung der Oberfläche (Verwitterung)."
   },
   {
     "id": "punktgruppen",
     "header": "Punktgruppen",
-    "description": "Laura?<br> Punktgruppen dienen in der Kristallographie zum Beschreiben der Symmetrie eines Kristalls. Sie bauen sich je nach Kristallsystem aus mehreren Positionen auf, die anzeigen in welche Richtung welche Symmetrieoperation ausgeführt werden kann. Es werden jeweils die höchsten Symmetrieoperationen angegeben. "
+    "description": "Punktgruppen dienen in der Kristallographie zur Beschreibung Kristallsymmetrie. Sie werden je nach Kristallsystem mit bis zu drei Platzhaltern beschrieben, die anzeigen, in welche Richtung welche Symmetrieoperation ausgeführt werden kann. Dabei werden jeweils die höchsten Symmetrieoperationen angegeben."
   },
   {
     "id": "pyroelektrizität",
     "header": "Pyroelektrizität",
-    "description": "Pyroelektrizität beschreibt  den Effekt, der bei manchen Kristallen an entgegengesetzten Seiten bei schneller Erwärmung elektrische Ladungen erzeugt."
+    "description": "Bei pyroelektrischen Kristallen entsteht an entgegengesetzten Seiten eine elektrische Spannung, wenn sie schnell erwärmt werden."
   },
   {
     "id": "radialstrahlig",
-    "header": "Radialstrahlig",
-    "description": "Als radialstrahlig wir das Wachstum nadeliger Kristalle bezeichnet, die radialausgehend von einem Kristallisationszentrum wachsen."
-  },
-  {
-    "id": "rationalitaetengesetzt",
-    "header": "Rationalitätengesetz",
-    "description": "Das Rationalitätengesetz beschreibt die Rationalität der Achsenabschnitte also, dass Flächen die kristallographischen Achsen in rationalen Verhältnissen schneiden."
-  },
-  {
-    "id": "raumgruppen",
-    "header": "Raumgruppen",
-    "description": "Laura?"
+    "header": "radialstrahlig",
+    "description": "Das Wachstum findet von einem Kristallisationszentrum ausgehend in alle Raumrichtungen statt."
   },
   {
     "id": "ringsilikate",
     "header": "Ringsilikate",
-    "description": "Ringsilikate sind Silikate, deren SiO4-Tetraeder zu Ringen angeordnet vorliegen. Am Häufigsten dabei sind die stabilen 6er Ringe. An der chemischen Formel erkennt man Ringsilikate anhand der Si6O18- Gruppen."
+    "description": "Ringsilikate sind Silikate, deren SiO<sub>4</sub>-Tetraeder zu Ringen angeordnet vorliegen. Am Häufigsten dabei sind die stabilen 6er Ringe. An der chemischen Formel erkennt man Ringsilikate anhand der Si<sub>6</sub>O<sub>18</sub>- Gruppen."
   },
   {
     "id": "rotationsachse",
     "header": "Rotationsachse",
-    "description": "= Drehachse. Symmetrieoperation, bei der der Kristall um eine mehrzählige (2,3,4 oder 6-zählige) Achse in bestimmter Blickrichtung gedreht werden kann und stets symmetrieäquivalente Flächen zeigt."
+    "description": "Symmetrieoperation, bei der der Kristall um eine mehrzählige (2,3,4 oder 6-zählige) Achse in bestimmter Blickrichtung gedreht werden kann und stets symmetrieäquivalente Flächen zeigt."
   },
   {
     "id": "schichtsilikate",
     "header": "Schichtsilikate",
-    "description": "Schichtsilikate sind Silikate, deren eckenverknüpfte SiO<sub>4</sub>-Tetraeder Schichten ausbilden. Sie sind dabei nur zweidimensional verknüpft und sind daher anhand der chemischen Formel an der Si4O10-Gruppe zu erkennen. Beispiele sind Muskovit und Biotit."
+    "description": "Schichtsilikate sind Silikate, deren eckenverknüpfte SiO<sub>4</sub>-Tetraeder Schichten ausbilden. Sie sind dabei nur zweidimensional verknüpft und sind daher anhand der chemischen Formel an der Si<sub>4</sub>O<sub>10</sub>-Gruppe zu erkennen."
   },
   {
     "id": "spaltbarkeit",
     "header": "Spaltbarkeit",
-    "description": "Die Spaltbarkeit eines Minerals bezeichnet den gerichteten Bruch entlang von kristallographischen Flächen/Ebenen des jeweiligen Minerals. Sie wird in verschiedene Abstufungen von nicht spaltbar, unvollkommen/undeutlich, deutlich, gut, vollkommen bis höchst/sehr vollkommen eingeteilt. Es ist zu beachten, dass es innerhalb eines Minerals zu verschieden gut ausgeprägten Spaltbarkeiten entlang verschiedener Flächen kommen kann. Deshalb werden die Millerschen Indizes der kristallographischen Bezugsfläche angegeben. Beispiel: Muskovit - sehr vollkommen (001)."
+    "description": "Die Spaltbarkeit eines Minerals bezeichnet den gerichteten Bruch entlang kristallographischer Flächen/Ebenen des jeweiligen Minerals. Sie wird in verschiedene Abstufungen eingeteilt (nicht spaltbar, unvollkommen/undeutlich, deutlich, gut, vollkommen, höchst/sehr vollkommen). Innerhalb eines Minerals kann es zu verschieden gut ausgeprägten Spaltbarkeiten entlang verschiedener Flächen kommen. Deshalb werden zur Spaltbarkeit die Millerschen Indizes der kristallographischen Bezugsfläche angegeben."
   },
   {
     "id": "spaltrhomboeder",
@@ -346,7 +335,7 @@
     "description": "= prismatisch, = stängelig. Säulig beschreibt eine Wachstumsform von Kristallen."
   },
   {
-    "id": "straengelig",
+    "id": "staengelig",
     "header": "Stängelig",
     "description": "=säulig, = prismatisch. Als 'stängelig' wird das Wachstum eines Minerals bezeichnet, wenn es ein schnelleres Wachstum in eine bevorzugte Richtung gibt. Dies findet meist entlang der kristallographischen c-Achse statt. Das Mineral sieht dann länglich in eine Richtung 'gestreckt' aus."
   },
@@ -373,7 +362,7 @@
   {
     "id": "tracht",
     "header": "Tracht",
-    "description":""
+    "description":"Die Tracht beschreibt die Anzahl und Kombination der äußeren am Kristall sichtbaren Flächen zueinander und im Vergleich zu anderen Kristallen desselben Minerals. Je nach Wachstumsbedinungen und -dauer, kann die Tracht sehr variieren."
   },
   {
     "id": "translationsvektor",
