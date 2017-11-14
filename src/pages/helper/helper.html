@@ -14,8 +14,8 @@
   <ion-slides pager>
     <ion-slide >
       <h2>Abstrakt</h2>
-      <p text-justify>Dieser Bestimmungshelfer unterstützt die eindeutige Mineralerkennung und -bestimmung - und zeigt systematisch die Schritte des Bestimmungsvorgangs. Im Folgenden werden dazu verschiedene Erkennungsmerkmale kurz erklärt und an Beispielen gezeigt.</p>
-       <p text-justify>Bei der Mineralbestimmung geht es neben der optischen Beschreibung auch darum, Minerale mit Hilfe des Kristallsystems in die entsprechende Systematik einzuordnen und so zu klassifizieren, sodass dann auch eine Einordnung des Gesteins, in dem die Minerale vorkommen, schneller möglich ist.</p>
+      <p text-justify>Dieser Bestimmungshelfer unterstützt die eindeutige Mineralerkennung und -bestimmung &ndash; und zeigt systematisch die Schritte des Bestimmungsvorgangs. Im Folgenden werden dazu verschiedene Erkennungsmerkmale kurz erklärt und an Beispielen gezeigt.</p>
+       <p text-justify>Bei der Mineralbestimmung geht es neben der optischen Beschreibung auch darum, Minerale mit Hilfe des Kristallsystems in die entsprechende Systematik einzuordnen und so zu klassifizieren, dass dann auch eine Einordnung des Gesteins, in dem die Minerale vorkommen, schneller möglich ist.</p>
        <p text-justify>Zur Mineralbestimmung sollte man sich stets an der hier vorgestellten Reihenfolge der Eigenschaften orientieren, <b>wobei nicht jedes Erkennungsmerkmal für jedes Mineral charakteristisch ist!</b></p>
     </ion-slide>
 
@@ -23,10 +23,10 @@
       <h2>Allgemeines Aussehen</h2>
       <ion-row>
         <ion-col col-12 col-sm-6>
-          <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorpher</a> oder ein <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorpher</a> Kristall ist. Einen idiomorphen Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen), konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als xenomorph bezeichnet. Der Übergang zwischen diesen beiden Formen wird <a class="internLink" (click)="showGlossaryEntry($event, 'hypidiomorph')">hypidiomorph</a> genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</p>
+          <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorpher</a> oder ein <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorpher</a> Kristall ist. Einen <i>idiomorphen</i> Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen), konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als <i>xenomorph</i> bezeichnet. Der Übergang zwischen diesen beiden Formen wird <a class="internLink" (click)="showGlossaryEntry($event, 'hypidiomorph')">hypidiomorph</a> genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</p>
         </ion-col>
         <ion-col col-12 col-sm-6>
-          <p text-justify>Wenn es sich um einen <b>idiomorphen</b> Kristall handelt, kann man über die äußere Form meist die <a class="internLink" (click)="showGlossaryEntry($event, 'tracht')">Tracht</a>, den <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> und das <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b>hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls üebr die äußere Form, die Tracht und den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt, ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a class="internLink" (click)="showGlossaryEntry($event, 'bruch')">Bruch</a> des Minerals.</p>
+          <p text-justify>Wenn es sich um einen <b>idiomorphen</b> Kristall handelt, kann man über die äußere Form meist die <a class="internLink" (click)="showGlossaryEntry($event, 'tracht')">Tracht</a>, den <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> und das <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b>hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls über die äußere Form die Tracht, den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a class="internLink" (click)="showGlossaryEntry($event, 'bruch')">Bruch</a> des Minerals.</p>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -67,7 +67,7 @@
       <h2>Habitus</h2>
       <ion-row>
         <ion-col>
-          <p text-justify>Der <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> beschreibt das Größenverhältnis der verschiedenen Kristallflächen eines Kristalls zueinander. Der Habitus kann innerhalb einer Mineralart stark variieren.<br>Das kubische Kristallsystem beispielsweise weist stets einen isometrischen Habitus auf, da die Achsen alle gleich lang sind. Das tetragonale Kristallsystem zeigt hingegen einen stängeligen, tafeligen oder prismatischen Habitus, da eine Achse länger ist (a = b &ne; c).
+          <p text-justify>Der <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> beschreibt das Größenverhältnis der verschiedenen Kristallflächen eines Kristalls zueinander. Der Habitus kann innerhalb einer Mineralart stark variieren.<br>Das kubische Kristallsystem beispielsweise weist stets einen <i>isometrischen</i> Habitus auf, da die Achsen alle gleich lang sind. Das tetragonale Kristallsystem zeigt hingegen einen <i>stängeligen</i>, <i>tafeligen</i> oder <i>prismatischen</i> Habitus, da eine Achse länger ist (a = b &ne; c).
           </p>
         </ion-col>
       </ion-row>
@@ -144,7 +144,7 @@
           <img src="assets/helper/spaltbarkeit.jpg" alt="Sehr vollkommene Spaltbarkeit">
         </ion-col>
         <ion-col>
-          <p no-margin padding class="image-header">Vollkommene Spaltbarkeit(Calcit)</p>
+          <p no-margin padding class="image-header">Vollkommene Spaltbarkeit (Calcit)</p>
           <img src="assets/helper/spaltbarkeit2.jpg" alt="image.img_description">
         </ion-col>
       </ion-row>
@@ -221,7 +221,7 @@
       <h2>Farbe</h2>
       <ion-row>
         <ion-col>
-          <p text-justify>Die Farbe ist bei den meisten Mineralen <b>kein diagnostisches Merkmal</b> zur Bestimmung. Sie dient aber oft dazu verschiedene Varietäten wie z.B. beim Beryll (Aquamarin = blau, Smaragd = grün) voneinander zu unterscheiden. Seltene starke Farben können einen gewissen Wiedererkennungscharakter haben.</p>
+          <p text-justify>Die Farbe ist bei den meisten Mineralen <b>kein diagnostisches Merkmal</b> zur Bestimmung. Sie dient aber oft dazu, verschiedene Varietäten wie z.B. beim Beryll (Aquamarin = blau, Smaragd = grün) voneinander zu unterscheiden. Seltene starke Farben können einen gewissen Wiedererkennungscharakter haben.</p>
         </ion-col>
       </ion-row>
       <ion-row>
