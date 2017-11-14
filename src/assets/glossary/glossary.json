@@ -1,7 +1,7 @@
 [
   {
     "id": "achromatisch",
-    "header": "Achromatisch",
+    "header": "achromatisch",
     "description": "farblos"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "id": "amorph",
-    "header": "Amorph",
+    "header": "amorph",
     "description": "Ein Mineral wird als <i>amorph</i> bezeichnet, wenn keine kristalline Struktur vorhanden ist. Das heißt, es gibt kristallographisch eine <i>Nahordnung</i>, aber keine periodische <i>Fernordnung</i>. Dies tritt zum Beispiel bei sehr schnellem Abkühlen von Schmelzen auf."
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "id": "bandsilikate",
-    "header": "Bandsilikate/Kettensilikate/Inosilikate",
+    "header": "Band- / Ketten- / Inosilikate",
     "description": "Band- oder Kettensilikate sind Silikate, deren SiO<sub>4</sub>-Tetraeder so eckenverknüpft sind, dass sie lange Ketten bilden. Dabei kann es zu relativ komplexen Prozessen und zu einfach- oder mehrfachverzweigten Ketten kommen. Die chemische Formel zeigt dies durch das Vorhandensein von Si<sub>2</sub>O<sub>6</sub>."
   },
   {
@@ -75,11 +75,6 @@
     "description": "Dieser Glanz erinnert an schimmernde Fettflecken auf Pergamentpapier. Beispiele sind Carnalit oder die Bruchflächen von Quarz."
   },
   {
-    "id": "winkelkonstanz",
-    "header": "Gesetz der Winkelkonstanz",
-    "description": "Alle Winkel einer Kristallart haben gleich große Winkel zwischen analogen Flächen."
-  },
-  {
     "id": "glanz",
     "header": "Glanz",
     "description": "Der Glanz beschreibt das Reflexionsvermögen einer Kristallfläche. Je nach der Intensität der Reflexion des einfallenden Lichtes wird der Glanz in folgende Arten unterschieden: Diamantglanz, Glasglanz, Fettglanz, Perlmuttglanz, Seidenglanz, Metallglanz, Pechglanz, Harzglanz und mattem Glanz."
@@ -106,17 +101,17 @@
   },
   {
     "id": "hypidiomorph",
-    "header": "Hypidiomorph",
+    "header": "hypidiomorph",
     "description": "=teilweise eigengestaltig. Der Kristall wächst teilweise unbeeinflusst und teilweise beeinflusst von äußeren Störfaktoren, sodass sich die natürliche Gestalt nur eingeschränkt entwickeln kann."
   },
   {
     "id": "idiochromatisch",
-    "header": "Idiochromatisch",
+    "header": "idiochromatisch",
     "description": "= eigenfarbig. Gegenteil von allochromatisch."
   },
   {
     "id": "idiomorph",
-    "header": "Idiomorph",
+    "header": "idiomorph",
     "description": "= eigengestaltig. Der Kristall wächst unbeeinflusst von äußeren Störfaktoren in seiner natürlichen Gestalt und bildet so deutliche Kristallflächen aus, die die innere atomare Struktur widerspiegeln und das Kristallsystem zeigen."
   },
   {
@@ -126,12 +121,12 @@
   },
   {
     "id": "irisieren",
-    "header": "Irisieren / Irideszenz / Irisierender Effekt",
+    "header": "Irisieren / Irideszenz / irisierender Effekt",
     "description": "Die Oberfläche erscheint je nach Lichteinfall und Perspektive andersfarbig z.B. Perlmuttglanz. Dieser optische Effekt entsteht durch Interferenz und Beugung des Lichtes am Kristallgitter. "
   },
   {
     "id": "isometrisch",
-    "header": "Isometrisch",
+    "header": "isometrisch",
     "description": "Das Wachstum findet gleich schnell in alle kristallographischen Richtungen statt. Das isometrische Wachstum ist typisch für kubische Kristalle."
   },
   {
@@ -331,12 +326,12 @@
   },
   {
     "id": "saeulig",
-    "header": "Säulig",
+    "header": "säulig",
     "description": "= prismatisch, = stängelig. Säulig beschreibt eine Wachstumsform von Kristallen."
   },
   {
     "id": "staengelig",
-    "header": "Stängelig",
+    "header": "stängelig",
     "description": "=säulig, = prismatisch. Als 'stängelig' wird das Wachstum eines Minerals bezeichnet, wenn es ein schnelleres Wachstum in eine bevorzugte Richtung gibt. Dies findet meist entlang der kristallographischen c-Achse statt. Das Mineral sieht dann länglich in eine Richtung 'gestreckt' aus."
   },
   {
@@ -397,8 +392,13 @@
     "description": "(Buchstaben?) direkt abgelesenen Achsenabschnitte einer Ebene oder Geraden mit den kristallographischen Achsen. Nicht zu verwechseln mit dem Millerschen Indizes (h, k, l)."
   },
   {
+    "id": "winkelkonstanz",
+    "header": "Winkelkonstanz",
+    "description": "Alle Winkel einer Kristallart haben gleich große Winkel zwischen analogen Flächen."
+  },
+  {
     "id": "xenomorph",
-    "header": "Xenomorph",
+    "header": "xenomorph",
     "description": "=fremdgestalt. Der Kristall wurde in seinem Wachstum eingeschränkt (meist durch andere Kristalle in der Umgebung) und konnte so keine oder nur teilweise deutliche Kristallflächen ausbilden."
   },
   {
