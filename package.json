@@ -11,7 +11,7 @@
         "ionic:build": "ionic-app-scripts build",
         "ionic:serve": "ionic-app-scripts serve",
         "compodoc": "./node_modules/.bin/compodoc -p tsconfig.json",
-        "postinstall": "npm ionic:build",
+        "postinstall": "npm run ionic:build",
         "start": "node server.js"
     },
     "dependencies": {
