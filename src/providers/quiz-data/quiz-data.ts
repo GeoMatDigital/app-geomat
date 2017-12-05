@@ -23,8 +23,7 @@ export class QuizDataProvider {
     }
 
     return new Promise(resolve => {
-
-      this.http.get('https://geomat.uni-frankfurt.de/api/quizquestion_list').map(res => res.json()).subscribe(data => {
+      this.http.get(`${process.env.API_URL}/quizquestion_list`).map(res => res.json()).subscribe(data => {
         this.data = data;
         resolve(this.data);
       });
