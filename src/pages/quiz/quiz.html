@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>SELBSTTEST</ion-title>
+    <ion-title>Selbsttest</ion-title>
     <ion-buttons right class="hidden-lg-up" padding-right>
       <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
         <ion-icon name="book"></ion-icon>
@@ -9,7 +9,44 @@
   </ion-navbar>
 </ion-header>
 
+<ion-content>
 
-<ion-content padding>
-  <h1>TO BE IMPLEMENTED</h1>
+  <ion-slides #slides>
+
+    <ion-slide class="start-slide">
+      <button ion-button color="primary" (click)="nextSlide()">Start!</button>
+    </ion-slide>
+
+    <ion-slide *ngFor="let question of questions; let i = index;">
+
+      <h3>Question {{i+1}}</h3>
+
+      <flash-card [isFlipped]="flashCardFlipped">
+        <div class="flash-card-front" [innerHTML]="question.qtext"></div>
+        <div class="flash-card-back" [innerHTML]="answerChecking"></div>
+      </flash-card>
+
+      <h3>{{question.questionText}}</h3>
+
+      <ion-list no-lines radio-group>
+
+        <ion-item *ngFor="let answer of question.answers; let i = index;"
+                  [class.wronganswer]="!answer.correct&&flashCardFlipped" [class.rightanswer]="answer.correct&&flashCardFlipped">
+          <ion-label>{{i+1}}. {{answer.atext}}</ion-label>
+          <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+        </ion-item>
+
+      </ion-list>
+
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Final Score: {{score}}</h2>
+
+      <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>
+
+    </ion-slide>
+
+  </ion-slides>
+
 </ion-content>

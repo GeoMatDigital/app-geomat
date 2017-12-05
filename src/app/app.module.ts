@@ -8,6 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+//import {ComponentsModule} from "../components/components.module";
+//import FlashCard from "../components/flash-card/flash-card";
 import { CrystalsystemsPage } from '../pages/crystalsystems/crystalsystems';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { HelperPage } from '../pages/helper/helper';
@@ -35,6 +37,7 @@ import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-po
 import { MenuService } from '../services/menu';
 // import { FeedbackPage } from '../pages/feedback/feedback';
 import { FeedbackPageModule } from '../pages/feedback/feedback.module';
+import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,7 @@ import { FeedbackPageModule } from '../pages/feedback/feedback.module';
     HomePage,
     ProfileDetailsPage,
     GlossaryPage
+
   ],
   imports: [
     BrowserModule,
@@ -82,7 +86,8 @@ import { FeedbackPageModule } from '../pages/feedback/feedback.module';
     HelpersService,
     GlossaryService,
     MenuService,
-    D3Service
+    D3Service,
+    QuizDataProvider
   ]
 })
 export class AppModule {}
