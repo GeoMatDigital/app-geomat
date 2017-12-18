@@ -82,9 +82,14 @@ export class QuizPage {
     this.slides.lockSwipes(true);
   }
 
+  lastSlide(){
+    this.flashCardFlipped = true;
+    this.slides.lockSwipes(false);
+    this.slides.slidePrev();
+  }
+
   selectAnswer(answer, question){
-    console.log("Test");
-    /*//answer.selected = true;
+    //answer.selected = true;
     this.hasAnswered = true;
     // if (question.qtype == "Single Choice") {
     // the answer text inside the ionic card is selected
@@ -99,10 +104,6 @@ export class QuizPage {
     if(answer.correct){
       this.score++;
     }
-
-    setTimeout(() => {
-      this.nextSlide();
-    }, 5000)*/;
   }
 
 

@@ -44,8 +44,17 @@
         </ion-item>
 
       </ion-list>
+      <!-- Float the icon left -->
+      <button ion-button icon-left (click)="lastSlide()">
+        <ion-icon name="arrow-back"></ion-icon>
+        zurück
+      </button>
 
-    </ion-slide>
+      <!-- Float the icon right -->
+      <button ion-button icon-right (click)="nextSlide()">
+        vorwäs
+        <ion-icon name="arrow-foward"></ion-icon>
+      </button>    </ion-slide>
 
     <ion-slide>
       <h2>Final Score: {{score}}</h2>
