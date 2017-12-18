@@ -19,14 +19,21 @@
 
     <ion-slide *ngFor="let question of questions; let i = index;">
 
-      <h3>Question {{i+1}}</h3>
-
-      <flash-card [isFlipped]="flashCardFlipped">
+        <ion-card>
+          <ion-card-header>
+            Question {{i+1}}
+          </ion-card-header>
+          <ion-card-content>
+            {{question.qtext}}
+            <div *ngIf="hasAnswered">{{answerChecking}}</div>
+          </ion-card-content>
+        </ion-card>
+      <!--<flash-card [isFlipped]="flashCardFlipped">
         <div class="flash-card-front" [innerHTML]="question.qtext"></div>
         <div class="flash-card-back" [innerHTML]="answerChecking"></div>
-      </flash-card>
+      </flash-card>-->
 
-      <h3>{{question.questionText}}</h3>
+      <!--<h3>{{question.questionText}}</h3>-->
 
       <ion-list no-lines radio-group>
 

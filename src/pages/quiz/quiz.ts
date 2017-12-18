@@ -39,6 +39,7 @@ export class QuizPage {
    */
   openSidemenu(activeMenu) {
     this._menuService.openSidemenu(activeMenu);
+
   }
   ionViewDidLoad() {
 
@@ -60,46 +61,6 @@ export class QuizPage {
 
   }
 
-  nextSlide(){
-    this.slides.lockSwipes(false);
-    this.slides.slideNext();
-    this.slides.lockSwipes(true);
-  }
-
-  selectAnswer(answer, question){
-
-    this.hasAnswered = true;
-    answer.selected = true;
-    // if (question.qtype == "Single Choice") {
-      if (answer.correct) {
-        this.answerChecking = answer.feedback_correct;
-        this.makegreen = true;
-        this.makered = false;
-      } else {
-        this.answerChecking = answer.feedback_incorrect;
-        this.makegreen = false;
-        this.makered = true;
-      }
-    // } else {
-    //   this.answerChecking = answer.feedback_correct;
-    // }
-
-    this.flashCardFlipped = true;
-
-    if(answer.correct){
-      this.score++;
-    }
-
-    setTimeout(() => {
-      this.makegreen = false;
-      this.makered = false;
-      this.hasAnswered = false;
-      this.nextSlide();
-      answer.selected = false;
-      this.flashCardFlipped = false;
-    }, 3000);
-  }
-
   randomizeAnswers(rawAnswers: any[]): any[] {
 
     for (let i = rawAnswers.length - 1; i > 0; i--) {
@@ -112,6 +73,38 @@ export class QuizPage {
     return rawAnswers;
 
   }
+
+  nextSlide(){
+    this.flashCardFlipped = false;
+    this.hasAnswered = false;
+    this.slides.lockSwipes(false);
+    this.slides.slideNext();
+    this.slides.lockSwipes(true);
+  }
+
+  selectAnswer(answer, question){
+    console.log("Test");
+    /*//answer.selected = true;
+    this.hasAnswered = true;
+    // if (question.qtype == "Single Choice") {
+    // the answer text inside the ionic card is selected
+      if (answer.correct) {
+        this.answerChecking = answer.feedback_correct;
+      } else {
+        this.answerChecking = answer.feedback_incorrect;
+      }
+
+    this.flashCardFlipped = true;
+
+    if(answer.correct){
+      this.score++;
+    }
+
+    setTimeout(() => {
+      this.nextSlide();
+    }, 5000)*/;
+  }
+
 
   restartQuiz() {
     this.score = 0;
