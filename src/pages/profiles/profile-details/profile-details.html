@@ -26,19 +26,19 @@
             <ion-item-divider color="light">Dichte</ion-item-divider>
             <ion-item class="selectable" no-padding>{{ profile.mineral_type.density }}</ion-item>
             <ion-item-divider color="light">Spaltbarkeit</ion-item-divider>
-            <ion-item class="selectable" no-padding *ngFor="let cleavage of profile.mineral_type.cleavage">{{ cleavage }}</ion-item>
+            <ion-item class="selectable" no-padding *ngFor="let cleavage of profile.mineral_type.cleavage">{{ cleavage.cleavage }}</ion-item>
             <ion-item-divider color="light">Bruch</ion-item-divider>
             <span *ngFor="let fracture of profile.mineral_type.fracture">
-              <ion-row *ngIf="fracture.coordinates">
+              <ion-row *ngIf="profile.mineral_type.cleavage.coordinates">
                 <ion-col col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10>
-                  <ion-item class="selectable" no-padding >{{ fracture.fracture_full }}</ion-item>
+                  <ion-item class="selectable" no-padding >{{ fracture }}</ion-item>
                 </ion-col>
                 <ion-col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2>
-                  <ion-item class="selectable" no-padding>{{ fracture.coordinates }}</ion-item>
+                  <ion-item class="selectable" no-padding>{{ profile.mineral_type.cleavage.coordinates }}</ion-item>
                 </ion-col>
               </ion-row>
-              <ion-col *ngIf="!fracture.coordinates" col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10>
-                <ion-item class="selectable" no-padding >{{ fracture.fracture_full }}</ion-item>
+              <ion-col *ngIf="!profile.mineral_type.cleavage.coordinates" col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10>
+                <ion-item class="selectable" no-padding >{{ fracture}}</ion-item>
               </ion-col>
             </span>
             <ion-item-divider color="light">Farbe</ion-item-divider>
