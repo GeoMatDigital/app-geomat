@@ -12,7 +12,8 @@
     "ionic:serve": "ionic-app-scripts serve",
     "prod": "ionic build --prod",
     "compodoc": "./node_modules/.bin/compodoc -p tsconfig.json",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "npm install ionic cordova && npm run prod"
   },
   "dependencies": {
     "@angular/common": "4.1.3",
