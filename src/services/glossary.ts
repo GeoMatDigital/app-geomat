@@ -18,7 +18,7 @@ export class GlossaryService {
    * @returns {Obserable<any[]>} GlossaryEntries
    */
   getGlossary(): Observable<any[]> {
-    return this._http.get('https://geomat.uni-frankfurt.de/api/glossary')
+    return this._http.get(`${process.env.API_URL}/glossary`)
     .map((res:Response) => res.json());
   }
 
