@@ -47,7 +47,7 @@ export class Profiles1Page implements OnInit{
   onProfiles(mineral) {
     if(this.profiles){
       this.profile = this.profiles.filter((profile: Profile):boolean => {
-        return profile.mineral_type.id == mineral.mineral_type.id;
+        return profile.crystal_system[0].id == mineral.crystal_system[0].id;
       })[0];
       this._navCtrl.push(this.profileDetailsPage, { profile: this.profile });
     }

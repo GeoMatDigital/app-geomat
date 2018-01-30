@@ -48,7 +48,7 @@ export class ProfilesPage {
   onProfile(systematics: string, imagePath: string = null) {
     if (this._profiles) {
       let profiles = this._profiles.filter((profile: Profile): boolean => {
-        return profile.mineral_type.systematics == systematics;
+        return profile.systematics == systematics;
       });
 
       systematics === 'Silikate und Germanate'

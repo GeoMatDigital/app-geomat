@@ -40,7 +40,7 @@ export class ProfileDetailsPage implements OnInit {
     this.chemical_formula = this.formatFormula();
 
     // Replacing abbreviations with german crystalsystems
-    this.profile.crystal_system = this.getCrystalsystem(this.profile.crystal_system);
+    //this.profile.crystal_system[0].crystal_system = this.getCrystalsystem(this.profile.crystal_system[0].crystal_system);
   }
   /**
    * Replace '_' and '^' with proper html-tags
@@ -49,7 +49,7 @@ export class ProfileDetailsPage implements OnInit {
    */
   private formatFormula():string {
     // console.log(this.profile);
-    let formula:string = this.profile.mineral_type.chemical_formula.replace(" ", ""); // removing whitespace
+    let formula:string = this.profile.chemical_formula.replace(" ", ""); // removing whitespace
     let sub:RegExpMatchArray = formula.match(/\_\{?\d+\+?\}?/ig);
     let sup:RegExpMatchArray = formula.match(/\^\{?\d+\+?\}?/ig);
     formula = formula.replace("\\cdot", "&sdot;");
@@ -80,7 +80,7 @@ export class ProfileDetailsPage implements OnInit {
    *
    * @return {string} full name of crystal-system
    */
-  private getCrystalsystem(crystal_system: string) {
+  /*private getCrystalsystem(crystal_system: string) {
     switch(crystal_system)      {
       case 'TC': return 'Triklin';
       case 'MC': return 'Monoklin';
@@ -91,7 +91,7 @@ export class ProfileDetailsPage implements OnInit {
       case 'CB': return 'Kubisch';
       default:   return ' - ';
     }
-  }
+  }*/
 
   /**
    * Opens requested sidemenu, deactivates others
