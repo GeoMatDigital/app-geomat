@@ -18,10 +18,12 @@
           <ion-list no-lines>
             <ion-item no-padding ripple *ngFor="let profile of profiles" (click)="onProfiles(profile)">
               <ion-thumbnail item-start>
-                <img src="assets/profiles/elemente_80.jpg">
+                <img  *ngIf="profile.image_file.thumbnail" src="{{profile.image_file.thumbnail}}">
+                <img  *ngIf="!profile.image_file.thumbnail" src="assets/profiles/NoIMG_thumbnail.svg">
               </ion-thumbnail>
               <!-- <p>{{profile | json }}</p> -->
-              <p>{{ profile.mineral_type.trivial_name }}</p>
+              <p *ngIf="profile.variety">{{ profile.variety }}</p>
+              <p *ngIf="!profile.variety">{{ profile.trivial_name }}</p>
             </ion-item>
             <ion-item *ngIf="profiles.length == 0" no-padding class="disabled">
               <ion-thumbnail item-start>

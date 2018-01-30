@@ -1,6 +1,7 @@
 <ion-header>
   <ion-navbar>
-    <ion-title class="selectable">{{ profile.mineral_type.display_name | uppercase }}</ion-title>
+    <ion-title class="selectable" *ngIf="profile.variety">{{ profile.variety | uppercase }}</ion-title>
+    <ion-title class="selectable" *ngIf="!profile.variety">{{ profile.trivial_name | uppercase }}</ion-title>
     <ion-buttons right class="hidden-lg-up" padding-right>
       <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
         <ion-icon name="book"></ion-icon>
@@ -15,40 +16,35 @@
       <ion-card no-margin>
         <ion-card-content no-padding>
           <ion-list>
+            <ion-item-divider color="light">Bild</ion-item-divider>
+            <ion-item *ngIf="profile.image_file.medium" class="selectable" no-padding><img src="{{profile.image_file.medium}}" /></ion-item>
+            <ion-item *ngIf="!profile.image_file.medium" class="selectable" no-padding><img src="assets/profiles/NoIMG_medium.svg" /></ion-item>
             <ion-item-divider color="light">chemische Formel</ion-item-divider>
             <ion-item class="selectable" no-padding [innerHTML]="chemical_formula"></ion-item>
             <ion-item-divider color="light">Trivialname</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.mineral_type.trivial_name }}</ion-item>
+            <ion-item class="selectable" no-padding>{{ profile.trivial_name }}</ion-item>
             <ion-item-divider color="light">Kristallsystem</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.crystal_system }}</ion-item>
+            <ion-item class="selectable" no-padding>{{ profile.crystal_system[0].crystal_system }}</ion-item>
             <ion-item-divider color="light">Mohshärte</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.mineral_type.mohs_scale }}</ion-item>
+            <ion-item class="selectable" no-padding>{{ profile.mohs_scale }}</ion-item>
             <ion-item-divider color="light">Dichte</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.mineral_type.density }}</ion-item>
+            <ion-item class="selectable" no-padding>{{ profile.density }}</ion-item>
             <ion-item-divider color="light">Spaltbarkeit</ion-item-divider>
-            <ion-item class="selectable" no-padding *ngFor="let cleavage of profile.mineral_type.cleavage">{{ cleavage.cleavage }}</ion-item>
+            <ion-item class="selectable" no-padding *ngFor="let cleavage of profile.cleavage">{{ cleavage.cleavage }} {{cleavage.coordinates}}</ion-item>
             <ion-item-divider color="light">Bruch</ion-item-divider>
-            <span *ngFor="let fracture of profile.mineral_type.fracture">
-              <ion-row *ngIf="profile.mineral_type.cleavage.coordinates">
+            <span *ngFor="let fracture of profile.fracture">
+              <ion-row>
                 <ion-col col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10>
                   <ion-item class="selectable" no-padding >{{ fracture }}</ion-item>
                 </ion-col>
-                <ion-col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2>
-                  <ion-item class="selectable" no-padding>{{ profile.mineral_type.cleavage.coordinates }}</ion-item>
-                </ion-col>
               </ion-row>
-              <ion-col *ngIf="!profile.mineral_type.cleavage.coordinates" col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10>
-                <ion-item class="selectable" no-padding >{{ fracture}}</ion-item>
-              </ion-col>
             </span>
             <ion-item-divider color="light">Farbe</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.mineral_type.normal_color }}</ion-item>
+            <ion-item class="selectable" no-padding>{{ profile.normal_color }}</ion-item>
             <ion-item-divider color="light">Glanz</ion-item-divider>
-            <ion-item class="selectable" no-padding *ngFor="let lustre of profile.mineral_type.lustre">{{ lustre }}</ion-item>
+            <ion-item class="selectable" no-padding *ngFor="let lustre of profile.lustre">{{ lustre }}</ion-item>
             <ion-item-divider color="light">Strichfarbe</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.mineral_type.streak }}</ion-item>
-            <ion-item-divider color="light">Modifikation</ion-item-divider>
-            <ion-item class="selectable" no-padding>{{ profile.mineral_type.variety }}</ion-item>
+            <ion-item class="selectable" no-padding>{{ profile.streak }}</ion-item>
           </ion-list>
         </ion-card-content>
       </ion-card>

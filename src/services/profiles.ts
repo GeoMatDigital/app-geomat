@@ -21,7 +21,7 @@ export class ProfilesService {
    * @returns {Obsevable<Response>} Minerallist
    */
   getProfiles() {
-    return this.http.get(`${process.env.API_URL}/crystalsystem_list/`)
+    return this.http.get(`${process.env.API_URL}/profiles`)
     // return this.http.get(`../pages/profiles/profiles.json`)
     .map((res:Response) => res.json());
   }
