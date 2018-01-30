@@ -4,26 +4,45 @@ import { MineralType } from './mineral_type';
  * Interface of mineral of profile-detail page
  */
 export interface Profile {
-    /**
-     * id of mineral
-     */
+  id: number,
+
+  classification: {
+  classification_name: string
+  },
+  systematics: string,
+  fracture: string[],
+  cleavage: [
+  {
+    cleavage: string,
+    coordinates:string
+  }],
+  lustre: string[],
+  crystal_system: [
+  {
     id: number,
-    /**
-     * type of mineral
-     *
-     * [Mineral_Type](@link Mineral_Type)
-     */
-    mineral_type: MineralType,
-    /**
-     * type of crystal-system's abbreviation (e.g. 'TR' for trigonal', 'HG' for 'hexagonal')
-     */
+    mineral_type: number,
     crystal_system: string,
-    /**
-     * temperature of mineral (currently not used)
-     */
-    temperature: string,
-    /**
-     * pressure of mineral (currently not used)
-     */
-    pressure: string
+    temperature: null,
+    pressure: null
+  }],
+  image_file: {
+  large: string,
+    medium: string,
+    small: string,
+    thumbnail: string,
+    original: string
+  },
+  trivial_name: string,
+  variety: string,
+  minerals: string,
+  mohs_scale: number,
+  density: number,
+  streak: string,
+  normal_color: string,
+  chemical_formula: string,
+  other: string,
+  resource_mindat: string,
+  resource_mineralienatlas: string,
+  created_at: string,
+  last_modified: string
 }
