@@ -1,5 +1,3 @@
-import { MineralType } from './mineral_type';
-
 /**
  * Interface of mineral of profile-detail page
  */
