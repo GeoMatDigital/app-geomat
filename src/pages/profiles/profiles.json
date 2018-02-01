@@ -1,0 +1,4765 @@
+[
+  {
+    "id": 104,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 92,
+        "mineral_type": 104,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Bergkristall.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Bergkristall.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Bergkristall.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Bergkristall.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Bergkristall.jpg"
+    },
+    "trivial_name": "Rauchquarz",
+    "variety": "Rauchquarz",
+    "minerals": "Quarz",
+    "mohs_scale": "7",
+    "density": "2,65",
+    "streak": "weiß",
+    "normal_color": "rauchig, braun, grau",
+    "chemical_formula": "SiO_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3689.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Rauchquarz",
+    "created_at": "2016-10-25T20:01:03.881000+02:00",
+    "last_modified": "2017-11-14T11:29:27.002383+01:00"
+  },
+  {
+    "id": 4,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 26,
+        "mineral_type": 4,
+        "crystal_system": "Amorph",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Flintstein.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Flintstein.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Flintstein.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Flintstein.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Flintstein.jpg"
+    },
+    "trivial_name": "Flintstein",
+    "variety": "Flintstein",
+    "minerals": "Quarz",
+    "mohs_scale": "6-7",
+    "density": "0",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "SiO_2 + nH_2O",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-6676.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/RockData?rock=Flint",
+    "created_at": "2016-04-04T16:00:15.106000+02:00",
+    "last_modified": "2017-11-14T11:30:30.796139+01:00"
+  },
+  {
+    "id": 16,
+    "classification": {
+      "classification_name": "Gruppensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{100}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 15,
+        "mineral_type": 16,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/ZoisitTansanit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/ZoisitTansanit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/ZoisitTansanit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/ZoisitTansanit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/ZoisitTansanit.jpg"
+    },
+    "trivial_name": "Zoisit",
+    "variety": "",
+    "minerals": "Zoisit",
+    "mohs_scale": "6",
+    "density": "3,2-3,4",
+    "streak": "weiß",
+    "normal_color": "grau, braun, grünlich",
+    "chemical_formula": "Ca_2Al_3(O/OH/SiO_4/Si_2O_7)",
+    "other": "starker Pleochroismus",
+    "resource_mindat": "http://www.mindat.org/min-4430.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Zoisit",
+    "created_at": "2016-04-04T17:15:20.646000+02:00",
+    "last_modified": "2017-11-14T11:53:13.754176+01:00"
+  },
+  {
+    "id": 70,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 63,
+        "mineral_type": 70,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Pyrit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Pyrit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Pyrit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Pyrit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Pyrit.jpg"
+    },
+    "trivial_name": "Pyrit",
+    "variety": "",
+    "minerals": "Pyrit",
+    "mohs_scale": "6-6,5",
+    "density": "5",
+    "streak": "grün-bräunlichschwarz",
+    "normal_color": "messinggelb",
+    "chemical_formula": "FeS_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3314.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Pyrit",
+    "created_at": "2016-07-17T16:50:36.972000+02:00",
+    "last_modified": "2017-11-13T23:32:22.272462+01:00"
+  },
+  {
+    "id": 8,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 13,
+        "mineral_type": 8,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Grossular.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Grossular.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Grossular.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Grossular.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Grossular.jpg"
+    },
+    "trivial_name": "Grossular",
+    "variety": "Grossular",
+    "minerals": "Granat",
+    "mohs_scale": "6,5-7,5",
+    "density": "3,5-4,5",
+    "streak": "weiß",
+    "normal_color": "blassgrün, braun",
+    "chemical_formula": "Ca_3Al_2(SiO_4)_3",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1755.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Grossular",
+    "created_at": "2016-04-04T16:43:55.959000+02:00",
+    "last_modified": "2017-11-13T23:32:22.280501+01:00"
+  },
+  {
+    "id": 18,
+    "classification": {
+      "classification_name": "Ringsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 19,
+        "mineral_type": 18,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/TurmalinSch%C3%B6rl.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/TurmalinSch%C3%B6rl.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/TurmalinSch%C3%B6rl.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/TurmalinSch%C3%B6rl.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/TurmalinSch%C3%B6rl.jpg"
+    },
+    "trivial_name": "Turmalin (Schörl)",
+    "variety": "Schörl",
+    "minerals": "Turmalin",
+    "mohs_scale": "7-7,5",
+    "density": "3-3,3",
+    "streak": "weiß",
+    "normal_color": "schwarz",
+    "chemical_formula": "NaFe_3Al_6((OH)_4/(BO_3)_3/(Si_6O_{18}))",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3578.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Sch%F6rl",
+    "created_at": "2016-04-04T17:23:35.684000+02:00",
+    "last_modified": "2017-11-13T23:32:22.288244+01:00"
+  },
+  {
+    "id": 1,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 7,
+        "mineral_type": 1,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Bergkristall_2.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Bergkristall_2.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Bergkristall_2.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Bergkristall_2.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Bergkristall_2.jpg"
+    },
+    "trivial_name": "Bergkristall",
+    "variety": "Bergkristall",
+    "minerals": "Quarz",
+    "mohs_scale": "7",
+    "density": "2,65",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "SiO_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-6128.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Bergkristall",
+    "created_at": "2016-04-04T15:33:03.151000+02:00",
+    "last_modified": "2017-11-13T23:32:22.292125+01:00"
+  },
+  {
+    "id": 2,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 8,
+        "mineral_type": 2,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Amethyst.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Amethyst.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Amethyst.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Amethyst.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Amethyst.jpg"
+    },
+    "trivial_name": "Amethyst",
+    "variety": "Amethyst",
+    "minerals": "Quarz",
+    "mohs_scale": "7",
+    "density": "2,65",
+    "streak": "weiß",
+    "normal_color": "violett",
+    "chemical_formula": "SiO_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-198.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Amethyst",
+    "created_at": "2016-04-04T15:44:05.949000+02:00",
+    "last_modified": "2017-11-13T23:32:22.296248+01:00"
+  },
+  {
+    "id": 31,
+    "classification": {
+      "classification_name": "Doppelkettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Seidenglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 54,
+        "mineral_type": 31,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Aktinolith.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Aktinolith.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Aktinolith.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Aktinolith.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Aktinolith.jpg"
+    },
+    "trivial_name": "Aktinolith",
+    "variety": "",
+    "minerals": "Aktinolith",
+    "mohs_scale": "5,5-6",
+    "density": "2,9-3,3",
+    "streak": "weiß",
+    "normal_color": "hell-dunkelgrün",
+    "chemical_formula": "Ca_2(Mg,Fe^{2+})_5((OH)_2Si_8O_{22})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-18.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Aktinolith",
+    "created_at": "2016-06-26T14:43:21.297000+02:00",
+    "last_modified": "2017-11-14T11:45:29.556555+01:00"
+  },
+  {
+    "id": 36,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 35,
+        "mineral_type": 36,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Biotit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Biotit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Biotit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Biotit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Biotit.jpg"
+    },
+    "trivial_name": "Dunkelglimmer",
+    "variety": "",
+    "minerals": "Biotit",
+    "mohs_scale": "2,5-3",
+    "density": "2,8-3,2",
+    "streak": "weiß",
+    "normal_color": "schwarz, braun",
+    "chemical_formula": "K(Mg,Fe^{2+})_3((OH)_2/AlSi_3O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-677.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Biotit",
+    "created_at": "2016-06-26T15:16:18.104000+02:00",
+    "last_modified": "2017-11-14T12:30:20.162052+01:00"
+  },
+  {
+    "id": 35,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 34,
+        "mineral_type": 35,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Biotit-Phlogopit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Biotit-Phlogopit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Biotit-Phlogopit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Biotit-Phlogopit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Biotit-Phlogopit.jpg"
+    },
+    "trivial_name": "Phlogopit",
+    "variety": "",
+    "minerals": "Phlogopit",
+    "mohs_scale": "2,75-3",
+    "density": "2,78-2,85",
+    "streak": "weiß",
+    "normal_color": "gelbbraun, grünlichgelb",
+    "chemical_formula": "KMg_3((OH,F)_2/AlSi_3O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3193.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Phlogopit",
+    "created_at": "2016-06-26T15:12:33.033000+02:00",
+    "last_modified": "2017-11-14T12:30:30.866356+01:00"
+  },
+  {
+    "id": 34,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 33,
+        "mineral_type": 34,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Muskovit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Muskovit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Muskovit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Muskovit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Muskovit.jpg"
+    },
+    "trivial_name": "Hellglimmer",
+    "variety": "",
+    "minerals": "Muskovit",
+    "mohs_scale": "2-2,5",
+    "density": "2,8-2,9",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß, gelblich, grünlich",
+    "chemical_formula": "KAl_2((OH)_2/AlSi_3O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-2815.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Muskovit",
+    "created_at": "2016-06-26T15:08:34.583000+02:00",
+    "last_modified": "2017-11-14T12:30:40.348140+01:00"
+  },
+  {
+    "id": 66,
+    "classification": null,
+    "systematics": "Sulfate",
+    "fracture": [
+      "splitterig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 78,
+        "mineral_type": 66,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Gips.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Gips.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Gips.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Gips.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Gips.jpg"
+    },
+    "trivial_name": "Gips",
+    "variety": "",
+    "minerals": "Gips",
+    "mohs_scale": "2",
+    "density": "2,3",
+    "streak": "weiß",
+    "normal_color": "farblos, gelblich, weiß",
+    "chemical_formula": "Ca(SO_4) \\cdot 2H_2O",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1784.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Gips",
+    "created_at": "2016-07-17T16:40:43.163000+02:00",
+    "last_modified": "2017-11-14T12:41:22.049196+01:00"
+  },
+  {
+    "id": 102,
+    "classification": null,
+    "systematics": "Elemente",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{0001}"
+      }
+    ],
+    "lustre": [
+      "Halbmetallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 86,
+        "mineral_type": 102,
+        "crystal_system": "Hexagonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Graphit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Graphit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Graphit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Graphit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Graphit.jpg"
+    },
+    "trivial_name": "Graphit",
+    "variety": "",
+    "minerals": "Graphit",
+    "mohs_scale": "1",
+    "density": "2,25",
+    "streak": "schwarz",
+    "normal_color": "grauschwarz",
+    "chemical_formula": "C",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1740.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Graphit",
+    "created_at": "2016-07-30T16:32:42.886000+02:00",
+    "last_modified": "2017-11-14T12:39:23.868870+01:00"
+  },
+  {
+    "id": 99,
+    "classification": null,
+    "systematics": "Halogenide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 91,
+        "mineral_type": 99,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Carnalit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Carnalit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Carnalit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Carnalit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Carnalit.jpg"
+    },
+    "trivial_name": "Carnallit",
+    "variety": "",
+    "minerals": "Carnallit",
+    "mohs_scale": "2,5",
+    "density": "1,6",
+    "streak": "weiß",
+    "normal_color": "farblos-orangegelb",
+    "chemical_formula": "KMgCl_3 \\cdot 6H_2O",
+    "other": "bitterer Geschmack",
+    "resource_mindat": "http://www.mindat.org/min-906.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Carnallit",
+    "created_at": "2016-07-30T16:24:43.037000+02:00",
+    "last_modified": "2017-11-13T23:32:22.524808+01:00"
+  },
+  {
+    "id": 100,
+    "classification": null,
+    "systematics": "Elemente",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 84,
+        "mineral_type": 100,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Schwefel.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Schwefel.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Schwefel.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Schwefel.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Schwefel.jpg"
+    },
+    "trivial_name": "Schwefel",
+    "variety": "",
+    "minerals": "Schwefel",
+    "mohs_scale": "1,5-2",
+    "density": "2-2,1",
+    "streak": "weiß",
+    "normal_color": "gelb",
+    "chemical_formula": "S",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3826.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Schwefel",
+    "created_at": "2016-07-30T16:27:42.738000+02:00",
+    "last_modified": "2017-11-13T23:32:22.528928+01:00"
+  },
+  {
+    "id": 101,
+    "classification": null,
+    "systematics": "Elemente",
+    "fracture": [
+      "hakig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 85,
+        "mineral_type": 101,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Kupfer.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Kupfer.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Kupfer.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Kupfer.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Kupfer.jpg"
+    },
+    "trivial_name": "Kupfer",
+    "variety": "",
+    "minerals": "Kupfer",
+    "mohs_scale": "2,5-3",
+    "density": "8,3-8,9",
+    "streak": "kupferrot",
+    "normal_color": "kupferrot",
+    "chemical_formula": "Cu",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1209.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Kupfer",
+    "created_at": "2016-07-30T16:30:10.207000+02:00",
+    "last_modified": "2017-11-13T23:32:22.532941+01:00"
+  },
+  {
+    "id": 115,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 98,
+        "mineral_type": 115,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Adular.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Adular.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Adular.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Adular.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Adular.jpg"
+    },
+    "trivial_name": "Adular",
+    "variety": "Adular",
+    "minerals": "Orthoklas",
+    "mohs_scale": "6",
+    "density": "2,5-2,6",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "K(AlSi_3O_8)",
+    "other": "",
+    "resource_mindat": "https://www.mindat.org/min-28.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Adular",
+    "created_at": "2017-02-03T15:49:02.533000+01:00",
+    "last_modified": "2017-11-14T11:46:27.779177+01:00"
+  },
+  {
+    "id": 47,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 45,
+        "mineral_type": 47,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Anorthit",
+    "variety": "",
+    "minerals": "Anorthit",
+    "mohs_scale": "6",
+    "density": "2,6-2,8",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "Ca(Al_2Si_2O_8)",
+    "other": "Plagioklas",
+    "resource_mindat": "http://www.mindat.org/min-246.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Anorthit",
+    "created_at": "2016-07-15T12:51:13.674000+02:00",
+    "last_modified": "2017-11-14T11:49:00.520026+01:00"
+  },
+  {
+    "id": 116,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 99,
+        "mineral_type": 116,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Fuchsit_MH6ckDe.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Fuchsit_MH6ckDe.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Fuchsit_MH6ckDe.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Fuchsit_MH6ckDe.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Fuchsit_MH6ckDe.jpg"
+    },
+    "trivial_name": "Fuchsit",
+    "variety": "Fuchsit",
+    "minerals": "Muskovit",
+    "mohs_scale": "2-2,5",
+    "density": "2,8-2,9",
+    "streak": "weiß",
+    "normal_color": "blassgrün, hellgrün, grün",
+    "chemical_formula": "K(Al,Cr)_3Si_3O_{10}(OH)_2",
+    "other": "",
+    "resource_mindat": "https://www.mindat.org/min-1617.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Fuchsit",
+    "created_at": "2017-06-08T11:05:35.713524+02:00",
+    "last_modified": "2017-11-14T12:28:50.326814+01:00"
+  },
+  {
+    "id": 58,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 87,
+        "mineral_type": 58,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Aragonit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Aragonit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Aragonit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Aragonit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Aragonit.jpg"
+    },
+    "trivial_name": "Aragonit",
+    "variety": "",
+    "minerals": "Aragonit",
+    "mohs_scale": "3,5-4",
+    "density": "2,95",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "CaCO_3",
+    "other": "Hochdruckmodifikation von Calcit",
+    "resource_mindat": "http://www.mindat.org/min-307.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Aragonit",
+    "created_at": "2016-07-15T13:41:41.902000+02:00",
+    "last_modified": "2017-11-13T23:32:22.610466+01:00"
+  },
+  {
+    "id": 22,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 23,
+        "mineral_type": 22,
+        "crystal_system": "Amorph",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Opal.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Opal.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Opal.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Opal.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Opal.jpg"
+    },
+    "trivial_name": "Opal",
+    "variety": "",
+    "minerals": "Opal",
+    "mohs_scale": "5,5-6,5",
+    "density": "2,1-2,2",
+    "streak": "Weiß",
+    "normal_color": "vielfarbig bis farblos",
+    "chemical_formula": "SiO_2 \\cdot nH_2O",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3004.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Opal",
+    "created_at": "2016-04-30T10:57:49.978000+02:00",
+    "last_modified": "2017-11-14T11:30:13.242017+01:00"
+  },
+  {
+    "id": 46,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 44,
+        "mineral_type": 46,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Labradorit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Labradorit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Labradorit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Labradorit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Labradorit.jpg"
+    },
+    "trivial_name": "Labradorit",
+    "variety": "",
+    "minerals": "Labradorit",
+    "mohs_scale": "6",
+    "density": "2,6-2,8",
+    "streak": "weiß",
+    "normal_color": "Regenbogen-Schiller",
+    "chemical_formula": "(Ca,Na)(AlSi_3O_8)",
+    "other": "Plagioklas",
+    "resource_mindat": "http://www.mindat.org/min-2308.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Labradorit",
+    "created_at": "2016-07-15T12:47:54.123000+02:00",
+    "last_modified": "2017-11-14T11:49:29.777813+01:00"
+  },
+  {
+    "id": 45,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 43,
+        "mineral_type": 45,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Andesin",
+    "variety": "",
+    "minerals": "Andesin",
+    "mohs_scale": "6",
+    "density": "2,6-2,8",
+    "streak": "weß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "(Na,Ca)(AlSi_3O_8)",
+    "other": "Plagioklas",
+    "resource_mindat": "http://www.mindat.org/min-220.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Andesin",
+    "created_at": "2016-07-15T12:44:46.251000+02:00",
+    "last_modified": "2017-11-14T11:49:55.816072+01:00"
+  },
+  {
+    "id": 44,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 51,
+        "mineral_type": 44,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Albit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Albit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Albit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Albit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Albit.jpg"
+    },
+    "trivial_name": "Albit",
+    "variety": "",
+    "minerals": "Albit",
+    "mohs_scale": "6",
+    "density": "2,6-2,8",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "Na(AlSi_3O_8)",
+    "other": "Plagioklas",
+    "resource_mindat": "http://www.mindat.org/min-96.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Albit",
+    "created_at": "2016-07-15T12:42:16.451000+02:00",
+    "last_modified": "2017-11-14T11:50:33.835676+01:00"
+  },
+  {
+    "id": 43,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 50,
+        "mineral_type": 43,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Anorthoklas",
+    "variety": "",
+    "minerals": "Anorthoklas",
+    "mohs_scale": "6",
+    "density": "2,5-2,6",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "(Na,K)(AlSi_3O_8)",
+    "other": "Alkalifeldspat",
+    "resource_mindat": "http://www.mindat.org/min-248.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Anorthoklas",
+    "created_at": "2016-07-15T12:40:00.312000+02:00",
+    "last_modified": "2017-11-14T11:50:52.814209+01:00"
+  },
+  {
+    "id": 3,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 21,
+        "mineral_type": 3,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Achat.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Achat.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Achat.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Achat.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Achat.jpg"
+    },
+    "trivial_name": "Achat",
+    "variety": "Achat",
+    "minerals": "Quarz",
+    "mohs_scale": "6-7",
+    "density": "2,65",
+    "streak": "weiß",
+    "normal_color": "vielfarbig",
+    "chemical_formula": "SiO_2",
+    "other": "kryptokristalline Quarzvarietät",
+    "resource_mindat": "http://www.mindat.org/min-51.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Achat",
+    "created_at": "2016-04-04T15:56:54.871000+02:00",
+    "last_modified": "2017-11-13T23:32:22.300368+01:00"
+  },
+  {
+    "id": 71,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 64,
+        "mineral_type": 71,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Markasit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Markasit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Markasit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Markasit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Markasit.jpg"
+    },
+    "trivial_name": "Markasit",
+    "variety": "",
+    "minerals": "Markasit",
+    "mohs_scale": "6-6,5",
+    "density": "4,8-4,9",
+    "streak": "grün-schwärzlichgrau",
+    "normal_color": "grünlichgelb",
+    "chemical_formula": "FeS_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-2571.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Markasit",
+    "created_at": "2016-07-17T16:53:19.072000+02:00",
+    "last_modified": "2017-11-13T23:32:22.322804+01:00"
+  },
+  {
+    "id": 20,
+    "classification": {
+      "classification_name": "Ringsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 24,
+        "mineral_type": 20,
+        "crystal_system": "Hexagonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/BeryllAquamarin.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/BeryllAquamarin.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/BeryllAquamarin.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/BeryllAquamarin.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/BeryllAquamarin.jpg"
+    },
+    "trivial_name": "Beryll",
+    "variety": "Aquamarin",
+    "minerals": "Beryll",
+    "mohs_scale": "7,5-8",
+    "density": "2,7-2,8",
+    "streak": "weiß",
+    "normal_color": "hellblau",
+    "chemical_formula": "Be_3Al_2(Si_6O_{18})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-289.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Aquamarin",
+    "created_at": "2016-04-04T17:26:24.847000+02:00",
+    "last_modified": "2017-11-13T23:32:22.330426+01:00"
+  },
+  {
+    "id": 21,
+    "classification": {
+      "classification_name": "Ringsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 22,
+        "mineral_type": 21,
+        "crystal_system": "Hexagonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/BeryllGoshenit_und_TurmalinSch%C3%B6rl.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/BeryllGoshenit_und_TurmalinSch%C3%B6rl.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/BeryllGoshenit_und_TurmalinSch%C3%B6rl.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/BeryllGoshenit_und_TurmalinSch%C3%B6rl.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/BeryllGoshenit_und_TurmalinSch%C3%B6rl.jpg"
+    },
+    "trivial_name": "Beryll",
+    "variety": "Goshenit",
+    "minerals": "Beryll",
+    "mohs_scale": "7,5-8",
+    "density": "2,7-2,8",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "Be_3Al_2(Si_6O_{18})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-7555.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Goshenit",
+    "created_at": "2016-04-04T17:29:01.958000+02:00",
+    "last_modified": "2017-11-13T23:32:22.334319+01:00"
+  },
+  {
+    "id": 10,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 5,
+        "mineral_type": 10,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Staurolit2.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Staurolit2.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Staurolit2.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Staurolit2.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Staurolit2.jpg"
+    },
+    "trivial_name": "Staurolith",
+    "variety": "",
+    "minerals": "Staurolith",
+    "mohs_scale": "7-7,5",
+    "density": "3,7-3,8",
+    "streak": "weiß",
+    "normal_color": "braun",
+    "chemical_formula": "Fe_2Al_9(O_6(O,OH)_2/(SiO_4)_4)",
+    "other": "Bildung von Durchkreuzungszwillingen",
+    "resource_mindat": "http://www.mindat.org/min-3753.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Staurolith",
+    "created_at": "2016-04-04T16:54:10.163000+02:00",
+    "last_modified": "2017-11-13T23:32:22.340712+01:00"
+  },
+  {
+    "id": 19,
+    "classification": {
+      "classification_name": "Ringsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 14,
+        "mineral_type": 19,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/TurmalinElbait.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/TurmalinElbait.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/TurmalinElbait.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/TurmalinElbait.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/TurmalinElbait.jpg"
+    },
+    "trivial_name": "Turmalin",
+    "variety": "Elbait",
+    "minerals": "Turmalin",
+    "mohs_scale": "7-7,5",
+    "density": "3-3,3",
+    "streak": "weiß",
+    "normal_color": "viefarbig",
+    "chemical_formula": "Na(Li,Al)_3Al_6((OH)_4/(BO_3)_3/(Si_6O_{18}))",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1364.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Elbait",
+    "created_at": "2016-04-04T17:24:59.476000+02:00",
+    "last_modified": "2017-11-13T23:32:22.347708+01:00"
+  },
+  {
+    "id": 42,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 46,
+        "mineral_type": 42,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Sanidin-Trachyt.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Sanidin-Trachyt.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Sanidin-Trachyt.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Sanidin-Trachyt.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Sanidin-Trachyt.jpg"
+    },
+    "trivial_name": "Sanidin",
+    "variety": "",
+    "minerals": "Sanidin",
+    "mohs_scale": "6",
+    "density": "2,5-2,6",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "(K,Na)(AlSi_3O_8)",
+    "other": "Alkalifeldspat",
+    "resource_mindat": "http://www.mindat.org/min-3521.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Sanidin",
+    "created_at": "2016-07-15T12:37:45.429000+02:00",
+    "last_modified": "2017-11-14T11:51:48.745003+01:00"
+  },
+  {
+    "id": 41,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 49,
+        "mineral_type": 41,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Orthoklas_Zwilling.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Orthoklas_Zwilling.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Orthoklas_Zwilling.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Orthoklas_Zwilling.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Orthoklas_Zwilling.jpg"
+    },
+    "trivial_name": "Orthoklas",
+    "variety": "",
+    "minerals": "Orthoklas",
+    "mohs_scale": "6",
+    "density": "2,5-2,6",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß-rosa",
+    "chemical_formula": "K(AlSi_3O_8)",
+    "other": "Alkalifeldspat",
+    "resource_mindat": "http://www.mindat.org/min-3026.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Orthoklas",
+    "created_at": "2016-07-15T12:34:30.543000+02:00",
+    "last_modified": "2017-11-14T11:52:08.781682+01:00"
+  },
+  {
+    "id": 12,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Diamantglanz",
+      "Wachsglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 31,
+        "mineral_type": 12,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Titanit_a80f1kL.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Titanit_a80f1kL.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Titanit_a80f1kL.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Titanit_a80f1kL.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Titanit_a80f1kL.jpg"
+    },
+    "trivial_name": "Titanit",
+    "variety": "Sphen",
+    "minerals": "Titanit",
+    "mohs_scale": "5-5,5",
+    "density": "3,4-3,6",
+    "streak": "weiß",
+    "normal_color": "farblos, gelbgrün-grün, braun",
+    "chemical_formula": "CaTi(O/SiO_4)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3977.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Titanit",
+    "created_at": "2016-04-04T17:00:33.325000+02:00",
+    "last_modified": "2017-11-14T11:54:54.599876+01:00"
+  },
+  {
+    "id": 7,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 11,
+        "mineral_type": 7,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Sillimanit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Sillimanit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Sillimanit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Sillimanit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Sillimanit.jpg"
+    },
+    "trivial_name": "Sillimanit",
+    "variety": "",
+    "minerals": "Sillimanit",
+    "mohs_scale": "6,5-7,5",
+    "density": "3,2",
+    "streak": "weiß",
+    "normal_color": "gelblichweiß, weiß",
+    "chemical_formula": "Al_2SiO_5",
+    "other": "Alumosilikat",
+    "resource_mindat": "http://www.mindat.org/min-3662.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Sillimanit",
+    "created_at": "2016-04-04T16:22:46.825000+02:00",
+    "last_modified": "2017-11-14T11:56:01.741618+01:00"
+  },
+  {
+    "id": 26,
+    "classification": {
+      "classification_name": "Kettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 28,
+        "mineral_type": 26,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Pyroxen.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Pyroxen.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Pyroxen.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Pyroxen.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Pyroxen.jpg"
+    },
+    "trivial_name": "Augit",
+    "variety": "",
+    "minerals": "Augit",
+    "mohs_scale": "5,5-6,5",
+    "density": "3,2",
+    "streak": "graugrün",
+    "normal_color": "braun, grün, schwarz",
+    "chemical_formula": "(Ca,Na)(Mg,Fe,Al)((Si,Al)_2O_6)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-419.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Augit",
+    "created_at": "2016-05-23T15:43:11.698000+02:00",
+    "last_modified": "2017-11-14T12:23:50.784772+01:00"
+  },
+  {
+    "id": 38,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Mattglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 37,
+        "mineral_type": 38,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Kaolinit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Kaolinit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Kaolinit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Kaolinit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Kaolinit.jpg"
+    },
+    "trivial_name": "Kaolinit",
+    "variety": "",
+    "minerals": "Kaolinit",
+    "mohs_scale": "2-3",
+    "density": "2,6-3",
+    "streak": "weiß",
+    "normal_color": "weiß",
+    "chemical_formula": "Al_4((OH)_8/Si_4O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-2156.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Kaolinit",
+    "created_at": "2016-06-26T15:28:31.456000+02:00",
+    "last_modified": "2017-11-14T12:29:46.657655+01:00"
+  },
+  {
+    "id": 33,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 32,
+        "mineral_type": 33,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Antigorit",
+    "variety": "Antigorit",
+    "minerals": "Serpentin",
+    "mohs_scale": "2,5-3",
+    "density": "2,5-2,6",
+    "streak": "weiß",
+    "normal_color": "grün",
+    "chemical_formula": "(Mg,Fe^{2+})_6((OH)_8/Si_4O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-260.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Antigorit",
+    "created_at": "2016-06-26T14:55:46.280000+02:00",
+    "last_modified": "2017-11-14T12:30:57.735682+01:00"
+  },
+  {
+    "id": 40,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Seidenglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 39,
+        "mineral_type": 40,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Chrysotil.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Chrysotil.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Chrysotil.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Chrysotil.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Chrysotil.jpg"
+    },
+    "trivial_name": "Chrysotil",
+    "variety": "Chrysotil",
+    "minerals": "Serpentin",
+    "mohs_scale": "3-4",
+    "density": "2,5-2,6",
+    "streak": "weiß",
+    "normal_color": "weiß",
+    "chemical_formula": "Mg_6((OH)_8/Si_4O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-975.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Chrysotil",
+    "created_at": "2016-06-26T15:40:26.338000+02:00",
+    "last_modified": "2017-11-13T23:32:22.409712+01:00"
+  },
+  {
+    "id": 48,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 42,
+        "mineral_type": 48,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Lapis_Lazuli.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Lapis_Lazuli.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Lapis_Lazuli.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Lapis_Lazuli.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Lapis_Lazuli.jpg"
+    },
+    "trivial_name": "Lasurit",
+    "variety": "",
+    "minerals": "Lasurit",
+    "mohs_scale": "5-6",
+    "density": "2,2",
+    "streak": "ultramarinblau",
+    "normal_color": "blau",
+    "chemical_formula": "(Na,Ca)_8((S)_2(AlSiO_4)_6)",
+    "other": "Foid",
+    "resource_mindat": "http://www.mindat.org/min-2357.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Lasurit",
+    "created_at": "2016-07-15T12:55:53.982000+02:00",
+    "last_modified": "2017-11-13T23:32:22.446495+01:00"
+  },
+  {
+    "id": 50,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 47,
+        "mineral_type": 50,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Leucit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Leucit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Leucit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Leucit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Leucit.jpg"
+    },
+    "trivial_name": "Leucit",
+    "variety": "",
+    "minerals": "Leucit",
+    "mohs_scale": "5,5-6",
+    "density": "2,5",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "K(AlSi_2O_6)",
+    "other": "Foid",
+    "resource_mindat": "http://www.mindat.org/min-2465.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Leucit",
+    "created_at": "2016-07-15T13:04:17.009000+02:00",
+    "last_modified": "2017-11-13T23:32:22.450552+01:00"
+  },
+  {
+    "id": 51,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 48,
+        "mineral_type": 51,
+        "crystal_system": "Hexagonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Nephelin.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Nephelin.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Nephelin.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Nephelin.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Nephelin.jpg"
+    },
+    "trivial_name": "Nephelin",
+    "variety": "",
+    "minerals": "Nephelin",
+    "mohs_scale": "5,5-6",
+    "density": "2,6",
+    "streak": "weiß",
+    "normal_color": "grünlich-rötlich, grau",
+    "chemical_formula": "(K,Na)(AlSiO_4)",
+    "other": "Foid",
+    "resource_mindat": "http://www.mindat.org/min-2880.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Nephelin",
+    "created_at": "2016-07-15T13:07:07.132000+02:00",
+    "last_modified": "2017-11-13T23:32:22.454698+01:00"
+  },
+  {
+    "id": 54,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 56,
+        "mineral_type": 54,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Phillipsit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Phillipsit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Phillipsit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Phillipsit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Phillipsit.jpg"
+    },
+    "trivial_name": "Phillipsit",
+    "variety": "",
+    "minerals": "Phillipsit",
+    "mohs_scale": "4,5",
+    "density": "2,1",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "(Ca,K,Na)_2(Si,Al)_8O_{16} \\cdot 6H_2O",
+    "other": "Zeolith",
+    "resource_mindat": "http://www.mindat.org/min-3192.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Phillipsit",
+    "created_at": "2016-07-15T13:29:17.596000+02:00",
+    "last_modified": "2017-11-13T23:32:22.462886+01:00"
+  },
+  {
+    "id": 64,
+    "classification": {
+      "classification_name": "Phosphat"
+    },
+    "systematics": "Phosphate, Arsenate und Vanadate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 59,
+        "mineral_type": 64,
+        "crystal_system": "Hexagonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Apatitpl%C3%A4ttchen.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Apatitpl%C3%A4ttchen.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Apatitpl%C3%A4ttchen.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Apatitpl%C3%A4ttchen.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Apatitpl%C3%A4ttchen.jpg"
+    },
+    "trivial_name": "Apatit",
+    "variety": "",
+    "minerals": "Apatit",
+    "mohs_scale": "5",
+    "density": "3,2",
+    "streak": "weiß",
+    "normal_color": "variabel, farblos",
+    "chemical_formula": "Ca_5((F,Cl,OH)(PO_4)_3)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-29229.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Apatit",
+    "created_at": "2016-07-15T14:04:08.845000+02:00",
+    "last_modified": "2017-11-13T23:32:22.496029+01:00"
+  },
+  {
+    "id": 30,
+    "classification": {
+      "classification_name": "Doppelkettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 25,
+        "mineral_type": 30,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Hornblende_im_Gestein.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Hornblende_im_Gestein.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Hornblende_im_Gestein.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Hornblende_im_Gestein.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Hornblende_im_Gestein.jpg"
+    },
+    "trivial_name": "Hornblende",
+    "variety": "Hornblende",
+    "minerals": "Amphibol",
+    "mohs_scale": "5-6",
+    "density": "3-3,5",
+    "streak": "farblos",
+    "normal_color": "schwarz, grün-braun",
+    "chemical_formula": "A_{0-1}B_2C_5((OH,F)_2/T_8O_{22})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1930.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Hornblende",
+    "created_at": "2016-06-26T14:24:30.247000+02:00",
+    "last_modified": "2017-11-14T11:45:49.073047+01:00"
+  },
+  {
+    "id": 55,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Seidenglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 79,
+        "mineral_type": 55,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Natrolit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Natrolit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Natrolit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Natrolit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Natrolit.jpg"
+    },
+    "trivial_name": "Natrolith",
+    "variety": "",
+    "minerals": "Natrolith",
+    "mohs_scale": "5-5,5",
+    "density": "2,2-2,6",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "Na_2(Al_2Si_3O_{10}) \\cdot 2H_2O",
+    "other": "Zeolith",
+    "resource_mindat": "http://www.mindat.org/min-2947.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Natrolith",
+    "created_at": "2016-07-15T13:32:51.100000+02:00",
+    "last_modified": "2017-11-14T11:47:03.244512+01:00"
+  },
+  {
+    "id": 52,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 40,
+        "mineral_type": 52,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Hauyn_in_Tephrit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Hauyn_in_Tephrit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Hauyn_in_Tephrit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Hauyn_in_Tephrit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Hauyn_in_Tephrit.jpg"
+    },
+    "trivial_name": "Hauyn",
+    "variety": "",
+    "minerals": "Hauyn",
+    "mohs_scale": "5-6",
+    "density": "2,5",
+    "streak": "hellblau",
+    "normal_color": "blau",
+    "chemical_formula": "(Na,Ca,K)_{8-4}((SO_4)_{2-1}/(AlSiO_4)_6)",
+    "other": "Foid",
+    "resource_mindat": "http://www.mindat.org/min-1833.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Ha%FCyn",
+    "created_at": "2016-07-15T13:11:07.409000+02:00",
+    "last_modified": "2017-11-14T11:48:32.902475+01:00"
+  },
+  {
+    "id": 63,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "gut",
+        "coordinates": "{201}"
+      },
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Seidenglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 58,
+        "mineral_type": 63,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Malachit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Malachit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Malachit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Malachit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Malachit.jpg"
+    },
+    "trivial_name": "Malachit",
+    "variety": "",
+    "minerals": "Malachit",
+    "mohs_scale": "3,5-4",
+    "density": "4",
+    "streak": "lichtgrün",
+    "normal_color": "dunkelgrün",
+    "chemical_formula": "Cu_2((OH)_2/CO_3)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-2550.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Malachit",
+    "created_at": "2016-07-15T13:55:07.606000+02:00",
+    "last_modified": "2017-11-14T11:58:07.363372+01:00"
+  },
+  {
+    "id": 62,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{011}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 4,
+        "mineral_type": 62,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Azurit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Azurit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Azurit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Azurit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Azurit.jpg"
+    },
+    "trivial_name": "Azurit",
+    "variety": "",
+    "minerals": "Azurit",
+    "mohs_scale": "3,5-4",
+    "density": "3,8",
+    "streak": "hellblau",
+    "normal_color": "azurblau",
+    "chemical_formula": "Cu_3((OH)/CO_3)_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-447.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Azurit",
+    "created_at": "2016-07-15T13:52:34.675000+02:00",
+    "last_modified": "2017-11-14T11:59:07.143664+01:00"
+  },
+  {
+    "id": 61,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{10-11}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 57,
+        "mineral_type": 61,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Smithsonit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Smithsonit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Smithsonit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Smithsonit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Smithsonit.jpg"
+    },
+    "trivial_name": "Smithsonit",
+    "variety": "",
+    "minerals": "Smithsonit",
+    "mohs_scale": "4-4,5",
+    "density": "4,4",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "Zn(CO_3)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3688.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Smithsonit",
+    "created_at": "2016-07-15T13:50:19.853000+02:00",
+    "last_modified": "2017-11-14T12:10:32.457124+01:00"
+  },
+  {
+    "id": 60,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{10-11}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 76,
+        "mineral_type": 60,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Siderit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Siderit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Siderit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Siderit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Siderit.jpg"
+    },
+    "trivial_name": "Siderit",
+    "variety": "",
+    "minerals": "Siderit",
+    "mohs_scale": "3,5-4",
+    "density": "3,7-3,9",
+    "streak": "weiß-blassblau",
+    "normal_color": "gelb-braun",
+    "chemical_formula": "Fe^{2+}(CO_3)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3647.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Siderit",
+    "created_at": "2016-07-15T13:46:58.900000+02:00",
+    "last_modified": "2017-11-14T12:11:14.557824+01:00"
+  },
+  {
+    "id": 59,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "splitterig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{10-11}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 3,
+        "mineral_type": 59,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Dolomit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Dolomit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Dolomit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Dolomit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Dolomit.jpg"
+    },
+    "trivial_name": "Dolomit",
+    "variety": "",
+    "minerals": "Dolomit",
+    "mohs_scale": "3,5-4",
+    "density": "2,9-3",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "Ca,Mg(CO_3)_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1304.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Dolomit",
+    "created_at": "2016-07-15T13:44:34.067000+02:00",
+    "last_modified": "2017-11-14T12:16:10.790565+01:00"
+  },
+  {
+    "id": 57,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{10-11}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 2,
+        "mineral_type": 57,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Calcit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Calcit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Calcit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Calcit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Calcit.jpg"
+    },
+    "trivial_name": "Kalkspat",
+    "variety": "",
+    "minerals": "Calcit",
+    "mohs_scale": "3",
+    "density": "2,7",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "CaCO_3",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-859.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Calcit",
+    "created_at": "2016-07-15T13:39:24.952000+02:00",
+    "last_modified": "2017-11-14T12:17:05.372253+01:00"
+  },
+  {
+    "id": 29,
+    "classification": {
+      "classification_name": "Kettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{100}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{102}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 30,
+        "mineral_type": 29,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Wollastonit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Wollastonit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Wollastonit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Wollastonit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Wollastonit.jpg"
+    },
+    "trivial_name": "Wollastonit",
+    "variety": "",
+    "minerals": "Wollastonit",
+    "mohs_scale": "4,5-5",
+    "density": "2,8-3,1",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß, grau",
+    "chemical_formula": "CaSiO_3",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-4323.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Wollastonit",
+    "created_at": "2016-05-23T15:56:43.999000+02:00",
+    "last_modified": "2017-11-14T12:23:14.127788+01:00"
+  },
+  {
+    "id": 27,
+    "classification": {
+      "classification_name": "Kettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 27,
+        "mineral_type": 27,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Diopsid",
+    "variety": "",
+    "minerals": "Diopsid",
+    "mohs_scale": "5,5-6,5",
+    "density": "3,2",
+    "streak": "weiß",
+    "normal_color": "grau, graugrün",
+    "chemical_formula": "CaMg(Si_2O_6)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1294.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Diopsid",
+    "created_at": "2016-05-23T15:45:56.370000+02:00",
+    "last_modified": "2017-11-14T12:23:32.435266+01:00"
+  },
+  {
+    "id": 39,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Perlmuttglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 38,
+        "mineral_type": 39,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Talk.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Talk.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Talk.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Talk.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Talk.jpg"
+    },
+    "trivial_name": "Talk",
+    "variety": "",
+    "minerals": "Talk",
+    "mohs_scale": "1",
+    "density": "2,78-2,85",
+    "streak": "weiß",
+    "normal_color": "zart grün, grau, weiß",
+    "chemical_formula": "Mg_3((OH)_2/Si_4O_{10})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3875.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Talk",
+    "created_at": "2016-06-26T15:34:39.231000+02:00",
+    "last_modified": "2017-11-14T12:29:23.303133+01:00"
+  },
+  {
+    "id": 37,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 53,
+        "mineral_type": 37,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Chlorit_auf_Quarz.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Chlorit_auf_Quarz.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Chlorit_auf_Quarz.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Chlorit_auf_Quarz.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Chlorit_auf_Quarz.jpg"
+    },
+    "trivial_name": "Klinochlor",
+    "variety": "Klinochlor",
+    "minerals": "Chlorit",
+    "mohs_scale": "2-3",
+    "density": "2,6-3",
+    "streak": "graugrün",
+    "normal_color": "grün, teilweise fast schwarz",
+    "chemical_formula": "(Mg,Fe,Al)_3((OH)_2/(Si,Al)_4O_{10}) \\cdot (Mg,Fe,Al)_3(OH)_6",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1070.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Klinochlor",
+    "created_at": "2016-06-26T15:23:39.073000+02:00",
+    "last_modified": "2017-11-14T12:30:00.246690+01:00"
+  },
+  {
+    "id": 68,
+    "classification": null,
+    "systematics": "Sulfate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{210}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 66,
+        "mineral_type": 68,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Baryt1.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Baryt1.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Baryt1.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Baryt1.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Baryt1.jpg"
+    },
+    "trivial_name": "Schwerspat",
+    "variety": "",
+    "minerals": "Baryt",
+    "mohs_scale": "3-3,5",
+    "density": "4,5",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß, blasse Farben",
+    "chemical_formula": "Ba(SO_4)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-549.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Baryt",
+    "created_at": "2016-07-17T16:45:34.119000+02:00",
+    "last_modified": "2017-11-14T12:40:49.954339+01:00"
+  },
+  {
+    "id": 67,
+    "classification": null,
+    "systematics": "Sulfate",
+    "fracture": [
+      "splitterig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{010}"
+      },
+      {
+        "cleavage": "gut",
+        "coordinates": "{100}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 61,
+        "mineral_type": 67,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Anhydrid.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Anhydrid.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Anhydrid.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Anhydrid.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Anhydrid.jpg"
+    },
+    "trivial_name": "Anhydrit",
+    "variety": "",
+    "minerals": "Anhydrit",
+    "mohs_scale": "3-3,5",
+    "density": "2,9",
+    "streak": "weiß",
+    "normal_color": "farblos, weißgrau",
+    "chemical_formula": "Ca(SO_4)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-234.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Anhydrit",
+    "created_at": "2016-07-17T16:43:00.481000+02:00",
+    "last_modified": "2017-11-14T12:41:09.274054+01:00"
+  },
+  {
+    "id": 65,
+    "classification": {
+      "classification_name": "Phosphat"
+    },
+    "systematics": "Phosphate, Arsenate und Vanadate",
+    "fracture": [
+      "splitterig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 60,
+        "mineral_type": 65,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Xenotim",
+    "variety": "",
+    "minerals": "Xenotim",
+    "mohs_scale": "4-5",
+    "density": "4,5-5",
+    "streak": "gelblich",
+    "normal_color": "gelb-braun",
+    "chemical_formula": "(Y,Yb)(PO_4)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-6613.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Xenotim",
+    "created_at": "2016-07-15T14:06:16.282000+02:00",
+    "last_modified": "2017-11-13T23:32:22.500230+01:00"
+  },
+  {
+    "id": 49,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 41,
+        "mineral_type": 49,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Sodalit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Sodalit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Sodalit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Sodalit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Sodalit.jpg"
+    },
+    "trivial_name": "Sodalit",
+    "variety": "",
+    "minerals": "Sodalit",
+    "mohs_scale": "5-6",
+    "density": "2,3",
+    "streak": "weiß-blassblau",
+    "normal_color": "blau",
+    "chemical_formula": "Na_8((Cl_2/AlSiO_4)_6)",
+    "other": "Foid",
+    "resource_mindat": "http://www.mindat.org/min-3701.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Sodalit",
+    "created_at": "2016-07-15T13:00:01.416000+02:00",
+    "last_modified": "2017-11-13T23:32:22.520715+01:00"
+  },
+  {
+    "id": 89,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 73,
+        "mineral_type": 89,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Chromit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Chromit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Chromit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Chromit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Chromit.jpg"
+    },
+    "trivial_name": "Chromit",
+    "variety": "",
+    "minerals": "Chromit",
+    "mohs_scale": "5,5",
+    "density": "4,6",
+    "streak": "dunkelbraun",
+    "normal_color": "braun-schwarz",
+    "chemical_formula": "FeCr_2O_4",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1036.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Chromit",
+    "created_at": "2016-07-30T15:43:08.387000+02:00",
+    "last_modified": "2017-11-13T23:32:22.569509+01:00"
+  },
+  {
+    "id": 90,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 74,
+        "mineral_type": 90,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Hamatit_Glaskopf.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Hamatit_Glaskopf.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Hamatit_Glaskopf.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Hamatit_Glaskopf.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Hamatit_Glaskopf.jpg"
+    },
+    "trivial_name": "Hämatit",
+    "variety": "",
+    "minerals": "Hämatit",
+    "mohs_scale": "5,5-6,5",
+    "density": "5,2",
+    "streak": "kirschrot-rotbraun",
+    "normal_color": "rötlichgrau-eisenschwarz",
+    "chemical_formula": "Fe_2O_3",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1856.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=H%E4matit",
+    "created_at": "2016-07-30T15:47:07.345000+02:00",
+    "last_modified": "2017-11-13T23:32:22.573601+01:00"
+  },
+  {
+    "id": 92,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 77,
+        "mineral_type": 92,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Spinell.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Spinell.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Spinell.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Spinell.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Spinell.jpg"
+    },
+    "trivial_name": "Magnetit",
+    "variety": "",
+    "minerals": "Magnetit",
+    "mohs_scale": "6",
+    "density": "5,2",
+    "streak": "schwarz",
+    "normal_color": "schwarz-grau",
+    "chemical_formula": "Fe^{2+}Fe_2^{3+}O_4",
+    "other": "Spinell-Gruppe",
+    "resource_mindat": "http://www.mindat.org/min-2538.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Magnetit",
+    "created_at": "2016-07-30T15:55:31.321000+02:00",
+    "last_modified": "2017-11-13T23:32:22.577655+01:00"
+  },
+  {
+    "id": 91,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 75,
+        "mineral_type": 91,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Spinell.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Spinell.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Spinell.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Spinell.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Spinell.jpg"
+    },
+    "trivial_name": "Spinell",
+    "variety": "",
+    "minerals": "Spinell",
+    "mohs_scale": "7,5-8",
+    "density": "3,8-4,1",
+    "streak": "grauweiß",
+    "normal_color": "variabel",
+    "chemical_formula": "MgAl_2O_4",
+    "other": "Spinell-Gruppe",
+    "resource_mindat": "http://www.mindat.org/min-3729.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Spinell",
+    "created_at": "2016-07-30T15:52:36.137000+02:00",
+    "last_modified": "2017-11-13T23:32:22.581708+01:00"
+  },
+  {
+    "id": 93,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 80,
+        "mineral_type": 93,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Korund_Kopf.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Korund_Kopf.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Korund_Kopf.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Korund_Kopf.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Korund_Kopf.jpg"
+    },
+    "trivial_name": "Korund",
+    "variety": "",
+    "minerals": "Korund",
+    "mohs_scale": "9",
+    "density": "3,9-4,1",
+    "streak": "weiß",
+    "normal_color": "variabel",
+    "chemical_formula": "Al_2O_3",
+    "other": "Varietäten sind Rubin und Saphir",
+    "resource_mindat": "http://www.mindat.org/min-1136.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Korund",
+    "created_at": "2016-07-30T15:59:12.614000+02:00",
+    "last_modified": "2017-11-13T23:32:22.586066+01:00"
+  },
+  {
+    "id": 94,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 81,
+        "mineral_type": 94,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Kassiterit",
+    "variety": "",
+    "minerals": "Kassiterit",
+    "mohs_scale": "6-7",
+    "density": "6,8-7,1",
+    "streak": "gelbweiß-farblos",
+    "normal_color": "gelbbraun-schwarzbraun",
+    "chemical_formula": "SnO_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-917.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Kassiterit",
+    "created_at": "2016-07-30T16:02:56.094000+02:00",
+    "last_modified": "2017-11-13T23:32:22.590201+01:00"
+  },
+  {
+    "id": 95,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 82,
+        "mineral_type": 95,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Ilmenit",
+    "variety": "",
+    "minerals": "Ilmenit",
+    "mohs_scale": "5,5-6",
+    "density": "4,5-5",
+    "streak": "schwarz",
+    "normal_color": "braunschwarz, stahlgrau",
+    "chemical_formula": "FeTiO_3",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-2013.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Ilmenit",
+    "created_at": "2016-07-30T16:05:36.089000+02:00",
+    "last_modified": "2017-11-13T23:32:22.594243+01:00"
+  },
+  {
+    "id": 105,
+    "classification": {
+      "classification_name": "Karbonat"
+    },
+    "systematics": "Carbonate und Nitrate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 93,
+        "mineral_type": 105,
+        "crystal_system": "Trigonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Magnesit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Magnesit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Magnesit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Magnesit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Magnesit.jpg"
+    },
+    "trivial_name": "Magnesit",
+    "variety": "",
+    "minerals": "Magnesit",
+    "mohs_scale": "3,5-4,5",
+    "density": "3",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß, grau, gelblich, schwärzlich",
+    "chemical_formula": "MgCO_3",
+    "other": "-",
+    "resource_mindat": "http://www.mindat.org/min-2482.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Magnesit",
+    "created_at": "2016-10-30T12:29:39.948000+01:00",
+    "last_modified": "2017-11-13T23:32:22.602295+01:00"
+  },
+  {
+    "id": 56,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 52,
+        "mineral_type": 56,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Analcim.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Analcim.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Analcim.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Analcim.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Analcim.jpg"
+    },
+    "trivial_name": "Analcim",
+    "variety": "",
+    "minerals": "Analcim",
+    "mohs_scale": "5-5,5",
+    "density": "2,3",
+    "streak": "weiß",
+    "normal_color": "farblos, grau, rötlich",
+    "chemical_formula": "Na(AlSi_2O_6) \\cdot H_2O",
+    "other": "Zeolith",
+    "resource_mindat": "http://www.mindat.org/min-210.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Analcim",
+    "created_at": "2016-07-15T13:36:13.805000+02:00",
+    "last_modified": "2017-11-14T11:46:50.330498+01:00"
+  },
+  {
+    "id": 87,
+    "classification": {
+      "classification_name": "Hydroxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 71,
+        "mineral_type": 87,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Goethit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Goethit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Goethit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Goethit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Goethit.jpg"
+    },
+    "trivial_name": "Goethit",
+    "variety": "",
+    "minerals": "Goethit",
+    "mohs_scale": "5-5,5",
+    "density": "4,5",
+    "streak": "gelbbraun",
+    "normal_color": "schwarzbraun-lichtgelb",
+    "chemical_formula": "FeOOH",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1719.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Goethit",
+    "created_at": "2016-07-30T15:34:21.046000+02:00",
+    "last_modified": "2017-11-14T11:54:17.322091+01:00"
+  },
+  {
+    "id": 88,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 72,
+        "mineral_type": 88,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Pyrolusit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Pyrolusit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Pyrolusit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Pyrolusit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Pyrolusit.jpg"
+    },
+    "trivial_name": "Pyrolusit",
+    "variety": "",
+    "minerals": "Pyrolusit",
+    "mohs_scale": "6-6,5",
+    "density": "5,2",
+    "streak": "schwarz",
+    "normal_color": "dunkelgrau",
+    "chemical_formula": "MnO_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3318.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Pyrolusit",
+    "created_at": "2016-07-30T15:38:38.983000+02:00",
+    "last_modified": "2017-11-14T12:24:31.254422+01:00"
+  },
+  {
+    "id": 86,
+    "classification": {
+      "classification_name": "Oxid"
+    },
+    "systematics": "Oxide und Hydroxide",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 70,
+        "mineral_type": 86,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Rutil.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Rutil.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Rutil.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Rutil.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Rutil.jpg"
+    },
+    "trivial_name": "Rutil",
+    "variety": "",
+    "minerals": "Rutil",
+    "mohs_scale": "6-6,5",
+    "density": "4,25",
+    "streak": "gelblich-bräunlich",
+    "normal_color": "rotbraun-schwarz",
+    "chemical_formula": "TiO_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3486.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Rutil",
+    "created_at": "2016-07-30T15:29:52.991000+02:00",
+    "last_modified": "2017-11-14T12:24:55.674894+01:00"
+  },
+  {
+    "id": 84,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 68,
+        "mineral_type": 84,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Zinkblende.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Zinkblende.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Zinkblende.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Zinkblende.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Zinkblende.jpg"
+    },
+    "trivial_name": "Zinkblende",
+    "variety": "",
+    "minerals": "Sphalerit",
+    "mohs_scale": "3,5-4",
+    "density": "3,9-4,1",
+    "streak": "gelb-braun",
+    "normal_color": "weiß, gelb, rot-braun, schwarz",
+    "chemical_formula": "ZnS",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3727.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Sphalerit",
+    "created_at": "2016-07-30T15:15:20.846000+02:00",
+    "last_modified": "2017-11-14T12:32:17.136037+01:00"
+  },
+  {
+    "id": 69,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{100}"
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 62,
+        "mineral_type": 69,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Galenit_W%C3%BCrfel.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Galenit_W%C3%BCrfel.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Galenit_W%C3%BCrfel.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Galenit_W%C3%BCrfel.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Galenit_W%C3%BCrfel.jpg"
+    },
+    "trivial_name": "Bleiglanz",
+    "variety": "",
+    "minerals": "Galenit",
+    "mohs_scale": "2,5-3",
+    "density": "7,4-7,6",
+    "streak": "grauschwarz",
+    "normal_color": "bleigrau",
+    "chemical_formula": "PbS",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1641.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Galenit",
+    "created_at": "2016-07-17T16:48:07.824000+02:00",
+    "last_modified": "2017-11-14T12:38:42.039751+01:00"
+  },
+  {
+    "id": 103,
+    "classification": null,
+    "systematics": "Elemente",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{111}"
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 88,
+        "mineral_type": 103,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Diamant",
+    "variety": "",
+    "minerals": "Diamant",
+    "mohs_scale": "10",
+    "density": "3,52",
+    "streak": "keine",
+    "normal_color": "farblos, variabel",
+    "chemical_formula": "C",
+    "other": "Hochdruckmodifikation von Kohlenstoff",
+    "resource_mindat": "http://www.mindat.org/min-1282.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Diamant",
+    "created_at": "2016-07-30T16:34:25.217000+02:00",
+    "last_modified": "2017-11-14T12:39:08.724399+01:00"
+  },
+  {
+    "id": 98,
+    "classification": null,
+    "systematics": "Halogenide",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{100}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 90,
+        "mineral_type": 98,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Sylvin.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Sylvin.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Sylvin.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Sylvin.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Sylvin.jpg"
+    },
+    "trivial_name": "Kalisalz",
+    "variety": "",
+    "minerals": "Sylvin",
+    "mohs_scale": "2",
+    "density": "1,99",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "KCl",
+    "other": "bitterer Geschmack",
+    "resource_mindat": "http://www.mindat.org/min-3850.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Sylvin",
+    "created_at": "2016-07-30T16:20:33.569000+02:00",
+    "last_modified": "2017-11-14T12:39:55.739610+01:00"
+  },
+  {
+    "id": 97,
+    "classification": null,
+    "systematics": "Halogenide",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{100}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 89,
+        "mineral_type": 97,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Halit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Halit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Halit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Halit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Halit.jpg"
+    },
+    "trivial_name": "Steinsalz",
+    "variety": "",
+    "minerals": "Halit",
+    "mohs_scale": "2",
+    "density": "2,1-2,2",
+    "streak": "weiß",
+    "normal_color": "farblos",
+    "chemical_formula": "NaCl",
+    "other": "salziger Geschmack",
+    "resource_mindat": "http://www.mindat.org/min-1804.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Halit",
+    "created_at": "2016-07-30T16:18:16.579000+02:00",
+    "last_modified": "2017-11-14T12:40:08.246354+01:00"
+  },
+  {
+    "id": 96,
+    "classification": null,
+    "systematics": "Halogenide",
+    "fracture": [
+      "splitterig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{111}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 83,
+        "mineral_type": 96,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Fluoritoktaeder.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Fluoritoktaeder.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Fluoritoktaeder.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Fluoritoktaeder.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Fluoritoktaeder.jpg"
+    },
+    "trivial_name": "Flussspat",
+    "variety": "",
+    "minerals": "Fluorit",
+    "mohs_scale": "4",
+    "density": "3-3,5",
+    "streak": "weiß",
+    "normal_color": "sehr variabel",
+    "chemical_formula": "CaF_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1576.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Fluorit",
+    "created_at": "2016-07-30T16:16:15.352000+02:00",
+    "last_modified": "2017-11-14T12:40:21.320513+01:00"
+  },
+  {
+    "id": 83,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": "{0001}"
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 67,
+        "mineral_type": 83,
+        "crystal_system": "Hexagonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Molybd%C3%A4nit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Molybd%C3%A4nit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Molybd%C3%A4nit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Molybd%C3%A4nit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Molybd%C3%A4nit.jpg"
+    },
+    "trivial_name": "Molybdänit",
+    "variety": "",
+    "minerals": "Molybdänit",
+    "mohs_scale": "1-1,5",
+    "density": "4,7-4,8",
+    "streak": "dunkelgrau",
+    "normal_color": "bleigrau",
+    "chemical_formula": "MoS_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-2746.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Molybd%E4nit",
+    "created_at": "2016-07-30T15:11:40.797000+02:00",
+    "last_modified": "2017-11-15T11:19:26.434441+01:00"
+  },
+  {
+    "id": 85,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": "{111}"
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 69,
+        "mineral_type": 85,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Buntkupferkies-Bornit_gfoPjwA.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Buntkupferkies-Bornit_gfoPjwA.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Buntkupferkies-Bornit_gfoPjwA.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Buntkupferkies-Bornit_gfoPjwA.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Buntkupferkies-Bornit_gfoPjwA.jpg"
+    },
+    "trivial_name": "Buntkupferkies",
+    "variety": "",
+    "minerals": "Bornit",
+    "mohs_scale": "3",
+    "density": "5,07",
+    "streak": "grauschwarz",
+    "normal_color": "rötlich bronzefarben (frisch), bunt anlaufend, schwarz-braun",
+    "chemical_formula": "Cu_5FeS_4",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-727.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Bornit",
+    "created_at": "2016-07-30T15:26:25.677000+02:00",
+    "last_modified": "2017-12-22T15:36:29.522959+01:00"
+  },
+  {
+    "id": 53,
+    "classification": {
+      "classification_name": "Gerüstsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "höchst vollkommen",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 36,
+        "mineral_type": 53,
+        "crystal_system": "Amorph",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Chabasit_2.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Chabasit_2.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Chabasit_2.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Chabasit_2.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Chabasit_2.jpg"
+    },
+    "trivial_name": "Chabasit",
+    "variety": "",
+    "minerals": "Chabasit",
+    "mohs_scale": "4,5",
+    "density": "2,1",
+    "streak": "weiß",
+    "normal_color": "farblos, weiß",
+    "chemical_formula": "(Ca,K,Na)_4(Al_4Si_8O_{24}) \\cdot 12H_2O",
+    "other": "Zeolith",
+    "resource_mindat": "http://www.mindat.org/min-956.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Chabasit",
+    "created_at": "2016-07-15T13:19:12.783000+02:00",
+    "last_modified": "2017-11-13T23:32:22.626709+01:00"
+  },
+  {
+    "id": 17,
+    "classification": {
+      "classification_name": "Ringsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Fettglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 17,
+        "mineral_type": 17,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Cordierit",
+    "variety": "",
+    "minerals": "Cordierit",
+    "mohs_scale": "7",
+    "density": "2,6",
+    "streak": "weiß",
+    "normal_color": "blassblau, grau, gelblich",
+    "chemical_formula": "(Mg,Fe^{2+})_2(Al_2Si)(Al_2Si_4O_{18})",
+    "other": "starker Pleochroismus",
+    "resource_mindat": "http://www.mindat.org/min-1128.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Cordierit",
+    "created_at": "2016-04-04T17:19:33.138000+02:00",
+    "last_modified": "2017-11-13T23:32:22.630914+01:00"
+  },
+  {
+    "id": 25,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 9,
+        "mineral_type": 25,
+        "crystal_system": "Kubisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Hessonit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Hessonit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Hessonit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Hessonit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Hessonit.jpg"
+    },
+    "trivial_name": "Grossular",
+    "variety": "Hessonit",
+    "minerals": "Granat",
+    "mohs_scale": "6,5-7,5",
+    "density": "3,5-4,5",
+    "streak": "weiß",
+    "normal_color": "orange",
+    "chemical_formula": "Ca_3Al_2(SiO_4)_3",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1882.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Hessonit",
+    "created_at": "2016-05-20T12:45:20.460000+02:00",
+    "last_modified": "2017-11-13T23:32:22.643186+01:00"
+  },
+  {
+    "id": 13,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Diamantglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 16,
+        "mineral_type": 13,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Zirkon.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Zirkon.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Zirkon.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Zirkon.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Zirkon.jpg"
+    },
+    "trivial_name": "Zirkon",
+    "variety": "",
+    "minerals": "Zirkon",
+    "mohs_scale": "7,5",
+    "density": "4,7",
+    "streak": "weiß",
+    "normal_color": "braungelb, farblos",
+    "chemical_formula": "ZrSiO_4",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-4421.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Zirkon",
+    "created_at": "2016-04-04T17:02:23.674000+02:00",
+    "last_modified": "2017-11-13T23:32:22.651442+01:00"
+  },
+  {
+    "id": 28,
+    "classification": {
+      "classification_name": "Kettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 29,
+        "mineral_type": 28,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Spodumen.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Spodumen.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Spodumen.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Spodumen.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Spodumen.jpg"
+    },
+    "trivial_name": "Spodumen",
+    "variety": "",
+    "minerals": "Spodumen",
+    "mohs_scale": "6,5-7",
+    "density": "3-3,2",
+    "streak": "weiß",
+    "normal_color": "farblos, weß, hellgrau",
+    "chemical_formula": "LiAl(Si_2O_6)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3733.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Spodumen",
+    "created_at": "2016-05-23T15:52:03.612000+02:00",
+    "last_modified": "2017-11-13T23:32:22.663623+01:00"
+  },
+  {
+    "id": 106,
+    "classification": {
+      "classification_name": "Sulfid"
+    },
+    "systematics": "Sulfide und Sulfosalze",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "keine",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Metallglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 94,
+        "mineral_type": 106,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Chalkopyrit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Chalkopyrit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Chalkopyrit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Chalkopyrit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Chalkopyrit.jpg"
+    },
+    "trivial_name": "Kupferkies",
+    "variety": "",
+    "minerals": "Chalkopyrit",
+    "mohs_scale": "3,5-4",
+    "density": "4,1-4,3",
+    "streak": "grünlich-schwarz",
+    "normal_color": "messinggelb",
+    "chemical_formula": "CuFeS_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-955.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Chalkopyrit",
+    "created_at": "2016-10-30T12:35:10.566000+01:00",
+    "last_modified": "2017-11-13T23:32:22.675831+01:00"
+  },
+  {
+    "id": 108,
+    "classification": {
+      "classification_name": "Doppelkettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{210}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 96,
+        "mineral_type": 108,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Antophyllit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Antophyllit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Antophyllit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Antophyllit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Antophyllit.jpg"
+    },
+    "trivial_name": "Anthophyllit",
+    "variety": "",
+    "minerals": "Anthophyllit",
+    "mohs_scale": "5,5-6",
+    "density": "2,9-3,6",
+    "streak": "grauweiß",
+    "normal_color": "weiß, gelbgrau, braungrün",
+    "chemical_formula": "(Mg,Fe^{2+})_7Si_8O_{22}(OH)_2",
+    "other": "-",
+    "resource_mindat": "http://www.mindat.org/min-254.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Antophyllit",
+    "created_at": "2016-10-30T12:54:31.516000+01:00",
+    "last_modified": "2017-11-14T11:44:37.513515+01:00"
+  },
+  {
+    "id": 32,
+    "classification": {
+      "classification_name": "Doppelkettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 1,
+        "mineral_type": 32,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Glaukophan",
+    "variety": "",
+    "minerals": "Glaukophan",
+    "mohs_scale": "5,5-6",
+    "density": "3-3,3",
+    "streak": "blaugrau",
+    "normal_color": "lavendelblau, schwarz",
+    "chemical_formula": "Na_2(Mg,Fe^{2+})_3Al_2((OH)_2Si_8O_{22})",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-1704.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Glaukophan",
+    "created_at": "2016-06-26T14:48:50.702000+02:00",
+    "last_modified": "2017-11-14T11:44:59.818128+01:00"
+  },
+  {
+    "id": 114,
+    "classification": {
+      "classification_name": "Gruppensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 97,
+        "mineral_type": 114,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Klinozoisit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Klinozoisit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Klinozoisit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Klinozoisit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Klinozoisit.jpg"
+    },
+    "trivial_name": "Klinozoisit",
+    "variety": "",
+    "minerals": "Klinozoisit",
+    "mohs_scale": "6,5",
+    "density": "3,2-3,4",
+    "streak": "grauweiß",
+    "normal_color": "farblos, grün, grau, gelb",
+    "chemical_formula": "Ca_2Al_3(O/OH/SiO_4/Si_2O_7)",
+    "other": "Epidot-Gruppe",
+    "resource_mindat": "https://www.mindat.org/min-1087.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Klinozoisit",
+    "created_at": "2017-02-03T15:45:39.467000+01:00",
+    "last_modified": "2017-11-14T11:52:50.113774+01:00"
+  },
+  {
+    "id": 15,
+    "classification": {
+      "classification_name": "Gruppensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "undeutlich",
+        "coordinates": ""
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 18,
+        "mineral_type": 15,
+        "crystal_system": "Tetragonal",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Vesuvian.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Vesuvian.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Vesuvian.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Vesuvian.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Vesuvian.jpg"
+    },
+    "trivial_name": "Vesuvian",
+    "variety": "",
+    "minerals": "Vesuvian",
+    "mohs_scale": "6-7",
+    "density": "3,3-3,5",
+    "streak": "weiß",
+    "normal_color": "braun-grün, gelblich",
+    "chemical_formula": "Ca_{19}Al_{10}(Mg,Fe)_3((OH,F)_{10}/(SiO_4)_{10}/(Si_2O_7)_4)",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-4223.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Vesuvian",
+    "created_at": "2016-04-04T17:09:02.552000+02:00",
+    "last_modified": "2017-11-14T11:53:25.821351+01:00"
+  },
+  {
+    "id": 14,
+    "classification": {
+      "classification_name": "Gruppensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 55,
+        "mineral_type": 14,
+        "crystal_system": "Monoklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Epidot.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Epidot.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Epidot.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Epidot.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Epidot.jpg"
+    },
+    "trivial_name": "Epidot",
+    "variety": "",
+    "minerals": "Epidot",
+    "mohs_scale": "6-7",
+    "density": "3,3-3,5",
+    "streak": "weiß",
+    "normal_color": "gelbgrün-grün, schwarz",
+    "chemical_formula": "Ca_2(Fe^{3+}Al)Al_2(O/OH/SiO_4/Si_2O_7)",
+    "other": "Epidot-Gruppe,\r\nstarker Pleochroismus",
+    "resource_mindat": "http://www.mindat.org/min-1389.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Epidot",
+    "created_at": "2016-04-04T17:06:35.154000+02:00",
+    "last_modified": "2017-11-14T11:53:45.478622+01:00"
+  },
+  {
+    "id": 11,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 10,
+        "mineral_type": 11,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Topas_wei%C3%9F.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Topas_wei%C3%9F.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Topas_wei%C3%9F.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Topas_wei%C3%9F.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Topas_wei%C3%9F.jpg"
+    },
+    "trivial_name": "Topas",
+    "variety": "",
+    "minerals": "Topas",
+    "mohs_scale": "8",
+    "density": "3,5",
+    "streak": "weiß",
+    "normal_color": "farblos, variabel",
+    "chemical_formula": "Al_2SiO_4(OH,F)_2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-3996.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Topas",
+    "created_at": "2016-04-04T16:56:23.695000+02:00",
+    "last_modified": "2017-11-14T11:55:12.515839+01:00"
+  },
+  {
+    "id": 9,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{010}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 6,
+        "mineral_type": 9,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Olivin.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Olivin.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Olivin.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Olivin.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Olivin.jpg"
+    },
+    "trivial_name": "Olivin",
+    "variety": "",
+    "minerals": "Olivin",
+    "mohs_scale": "6,5-7",
+    "density": "3,2-4,3",
+    "streak": "weiß",
+    "normal_color": "grün. gelblichbraun",
+    "chemical_formula": "(Mg,Fe)_2SiO_4",
+    "other": "häufigstes Mineral im Erdmantel\r\nMg-Endglied Forsterit und Fe-Endglied Fayalit",
+    "resource_mindat": "http://www.mindat.org/min-2983.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Olivin",
+    "created_at": "2016-04-04T16:51:05.719000+02:00",
+    "last_modified": "2017-11-14T11:55:37.464808+01:00"
+  },
+  {
+    "id": 6,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "splitterig"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "vollkommen",
+        "coordinates": "{100}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 20,
+        "mineral_type": 6,
+        "crystal_system": "Triklin",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Kyanit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Kyanit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Kyanit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Kyanit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Kyanit.jpg"
+    },
+    "trivial_name": "Kyanit",
+    "variety": "",
+    "minerals": "Kyanit",
+    "mohs_scale": "4-4,5 und 7",
+    "density": "3,56-3,67",
+    "streak": "weiß",
+    "normal_color": "blau",
+    "chemical_formula": "Al_2SiO_5",
+    "other": "Alumosilikat,\r\nHärteanisotropie\r\nauch Disthen genannt",
+    "resource_mindat": "http://www.mindat.org/min-2303.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Kyanit",
+    "created_at": "2016-04-04T16:17:32.539000+02:00",
+    "last_modified": "2017-11-14T11:56:17.438384+01:00"
+  },
+  {
+    "id": 5,
+    "classification": {
+      "classification_name": "Inselsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "muschelig",
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 12,
+        "mineral_type": 5,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Chiastolit.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Chiastolit.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Chiastolit.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Chiastolit.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Chiastolit.jpg"
+    },
+    "trivial_name": "Andalusit",
+    "variety": "Chiastolith",
+    "minerals": "Andalusit",
+    "mohs_scale": "7,5",
+    "density": "3,2",
+    "streak": "weiß",
+    "normal_color": "grau, rötlich, braun",
+    "chemical_formula": "Al_2SiO_5",
+    "other": "Alumosilikat\r\nZwillinge nach (110) als Chiastholit bezeichnet",
+    "resource_mindat": "http://www.mindat.org/min-1001.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Chiastolith",
+    "created_at": "2016-04-04T16:06:55.901000+02:00",
+    "last_modified": "2017-11-14T11:56:28.059234+01:00"
+  },
+  {
+    "id": 107,
+    "classification": {
+      "classification_name": "Kettensilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{110}"
+      }
+    ],
+    "lustre": [
+      "Perlmuttglanz",
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 95,
+        "mineral_type": 107,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {
+      "large": "https://cdn.geomat.uni-frankfurt.de/Pyroxen-Bronzit_rFgZuDk.large.jpg",
+      "medium": "https://cdn.geomat.uni-frankfurt.de/Pyroxen-Bronzit_rFgZuDk.medium.jpg",
+      "small": "https://cdn.geomat.uni-frankfurt.de/Pyroxen-Bronzit_rFgZuDk.small.jpg",
+      "thumbnail": "https://cdn.geomat.uni-frankfurt.de/Pyroxen-Bronzit_rFgZuDk.thumbnail.jpg",
+      "original": "https://cdn.geomat.uni-frankfurt.de/Pyroxen-Bronzit_rFgZuDk.jpg"
+    },
+    "trivial_name": "Bronzit",
+    "variety": "",
+    "minerals": "Bronzit",
+    "mohs_scale": "5-6",
+    "density": "3,2-3,9",
+    "streak": "grau",
+    "normal_color": "bronze, rotbraun, grünlich-braun",
+    "chemical_formula": "(Mg,Fe^{2+})_2(SiO_3)2",
+    "other": "",
+    "resource_mindat": "http://www.mindat.org/min-5293.html",
+    "resource_mineralienatlas": "https://www.mineralienatlas.de/lexikon/index.php/MineralData?mineral=Bronzit",
+    "created_at": "2016-10-30T12:44:31.479000+01:00",
+    "last_modified": "2017-11-14T12:22:17.438971+01:00"
+  },
+  {
+    "id": 117,
+    "classification": {
+      "classification_name": "Schichtsilikat"
+    },
+    "systematics": "Silikate und Germanate",
+    "fracture": [
+      "uneben"
+    ],
+    "cleavage": [
+      {
+        "cleavage": "deutlich",
+        "coordinates": "{001}"
+      }
+    ],
+    "lustre": [
+      "Glasglanz"
+    ],
+    "crystal_system": [
+      {
+        "id": 100,
+        "mineral_type": 117,
+        "crystal_system": "Orthorhombisch",
+        "temperature": null,
+        "pressure": null
+      }
+    ],
+    "image_file": {},
+    "trivial_name": "Prehnit",
+    "variety": "",
+    "minerals": "Prehnit",
+    "mohs_scale": "6-6,5",
+    "density": "2,8-3",
+    "streak": "weiß",
+    "normal_color": "blass- bis apfelgrün",
+    "chemical_formula": "Ca_2Al_2Si_3O_(10)(OH)_2",
+    "other": "",
+    "resource_mindat": "",
+    "resource_mineralienatlas": "",
+    "created_at": "2017-11-01T18:53:23.823964+01:00",
+    "last_modified": "2017-11-14T12:26:27.122306+01:00"
+  }
+]

@@ -1,0 +1,15 @@
+<ion-card no-margin>
+
+  <ion-card-header class="selectable">
+      {{_glossaryEntry.header}}
+  </ion-card-header>
+
+  <ion-card-content class="selectable" [innerHTML]="_glossaryEntry.description">
+
+  </ion-card-content>
+
+<ion-list>
+  <ion-item class="selectable" *ngFor="let item of _glossaryEntry.list; let i = index" no-margin>{{i+1}}. {{item}}</ion-item>
+</ion-list>
+
+</ion-card>

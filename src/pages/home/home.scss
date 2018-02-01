@@ -1,3 +1,119 @@
 page-home {
 
+  ion-row {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  ion-row ion-icon {
+    margin: 0 auto;
+    text-align: center;
+    padding: 24px 0 0 0;
+    font-size: 12rem;
+  }
+
+  ion-icon{
+    display: block;
+  }
+
+  .bar-button-md[icon-only]{
+    padding: 0 5px;
+    min-width: 44px;
+    margin: 0 6px;
+  }
+
+  .card-title-md, .card-title-ios, .card-title-wp {
+    font-size: 1.85rem;
+  }
+
+  .card-md, .card-ions, .card-wp {
+    border-radius: 0;
+    width: auto;
+    box-shadow: none;
+  }
+
+  .card-content-md, .card-content-ios, .card-content-wp {
+    padding-top: 8px;
+  }
+
+  .card-md, .card-ios, .card-wp{
+    margin: 0;
+  }
+
+  ion-card{
+    border-right: 1px solid color($colors, semi-light);
+    border-left: 1px solid color($colors, semi-light);
+    border-bottom: 1px solid color($colors, semi-light);
+
+    &:hover, &:active {
+      cursor: pointer;
+      background-color: color($colors, primary);
+      .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
+        color: #fff;
+      }
+      // border: 1px solid color($colors, primary);
+      border-right: 1px solid color($colors, primary);
+      border-left: 1px solid color($colors, primary);
+      border-bottom: 1px solid color($colors, primary);
+    }
+    &.disabled {
+      background-color: color($colors, semi-light);
+      .card-title-md, .card-title-ios, .card-title-wp, ion-icon {
+        color: #fff;
+      }
+    }
+    &.disabled:hover, &.disabled:active {
+      cursor: not-allowed;
+      border-right: 1px solid color($colors, semi-light);
+      border-left: 1px solid color($colors, semi-light);
+      border-bottom: 1px solid color($colors, semi-light);
+    }
+  }
+
+  @media (min-width: 992px) {
+    ion-row {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    ion-card {
+      border: 1px solid color($colors, semi-light);
+      &:hover, &:active {
+        border: 1px solid color($colors, primary);
+      }
+      &.disabled:hover, &.disabled:active {
+        cursor: not-allowed;
+        border: 1px solid color($colors, semi-light);
+      }
+    }
+
+    .scroll-content {
+      padding-top: 60px;
+    }
+    .card-md, .card-ios, .card-wp{
+      margin: 10px;
+    }
+
+    .card-content-md, .card-content-ios, .card-content-wp {
+      padding: 8px 12px 20px 12px;
+    }
+  }
+
+  .footer {
+    &:hover {
+      cursor: pointer;
+    }
+    .toolbar-md,
+    .toolbar-ios,
+    .toolbar-wp {
+      min-height: auto;
+    }
+
+    .toolbar-title-md,
+    .toolbar-title-ios,
+    .toolbar-title-wp {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
 }

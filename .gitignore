@@ -12,8 +12,11 @@ log.txt
 .vscode/
 npm-debug.log*
 
+.travis.yml.backup
+data.ts
 .idea/
 .sourcemaps/
+documentation/
 .sass-cache/
 .tmp/
 .versions/
@@ -33,3 +36,6 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+# Local environment file
+.env

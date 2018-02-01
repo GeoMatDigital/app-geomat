@@ -1,262 +1,288 @@
-<!--
-  Generated template for the HelperPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>Bestimmungsschlüssel Minerale GeoMat</ion-title>
+    <ion-title>BESTIMMUNGSSCHLÜSSEL MINERALE</ion-title>
+    <ion-buttons right class="hidden-lg-up" padding-right>
+      <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
+        <ion-icon name="book"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content>
-    <ion-slides pager>
-      <ion-slide>
-        <h2>Abstrakt</h2>
-        <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein idiomorpher oder ein xenomorpher Kristall ist.  Einen idiomorphen Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen) konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als xenomorph bezeichnet. Der Übergang zwischen diesen beiden Formen wird hypidiomorph genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</p>
-      </ion-slide>
 
-      <ion-slide>
-        <h2>Allgemeines Aussehen</h2>
-        <ion-row>
-          <ion-col col-12 col-sm-6>
-            <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein idiomorpher oder ein xenomorpher Kristall ist.  Einen idiomorphen Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen) konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als xenomorph bezeichnet. Der Übergang zwischen diesen beiden Formen wird hypidiomorph genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</p>
-          </ion-col>
-          <ion-col col-12 col-sm-6>
-            <p text-justify>Wenn es sich um einen <b>idiomorphen</b> Kristall handelt, kann man über die äußere Form meist die <a href="#" (click)="onLink('tracht')">Tracht</a>, den <a href="#" (click)="onLink('habitus')">Habitus</a> und das <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b>hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls üebr die äußere Form, die Tracht und den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt, ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a href="#" (click)="onLink('bruch')">Bruch</a> des Minerals.</p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>idiomorphes Äußeres</p>
-            <img src="../assets/helper/idiomorphes_aeusseres.jpg" alt="image.img_description">
-          </ion-col>
-          <ion-col>
-            <p>xenomorphes Äußeres</p>
-            <img src="../assets/helper/xenomorphes_aeusseres.jpg" alt="image.img_description">
-          </ion-col>
-        </ion-row>
-      </ion-slide>
+  <ion-slides pager>
+    <ion-slide >
+      <h2>Abstrakt</h2>
+      <p text-justify>Dieser Bestimmungshelfer unterstützt die eindeutige Mineralerkennung und -bestimmung &ndash; und zeigt systematisch die Schritte des Bestimmungsvorgangs. Im Folgenden werden dazu verschiedene Erkennungsmerkmale kurz erklärt und an Beispielen gezeigt.</p>
+       <p text-justify>Bei der Mineralbestimmung geht es neben der optischen Beschreibung auch darum, Minerale mit Hilfe des Kristallsystems in die entsprechende Systematik einzuordnen und so zu klassifizieren, dass dann auch eine Einordnung des Gesteins, in dem die Minerale vorkommen, schneller möglich ist.</p>
+       <p text-justify>Zur Mineralbestimmung sollte man sich stets an der hier vorgestellten Reihenfolge der Eigenschaften orientieren, <b>wobei nicht jedes Erkennungsmerkmal für jedes Mineral charakteristisch ist!</b></p>
+    </ion-slide>
 
-      <ion-slide>
-        <h2>Kristallsystem</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-              Bei einem <b>idiomorphem</b> Kristall ist an der Ausbildung der Flächen zueinander schnell das Kirstallsystem erkennbar. Durch Suchen und Finden verschiedener Symmetrieoperationen (Rotationsachsen, Spiegelachsen, ...) in dne definierten kristallographischen Richtungen und durch die Betrachtung des Habitus können die verschiedenen Kristallsysteme unterschieden werden. Das kubische Kristallsystem hat drei gleich lange Achsen a=b=c und drei gleich grüße Winkel (alpha=beta=gamma=90 Grad). die Blickrichtungen sind:
-              <br><br>&lt;100&gt;, &lt;110&gt;, &lt;111&gt;. <br><br>Entlang der 3. Blickrichtung ist immer eine dreizählige Rotationsachse zu finden.</p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>kubisches Kristallsystem</p>
-            <img src="../assets/helper/kubisches_kristallsystem.jpg" alt="image.img_description">
-          </ion-col>
-          <ion-col>
-            <p>trigonales Kristallsystem</p>
-            <img src="../assets/helper/trigonales_kristallsystem.jpg" alt="image.img_description">
-          </ion-col>
-        </ion-row>
-      </ion-slide>
+    <ion-slide>
+      <h2>Allgemeines Aussehen</h2>
+      <ion-row>
+        <ion-col col-12 col-sm-6>
+          <p text-justify>Die erste wichtige Beobachtung zur Erkennung von Mineralen ist, ob das unbekannte Mineralhandstück ein <a class="internLink" (click)="showGlossaryEntry($event, 'idiomorph')">idiomorpher</a> oder ein <a class="internLink" (click)="showGlossaryEntry($event, 'xenomorph')">xenomorpher</a> Kristall ist. Einen <i>idiomorphen</i> Kristall erkennt man an den perfekten Kristallflächen, die er nur ausbilden kann, wenn er frei gewachsen ist. Wenn sein Wachstum aber eingeschränkt war (z.B. von anderen Mineralen), konnten sich die Kristallflächen nicht eindeutig ausbilden und der Kristall wird als <i>xenomorph</i> bezeichnet. Der Übergang zwischen diesen beiden Formen wird <a class="internLink" (click)="showGlossaryEntry($event, 'hypidiomorph')">hypidiomorph</a> genannt und liegt vor, wenn ein Kristall teilweise idiomorph und teilweise xenomorph gewachsen ist.</p>
+        </ion-col>
+        <ion-col col-12 col-sm-6>
+          <p text-justify>Wenn es sich um einen <b>idiomorphen</b> Kristall handelt, kann man über die äußere Form meist die <a class="internLink" (click)="showGlossaryEntry($event, 'tracht')">Tracht</a>, den <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> und das <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> bestimmen.<br>Wenn es sich um einen <b>hypidiomorphen</b> Kristall handelt, kann man gegebenenfalls über die äußere Form die Tracht, den Habitus und das Kristallsystem bestimmen.<br>Wenn es sich um einen <b>xenomorphen</b> Kristall handelt ist dies leider nicht möglich. Das nächste Erkennungsmerkmal ist in diesem Fall der spezifische <a class="internLink" (click)="showGlossaryEntry($event, 'bruch')">Bruch</a> des Minerals.</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p no-margin padding class="image-header">Idiomorphes Äußeres (Spinelloktaeder)</p>
+          <img src="assets/helper/idiomorphes_aeusseres.jpg" alt="image.img_description">
+        </ion-col>
+        <ion-col>
+          <p no-margin padding class="image-header">Xenomorphes Äußeres (Labradorit im Gestein)</p>
+          <img src="assets/helper/xenomorphes_aeusseres.jpg" alt="image.img_description">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
 
-      <ion-slide>
-        <h2>Habitus</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-              Der Habitus beschreibt das Größenverhältnis der verschiedenen Kristallflächen eines Kristalls zueinander. Der Habitus kann innerhalb einer Mineralar stark variieren.<br>Das kubische <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> beispielsweise weist stets einen isometrischen Habitus auf, da die Achsen alle gleich lang sind. Während das tetragonale Kristallsystem einen stängeligen, tafeligen oder prismatischen Habitus zeigt, da eine Achse länger ist (a=b ungleich c).
-            </p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>isometrischer Habitus</p>
-            <img src="../assets/helper/kubisches_kristallsystem.jpg" alt="image.img_description">
-          </ion-col>
-          <ion-col>
-            <p>prismatischer Habitus</p>
-            <img src="../assets/helper/trigonales_kristallsystem.jpg" alt="image.img_description">
-          </ion-col>
-        </ion-row>
-      </ion-slide>
+    <ion-slide>
+      <h2>Kristallsystem</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>
+            Bei einem <b>idiomorphem</b> Kristall ist an der Ausbildung der Flächen zueinander schnell das <a class="internLink" (click)="showGlossaryEntry($event, 'kristallsystem')">Kristallsystem</a> erkennbar. Durch Suchen und Finden verschiedener <a class="internLink" (click)="showGlossaryEntry($event, 'symmetrieoperation')">Symmetrieoperationen</a> in den definierten kristallographischen Richtungen und durch die Betrachtung des Habitus können die 7 verschiedenen Kristallsysteme unterschieden werden.<br>Das <b>kubische</b> Kristallsystem hat drei gleich lange Achsen a = b = c und drei gleich große Winkel (&alpha; = &beta; = &gamma; = 90&deg;). Die Blickrichtungen sind: &lt;100&gt; &lt;110&gt; &lt;111&gt;<br>
+            Entlang der 3. Blickrichtung ist im Kubischen immer eine dreizählige Rotationsachse zu finden.
+        </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p no-margin padding class="image-header">Kubisches Kristallsystem (Pyrit)</p>
+          <img src="assets/helper/kubisches_kristallsystem.jpg" alt="image.img_description">
+        </ion-col>
+        <ion-col>
+          <p no-margin padding class="image-header">Trigonales Kristallsystem (Korund)</p>
+          <img src="assets/helper/trigonales_kristallsystem.jpg" alt="image.img_description">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
 
-      <ion-slide>
-        <h2>Trach</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-                Die Tracht beschreibt die Gesamtheit der ausgebildeten Flächen eines Kristalls, also die Kombination der einzelnen Kristallflächen zueinander. Sie stellt einen gewissen Gegensatz zum Habitus, der die Größenverhältnisse beschreibt, dar. Tracht und <a href="#" (click)="onLink('habitus')">Habitus</a> zusammen bilden die Kristallgestalt.
-            </p>
+    <ion-slide>
+      <h2>Habitus</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Der <a class="internLink" (click)="showGlossaryEntry($event, 'habitus')">Habitus</a> beschreibt das Größenverhältnis der verschiedenen Kristallflächen eines Kristalls zueinander. Der Habitus kann innerhalb einer Mineralart stark variieren.<br>Das kubische Kristallsystem beispielsweise weist stets einen <i>isometrischen</i> Habitus auf, da die Achsen alle gleich lang sind. Das tetragonale Kristallsystem zeigt hingegen einen <i>stängeligen</i>, <i>tafeligen</i> oder <i>prismatischen</i> Habitus, da eine Achse länger ist (a = b &ne; c).
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p no-margin padding class="image-header">Isometrischer Habitus (Grossular, Granat)</p>
+          <img src="assets/helper/isometrischer_habitus.jpg" alt="image.img_description">
+        </ion-col>
+        <ion-col>
+          <p no-margin padding class="image-header">Prismatischer Habitus (Bergkristall)</p>
+          <img src="assets/helper/prismatischer_habitus.jpg" alt="image.img_description">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Tracht</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Die <a class="internLink" (click)="showGlossaryEntry($event, 'tracht')">Tracht</a> beschreibt die Gesamtheit der ausgebildeten Flächen eines Kristalls, also die Kombination der einzelnen Kristallflächen zueinander. Sie stellt einen gewissen Gegensatz zum Habitus dar, welcher die Größenverhältnisse beschreibt. Tracht und Habitus zusammen bilden die Kristallgestalt.</p>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Bruch</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Der <a class="internLink" (click)="showGlossaryEntry($event, 'bruch')">Bruch</a> ist ein wichtiges Merkmal von Mineralen und ist klar von der <a class="internLink" (click)="showGlossaryEntry($event, 'spaltbarkeit')">Spaltbarkeit</a> zu trennen! Während die Spaltbarkeit einer kristallographischen Richtung folgt, folgt der Bruch <b>keiner</b> kristallographischen Richtung. Es können folgende Brucharten unterschieden werden:
+          <ion-list>
+            <ion-item>
+              <p>muschelig</p>
+            </ion-item>
+            <ion-item>
+              <p>uneben</p>
+            </ion-item>
+            <ion-item>
+              <p>glatt</p>
+            </ion-item>
+            <ion-item>
+              <p>hakig (bzw. hakig-biegsam)</p>
+            </ion-item>
+            <ion-item>
+              <p>glimmerartig</p>
+            </ion-item>
+            <ion-item>
+              <p>splittrig (selten auch faserig und erdig)</p>
+            </ion-item>
+          </ion-list>
+          <p text-justify>
+            An idiomorphen Kristallen ist meist kein Bruch zu erkennen, da die idiomorphen Kristallflächen den Bruch nur zeigen, wenn sie beschädigt sind.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-6 offset-3>
+            <p no-margin padding class="image-header">Muscheliger Bruch (Olivin)</p>
+            <img src="assets/helper/muscheliger_bruch.jpg" alt="image.img_description">
           </ion-col>
         </ion-row>
-      </ion-slide>
+    </ion-slide>
 
-      <ion-slide>
-          <h2>Spaltbarkeit</h2>
-          <ion-row>
-            <ion-col>
-              <p text-justify>
-                  Um die Spaltbarkeit zu untersuchen ist es wichtig deutliche Spaltwinkel oder -formen am Mineralhandstück zu entdecken. Da diese nicht in allen Handstücken deutlich zu sehen sind, ist es auch wichtig die vorhandenen idiomorph ausgebildeten Flächen im Verhältnis zu anderen idiomorph ausgebildeten Flächen zu untersuchen und die Winkel zwischen den Flächen festzustellen. Druch die unterschiedlichen Spaltwinkel lassen sich Minerale meist gut unterscheiden wie zum Beispiel Amphibole (120° Winkel) und Pyroxene (90° Winkel).<br>Allein durch die Betrachtung der äußeren Form und des Verwitterungsverhaltens des Minerals kann man gute Spaltbarkeit erkennen, da diese Minerale stets in typischen Formen verwittern, die das <a href="#" (click)="onLink('kristallsystem')">Kristallsystem</a> zeigen, wie beispielsweise Calcit, der typische Spaltrhomboeder aufweist.
-              </p>
-            </ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col col-6>
-              <p>Sehr vollkommene Spaltbarkeit</p>
-              <img src="../assets/helper/spaltbarkeit.jpg" alt="">
-            </ion-col>
-          </ion-row>
-        </ion-slide>
+    <ion-slide>
+      <h2>Spaltbarkeit</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Um die <a class="internLink" (click)="showGlossaryEntry($event, 'spaltbarkeit')">Spaltbarkeit</a> zu untersuchen ist es wichtig, deutliche Spaltwinkel oder -formen am Mineralhandstück zu entdecken. Da diese nicht in allen Handstücken deutlich zu sehen sind, ist es auch wichtig, die vorhandenen idiomorph ausgebildeten Flächen im Verhältnis zu anderen idiomorph ausgebildeten Flächen zu untersuchen und die Winkel zwischen den Flächen festzustellen. Durch die unterschiedlichen Spaltwinkel lassen sich Minerale meist gut unterscheiden, wie zum Beispiel Amphibole (120°-Winkel) und Pyroxene (90°-Winkel).<br>Allein durch die Betrachtung der äußeren Form und des Verwitterungsverhaltens des Minerals kann man gute bis sehr vollkommene Spaltbarkeit erkennen, da diese Minerale stets in typischen Formen verwittern, die das Kristallsystem zeigen, wie beispielsweise Calcit, der typische Spaltrhomboeder aufweist.
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p no-margin padding class="image-header">Sehr vollkommene Spaltbarkeit (Phlogopit)</p>
+          <img src="assets/helper/spaltbarkeit.jpg" alt="Sehr vollkommene Spaltbarkeit">
+        </ion-col>
+        <ion-col>
+          <p no-margin padding class="image-header">Vollkommene Spaltbarkeit (Calcit)</p>
+          <img src="assets/helper/spaltbarkeit2.jpg" alt="image.img_description">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
 
-      <ion-slide>
-        <h2>Bruch</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-              Der Bruch ist ein wichtiges Merkmal von Mineralen udn ist klar vo nder <a href="#" (click)="onLink('spaltbarkeit')">Spaltbarkeit</a> zu trennen! Während die Spaltbarkeit einer kristallographischen Ricthung folgt, folgt der Bruch keiner kristallographischen Richtung. Es können folgende Brucharten unterschieden werden:</p>
-            <ion-list>
-              <ion-item><b>muschelig</b></ion-item>
-              <ion-item><b>uneben</b></ion-item>
-              <ion-item><b>glatt</b></ion-item>
-              <ion-item>
-                <b>hakig</b>
-                <p>bzw. hakig-biegsam</p></ion-item>
-              <ion-item>
-                <b>glimmerartig</b>
-                <p>selten auch faserig und erdig</p>
-              </ion-item>
-            </ion-list>
-            <p>
-              An iodomorphen Kristallen ist meist kein Bruch zu erkennen, da die idiomorphen Kristallflächen den Bruch nur zeigen, wenn sie beschädigt sind.
-            </p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col>
-              <p>muscheliger Bruch</p>
-              <img src="../assets/helper/muscheliger_bruch.jpg" alt="image.img_description">
-            </ion-col>
-          </ion-row>
-      </ion-slide>
+    <ion-slide>
+      <h2>Glanz</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Um den <a class="internLink" (click)="showGlossaryEntry($event, 'glanz')">Glanz</a> zu erkennen, sollte man die Kristallflächen des Mineralhandstückes in möglichst hellem Licht (am besten eignet sich direktes Sonnenlicht) betrachten. Je nach Intensität des Glanzes, also der Intensität der Reflexion des Lichtes, wird der Glanz in folgende Arten unterschieden:
+          </p>
+          <ion-list>
+            <ion-item>
+              <b>Glasglanz</b>
+              <p text-wrap>- entspricht dem Glanz von einfachem Fensterglas.</p>
+            </ion-item>
+            <ion-item>
+              <b>Fettglanz</b>
+              <p text-wrap>- erinnert an schimmernde Fettflecken auf Pergamentpapier.</p>
+            </ion-item>
+            <ion-item><b>Diamantglanz</b>
+              <p text-wrap>- ist der strahlende Glanz, den man von geschliffenem Diamant und Bleikristallglas kennt.</p>
+            </ion-item>
+            <ion-item>
+              <b>Metallglanz</b>
+              <p text-wrap>- entspricht dem Glanz von poliertem Metall.</p>
+            </ion-item>
+            <ion-item>
+              <b>Pechglanz</b>
+              <p text-wrap>- haben z.B. die frisch zerschlagenen Teerbrocken.</p>
+            </ion-item>
+            <ion-item>
+              <b>Harzglanz</b>
+              <p text-wrap>- erinnert an Harz beziehungsweise den Glanz von Kerzenwachs.</p>
+            </ion-item>
+            <ion-item>
+              <b>Perlmuttglanz</b>
+              <p text-wrap>- erinnert an die Innenseite von Muschelschalen (Perlmutt), die einen weißlichen Schimmer mit farbigem Lichtschein zeigen.</p>
+            </ion-item>
+            <ion-item>
+              <b>Seidenglanz</b>
+              <p text-wrap>- weisen Minerale auf, die einen wogenden Lichtschein zeigen, wie er bei Seide zu beobachten ist.</p>
+            </ion-item>
+            <ion-item>
+              <b>Mattglanz</b>
+              <p text-wrap>- hat ein Mineral, das fast oder gar keinen Glanz aufweist.</p>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Metallglanz (Markasit)</p>
+          <img src="assets/helper/metall_glanz.jpg" alt="Metallglanz">
+        </ion-col>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Glasglanz (Bergkristall)</p>
+          <img src="assets/helper/glas_glanz.jpg" alt="">
+        </ion-col>
+      <ion-row>
+      </ion-row>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Perlmuttglanz (Biotit)</p>
+          <img src="assets/helper/perlmut_glanz.jpg" alt="">
+        </ion-col>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Stumpf-erdiger Glanz (Kaolinit)</p>
+          <img src="assets/helper/stumpf-erdiger_glanz.jpg" alt="">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
 
-      <ion-slide>
-        <h2>Glanz</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-                "Um den Glanz zu erkennen, sollte man die Kristallflächen des Mineralhandstückes in möglichst hellem Licht (am besten eignet sich direktes Sonnenlicht) betrachten. Je nach Intensität des Glanzes, also der Intensität der Reflexion des Lichtes wird der Glanz in folgende Arten unterschieden:
-            </p>
-            <ion-list>
-              <ion-item><b>Glasglans</b><p text-wrap>entspricht dem Glanz von einfachem Fensterglas.Beispiel: Quarz (äußere Kristallflächen), sowie die meisten Silikate</p></ion-item>
-              <ion-item><b>Fettglanz</b><p text-wrap>erinnert an schimmernde Fettflecken auf Pergamentpapier. Beispiel: Krokoit, Bruchflächen von Quarz</p></ion-item>
-              <ion-item><b>Diamantglanz</b><p text-wrap>ist der strahlende Glanz, den man von geschliffenem Diamant und Bleikristallglas kennt. Beispiel: Diamant, Zinnober, Zinkblende</p></ion-item>
-              <ion-item><b>Metallglanz</b><p text-wrap>entspricht dem Glanz von poliertem Metall. Beispiel: Härmatit, Pyrit, Antimonit</p></ion-item>
-              <ion-item><b>Pechglanz</b><p text-wrap>haben z.B. die frisch zerschlagenen Teerbrocken. Beispiel: Uraninit (Pechblende), Gadolinit</p></ion-item>
-              <ion-item><b>Harzglanz</b><p text-wrap>weisen Mineralien auf, die an Harz bzw. Kerzenwach erinnern. Beispiel: Einige Opale</p></ion-item>
-              <ion-item><b>Perlmuttglanz</b><p text-wrap>erinnert an die Innenseite von Muschelschalen (Perlmutt), die einen weißlichen Schimmer mit farbigem Lichtschein zeigen. Beispiel: Hellglimmer (Muskovit, Lepidolith), z.T. Gips</p></ion-item>
-              <ion-item><b>Seidenglanz</b><p text-wrap>weisen Mineralien auf, di eeinen wogenden Lichtschein zeigen, wie er bei Seide zu beobachten ist. Typisch für faserige Minerale. (z.B.: Beispiel: Asebest, Malacht, einiger Faser-Zeolithe)</p></ion-item>
-              <ion-item><b>matter Glanz</b><p text-wrap>Mineral, das fast oder gar keinen Glanz aufweist, z.B.: Rhodochrosit</p></ion-item>
-            </ion-list>
-          </ion-col>
-        </ion-row>
-        <ion-row>
+    <ion-slide>
+      <h2>Farbe</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Die Farbe ist bei den meisten Mineralen <b>kein diagnostisches Merkmal</b> zur Bestimmung. Sie dient aber oft dazu, verschiedene Varietäten wie z.B. beim Beryll (Aquamarin = blau, Smaragd = grün) voneinander zu unterscheiden. Seltene starke Farben können einen gewissen Wiedererkennungscharakter haben.</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Intensives Blau (Sodalith)</p>
+          <img src="assets/helper/farbe1.jpg" alt="">
+        </ion-col>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Intensives Grün (Olivin)</p>
+          <img src="assets/helper/farbe2.jpg" alt="">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Transparenz</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Die <a class="internLink" (click)="showGlossaryEntry($event, 'transparenz')">Transparenz</a> unterscheidet sich in <b>durchsichtig</b>, <b>durchlässig</b>, <b>undurchlässig</b> und <b>opak</b>. Mit ihr kann man viele verschiedene Tendenzen und Variationen in Mineralen unterscheiden, dennoch ist auch die Transparenz meist kein eindeutiges Merkmal, da sie von vielen Parametern wie z.B. der Dicke des Mineralhandstücks anhängig ist.</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
           <ion-col col-6>
-            <p>Metallglanz</p>
-            <img src="../assets/helper/metall_glanz.jpg" alt="Metall-Glanz">
+            <p no-margin padding class="image-header">Durchsichtig (Topas)</p>
+            <img src="assets/helper/transparent.jpg" alt="">
           </ion-col>
           <ion-col col-6>
-            <p>Glasglanz</p>
-            <img src="../assets/helper/glas_glanz.jpg" alt="">
-          </ion-col>
-        <ion-row>
-        </ion-row>
-          <ion-col col-6>
-            <p>Perlmutglanz</p>
-            <img src="../assets/helper/perlmut_glanz.jpg" alt="">
-          </ion-col>
-          <ion-col col-6>
-            <p>stumpf-erdiger Glanz</p>
-            <img src="../assets/helper/stumpf-erdiger_glanz.jpg" alt="">
+            <p no-margin padding class="image-header">Opak (Augit)</p>
+            <img src="assets/helper/opak.jpg" alt="">
           </ion-col>
         </ion-row>
-      </ion-slide>
+    </ion-slide>
 
-      <ion-slide>
-        <h2>Farbe</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-                Die Farbe ist bei den meisten Mineralen <b>kein diagnostisches Merkmal</b> zur Bestimmung. Sie dient aber oft dazu verschiedene Varietäten eines Minerals voneinander zu unterscheiden. Seltene starke Farben können einen gewissen Wiedererkennungscharakter haben.
-            </p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col col-6>
-            <img src="../assets/helper/farbe1.jpg" alt="">
-          </ion-col>
-          <ion-col col-6>
-            <img src="../assets/helper/farbe2.jpg" alt="">
-          </ion-col>
-        </ion-row>
-      </ion-slide>
-
-      <ion-slide>
-        <h2>Transparenz</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-                Die Transparenz unterscheidet sich in <b>durchsichtig, durchlässig, undurchlässig</b> und <b>opak</b>. Mit ihr kann man viele verschiedene Tendenzen und Variationen in Mineralen unterscheiden, dennoch ist auch die Transparenz meist kein eindeutiges Merkmal, da sie von vielen Parametern wie z.B. der Dicke des Mineralhandstücks anhängig ist.
-            </p>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <img src="../assets/helper/muscheliger_bruch.jpg" alt="image.img_description">
-          </ion-col>
-        </ion-row>
-      </ion-slide>
-
-      <ion-slide>
-        <h2>Besonderheiten</h2>
-        <ion-row>
-          <ion-col>
-            <p text-justify>
-                Als letztes können noch mineralspezifische Besonderheiten untersucht werden:
-            </p>
-            <ion-list>
-              <ion-item><b>Pleochroismus</b><p text-wrap>Weist das Mineral Pleochroismus auf? Labradorit</p></ion-item>
-              <ion-item><b>Spezifisches Gewicht</b><p text-wrap>Ist das Mineral ungewöhnlich schwer/leicht? Baryt, Galenit</p></ion-item>
-              <ion-item><b>Magnetismus</b><p text-wrap>Ist das Mineral magnetisch?</p></ion-item>
-              <ion-item><b>Verzwilligungen</b><p text-wrap>Treten besondere Verzwillingungserscheinungen auf?</p></ion-item>
-              <ion-item><b>Phantomausbildung</b><p text-wrap>Weist das Mineral Phantome auf?</p></ion-item>
-              <ion-item><b>Verwachsungen</b><p text-wrap>Ist das Mineral mit einem Anderen verwachsen?</p></ion-item>
-              <ion-item><b>Einschlüsse</b><p text-wrap>Zeigt das Mineral viele  oder besondere Einschlüsse?</p></ion-item>
-              <ion-item><b>Zonarbau</b><p text-wrap>Zeigt das Mineral einen Zonarbau?</p></ion-item>
-            </ion-list>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <p>Durchkreuzungszwillinge</p>
-            <img src="../assets/helper/durchkreuzungszwillinge.jpg" alt="">
-          </ion-col>
-          <ion-col>
-            <p>Paragenese</p>
-            <img src="../assets/helper/paragenese.jpg" alt="">
-          </ion-col>
-        </ion-row>
-      </ion-slide>
-        <!-- <ion-slide *ngFor="let helper of helpers">
-          <h2 [innerHTML]="helper.h2"></h2>
-          <p [innerHTML]="helper.description1"></p>
-          <p [innerHTML]="helper.description2"></p>
-          <img [src]="image.img_path" height="100px" width="100px" [alt]="image.img_description" *ngFor="let image of helper.images">
-        </ion-slide> -->
-
-
-      </ion-slides>
+    <ion-slide>
+      <h2>Besonderheiten</h2>
+      <ion-row>
+        <ion-col>
+          <p text-justify>Als letztes können noch mineralspezifische Besonderheiten untersucht werden:</p>
+          <ion-list>
+            <ion-item><b>Pleochroismus:</b><p text-wrap>Weist das Mineral Pleochroismus auf?</p></ion-item>
+            <ion-item><b>Spezifisches Gewicht:</b><p text-wrap>Ist das Mineral ungewöhnlich schwer/leicht?</p></ion-item>
+            <ion-item><b>Magnetismus:</b><p text-wrap>Ist das Mineral magnetisch?</p></ion-item>
+            <ion-item><b>Verzwillingungen:</b><p text-wrap>Treten besondere Verzwillingungserscheinungen auf?</p></ion-item>
+            <ion-item><b>Phantomausbildung:</b><p text-wrap>Weist das Mineral Phantome auf?</p></ion-item>
+            <ion-item><b>Verwachsungen:</b><p text-wrap>Ist das Mineral mit einem Anderen verwachsen?</p></ion-item>
+            <ion-item><b>Einschlüsse:</b><p text-wrap>Zeigt das Mineral viele oder besondere Einschlüsse?</p></ion-item>
+            <ion-item><b>Zonarbau:</b><p text-wrap>Zeigt das Mineral einen Zonarbau?</p></ion-item>
+            <ion-item><b>Weiteres:</b><p text-wrap>Treten andere Besonderheiten auf?</p></ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Durchkreuzungszwilling (Staurolith)</p>
+          <img src="assets/helper/durchkreuzungszwillinge.jpg" alt="">
+        </ion-col>
+        <ion-col col-6>
+          <p no-margin padding class="image-header">Paragenese (Chlorit auf Quarz)</p>
+          <img src="assets/helper/paragenese.jpg" alt="">
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+  </ion-slides>
 </ion-content>

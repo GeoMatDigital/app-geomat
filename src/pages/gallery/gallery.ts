@@ -1,25 +1,28 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
+import { MenuService } from '../../services/menu';
 
 /**
- * Generated class for the GalleryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Gallery-page
+ * Shows all images of all minerals at one place
  */
-
 @IonicPage()
 @Component({
   selector: 'page-gallery',
   templateUrl: 'gallery.html',
 })
 export class GalleryPage {
+  /**
+   * constructor()
+   * @param _menuService
+   */
+  constructor(private _menuService: MenuService) { }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GalleryPage');
-  }
-
 }

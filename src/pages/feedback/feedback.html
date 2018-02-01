@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Gib uns dein Feedback zur App:</ion-title>
+    <ion-buttons right>
+        <button ion-button clear icon-only (click)="closeFeedback()">
+            <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <form [formGroup]="feedbackForm" (ngSubmit)="sendFeedback()">
+   <ion-list>
+    <ion-item>
+      <ion-label stacked>Art Deiner Nachricht:</ion-label>
+      <ion-select formControlName="emailTitle">
+        <ion-option value="Supportanfrage">Supportanfrage</ion-option>
+        <ion-option value="Fehlermeldung">Fehlermeldung</ion-option>
+        <ion-option value="Neues Feature">Neues Feature</ion-option>
+        <ion-option value="Etwas anderes">Etwas anderes</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Anmerkungen:</ion-label>
+      <ion-textarea formControlName="emailContent"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Dein Name:</ion-label>
+      <ion-input type="text" formControlName="username">Name</ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Deine Email:</ion-label>
+      <ion-input type="text" formControlName="userEmail">Email</ion-input>
+    </ion-item>
+   </ion-list>
+   <button ion-button type="submit" [disabled]="!feedbackForm.valid">Abschicken</button>
+ </form>
+</ion-content>

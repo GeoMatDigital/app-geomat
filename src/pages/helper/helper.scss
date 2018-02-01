@@ -1,4 +1,8 @@
 page-helper {
+  .swiper-container{
+    padding-bottom: 32px;
+  }
+
   .swiper-slide {
     align-items: start;
     -webkit-box-pack: start;
@@ -9,9 +13,25 @@ page-helper {
       max-width: 800px;
     }
 
-    // img {
-    //   height: 200px;
-    //   width: 200px;
-    // }
+    p.image-header {
+      font-size: 15px;
+      background-color: color($colors, light);
+    }
+
+    .internLink {
+      text-decoration: underline;
+      &:hover, &:active{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: color($colors, primary);
   }
 }

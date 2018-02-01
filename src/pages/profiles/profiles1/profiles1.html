@@ -1,26 +1,39 @@
-<!--
-  Generated template for the Profile1Page page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>{{ header }}</ion-title>
+    <ion-title>{{ header | uppercase }}</ion-title>
+    <ion-buttons right class="hidden-lg-up" padding-right>
+      <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
+        <ion-icon name="book"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content>
-  <ion-list no-lines>
-    <ion-item no-padding ripple *ngFor="let profile of profiles" (click)="onProfiles(profile)">
-      <ion-thumbnail item-start>
-        <img src="../../assets/profiles/elemente_80.jpg">
-      </ion-thumbnail>
-      <!-- <p>{{profile | json }}</p> -->
-      <p>{{profile.mineral_type.trivial_name }}</p>
-    </ion-item>
-  </ion-list>
+  <ion-row>
+    <ion-col>
+      <ion-card no-margin>
+        <ion-card-content no-padding>
+          <ion-list no-lines>
+            <ion-item no-padding ripple *ngFor="let profile of profiles" (click)="onProfiles(profile)">
+              <ion-thumbnail item-start>
+                <img  *ngIf="profile.image_file.thumbnail" src="{{profile.image_file.thumbnail}}">
+                <img  *ngIf="!profile.image_file.thumbnail" src="assets/profiles/NoIMG_thumbnail.svg">
+              </ion-thumbnail>
+              <!-- <p>{{profile | json }}</p> -->
+              <p *ngIf="profile.variety">{{ profile.variety }}</p>
+              <p *ngIf="!profile.variety">{{ profile.trivial_name }}</p>
+            </ion-item>
+            <ion-item *ngIf="profiles.length == 0" no-padding class="disabled">
+              <ion-thumbnail item-start>
+                  <img src="assets/profiles/{{imagePath}}.jpg">
+              </ion-thumbnail>
+              <p>Wir haben leider keine <span class="color-primary">{{header}}</span> in unserer Datenbank</p>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>

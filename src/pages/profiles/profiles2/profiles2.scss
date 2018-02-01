@@ -1,4 +1,17 @@
 page-profiles2 {
+  ion-row  {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .col {
+    padding: 0;
+  }
+
+  .card-md, .card-ios, .card-wp {
+    width: auto;
+  }
+
   .item-md,
   .item-ios {
     ion-thumbnail[item-start]{
@@ -16,15 +29,24 @@ page-profiles2 {
       }
       ion-thumbnail[item-start]{
         text-align: center;
-        line-height: 80px;
-        font-size: 50px;
-        color: #fff;
         background-color: #ddd;
+        .icon-md, .icon-ions, .icon-wp {
+          line-height: 80px;
+          height: 80px;
+          vertical-align: center;
+          font-size: 80px;
+          color: color($colors, light);
+        }
       }
       &:hover {
         cursor: not-allowed;
       }
 
+      background-color:rgba(158,158,158,0.1);
+    }
+
+    &:hover {
+      cursor: pointer;
       background-color:rgba(158,158,158,0.1);
     }
   }

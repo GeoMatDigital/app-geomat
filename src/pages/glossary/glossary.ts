@@ -1,25 +1,27 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GlossaryService } from '../../services/glossary';
+import { Observable } from 'rxjs/Observable';
 
 /**
- * Generated class for the GlossaryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * stores current glossary entries
+ * manages content of sidemenu
  */
-
-@IonicPage()
 @Component({
   selector: 'page-glossary',
   templateUrl: 'glossary.html',
 })
 export class GlossaryPage {
+  /**
+   * Stores all glossary-items
+   */
+  glossary$: Observable<any[]>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GlossaryPage');
+  /**
+   * constructor()
+   * @param glossaryService
+   */
+  constructor(private _glossaryService: GlossaryService) {
+    this.glossary$ = this._glossaryService.getGlossary();
   }
 
 }

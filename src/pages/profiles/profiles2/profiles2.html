@@ -1,75 +1,80 @@
-<!--
-  Generated template for the Profiles2Page page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>{{ header }}</ion-title>
+    <ion-title>{{ header | uppercase }}</ion-title>
+    <ion-buttons right class="hidden-lg-up" padding-right>
+      <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
+        <ion-icon name="book"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content>
-  <ion-list no-lines>
-      <ion-item-divider color="light">Silikate</ion-item-divider>
-      <!-- <ion-list-header no-margin>
-          Silikate
-        </ion-list-header> -->
-      <ion-item no-padding (click)="onProfileGroup('Inselsilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Inselsilikate</p>
-      </ion-item>
-      <ion-item no-padding (click)="onProfileGroup('Gruppensilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Gruppensilikate</p>
-      </ion-item>
-      <ion-item no-padding (click)="onProfileGroup('Kettensilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Kettensilikate</p>
-      </ion-item>
-      <ion-item no-padding (click)="onProfileGroup('Bändersilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Bändersilikate</p>
-      </ion-item>
-      <ion-item no-padding (click)="onProfileGroup('Ringsilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Ringsilikate</p>
-      </ion-item>
-      <ion-item no-padding (click)="onProfileGroup('Schichtsilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Schichtsilikate</p>
-      </ion-item>
-      <ion-item no-padding (click)="onProfileGroup('Gerüstsilikat')">
-        <ion-thumbnail item-start>
-          <img src="../../assets/profiles/elemente_80.jpg">
-        </ion-thumbnail>
-        <p>Gerüstsilikate</p>
-      </ion-item>
-      <ion-item-divider color="light">Germanate</ion-item-divider>
-      <!-- <ion-list-header no-margin>
-          Germanate
-        </ion-list-header> -->
-        <ion-item no-padding class="disabled">
-          <ion-thumbnail item-start>
-            X
-          </ion-thumbnail>
-          <p>-</p>
-        </ion-item>
-    </ion-list>
+  <ion-row>
+    <ion-col>
+      <ion-card no-margin>
+        <ion-card-content no-padding>
+          <ion-list no-lines>
+            <ion-item-divider color="light">Silikate</ion-item-divider>
+            <ion-item no-padding (click)="onProfileGroup('Inselsilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Insel_80.jpg">
+              </ion-thumbnail>
+              <p>Inselsilikate</p>
+            </ion-item>
+            <ion-item no-padding (click)="onProfileGroup('Gruppensilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Gruppe_80.jpg">
+              </ion-thumbnail>
+              <p>Gruppensilikate</p>
+            </ion-item>
+            <ion-item no-padding (click)="onProfileGroup('Kettensilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Kette_80.jpg">
+              </ion-thumbnail>
+              <p>Kettensilikate</p>
+            </ion-item>
+            <ion-item no-padding (click)="onProfileGroup('Doppelkettensilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Band_80.jpg">
+              </ion-thumbnail>
+              <p>Doppelkettensilikate</p>
+            </ion-item>
+            <!--(click)="onProfileGroup('Bändersilikat')"
+            <ion-item no-padding  class="disabled">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Band_80.jpg">
+              </ion-thumbnail>
+              <p>Bändersilikate</p>
+            </ion-item> -->
+            <ion-item no-padding (click)="onProfileGroup('Ringsilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Ring_80.jpg">
+              </ion-thumbnail>
+              <p>Ringsilikate</p>
+            </ion-item>
+            <ion-item no-padding (click)="onProfileGroup('Schichtsilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Schicht_80.jpg">
+              </ion-thumbnail>
+              <p>Schichtsilikate</p>
+            </ion-item>
+            <ion-item no-padding (click)="onProfileGroup('Gerüstsilikat')">
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/Geruest_80.jpg">
+              </ion-thumbnail>
+              <p>Gerüstsilikate</p>
+            </ion-item>
+            <ion-item-divider color="light">Germanate</ion-item-divider>
+            <ion-item no-padding class="disabled">
+              <ion-thumbnail item-start>
+                <ion-icon name="close"></ion-icon>
+              </ion-thumbnail>
+              <p>keine vorhanden</p>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>

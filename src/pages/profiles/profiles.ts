@@ -4,48 +4,70 @@ import { ProfilesService } from '../../services/profiles';
 import { Profiles1Page } from './profiles1/profiles1';
 import { Profiles2Page } from './profiles2/profiles2';
 import { Profile } from '../../models/profile';
+import { MenuService } from '../../services/menu';
 
+/**
+ * Initial view of profiles list
+ */
 @IonicPage()
 @Component({
   selector: 'page-profiles',
-  templateUrl: 'profiles.html',
+  templateUrl: 'profiles.html'
 })
 export class ProfilesPage {
-  profiles: Profile[];
-  profiles1Page;
-  profiles2Page;
-  header: string = "?";
+  _profiles: Profile[];
+  _profiles1Page = Profiles1Page;
+  _profiles2Page = Profiles2Page;
+  _header: string = '?';
+  _activeMenu: string;
 
-  constructor(public navCtrl: NavController, private profilesService: ProfilesService) {
-    this.profiles1Page = Profiles1Page;
-    this.profiles2Page = Profiles2Page;
-  }
+  /**
+   * constructor()
+   * @param _navCtrl
+   * @param _profilesService
+   * @param _menuService
+   */
+  constructor(
+    public _navCtrl: NavController,
+    private _profilesService: ProfilesService,
+    private _menuService: MenuService
+  ) {}
 
+  /**
+   * Initializing profiles
+   */
   ionViewDidLoad() {
-    this.profilesService.getProfiles().subscribe(data => this.profiles = data);
+    this._profilesService
+      .getProfiles()
+      .subscribe(data => (this._profiles = data));
   }
 
-  onProfile(systematics: string) {
-    let profiles = this.profiles.filter((profile: Profile): boolean => {
-      return profile.mineral_type.systematics == systematics;
-    });
+  /**
+   * Navigates to specific profile-group (e.g. minerals of "elements")
+   */
+  onProfile(systematics: string, imagePath: string = null) {
+    if (this._profiles) {
+      let profiles = this._profiles.filter((profile: Profile): boolean => {
+        return profile.systematics == systematics;
+      });
 
-    if(systematics === 'SG'){
-      this.header = "Silikate und Germanat";
-      this.navCtrl.push(this.profiles2Page, {profiles: profiles, header: this.header });
-      return;
-    } else {
-      // to be changed to switch maybe?
-      if(systematics === "EL") { this.header = "Elemente"; }
-      else if(systematics === "CN") { this.header = "Carbonate und Nitrate"; }
-      else if(systematics === "OH") { this.header = "Oxide und Hydroxide"; }
-      else if(systematics === "PV") { this.header = "Phosphate und Vanadate"; }
-      else if(systematics === "SL") { this.header = "Sulfate"}
-      else if(systematics === "SF") { this.header = "Sulfide und Sulfosalze"}
-      else if(systematics === "HG") { this.header = "Halogenide"; }
-      }
-
-      this.navCtrl.push(this.profiles1Page, { profiles: profiles, header: this.header });
+      systematics === 'Silikate und Germanate'
+        ? this._navCtrl.push(this._profiles2Page, {
+            profiles: profiles,
+            header: systematics
+          })
+        : this._navCtrl.push(this._profiles1Page, {
+            profiles: profiles,
+            header: systematics,
+            imagePath: imagePath
+          });
     }
-
+  }
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
+  }
 }

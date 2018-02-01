@@ -1,18 +1,54 @@
-<!--
-  Generated template for the CrystalsystemsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>crystalsystems</ion-title>
+    <ion-title>KRISTALLSYSTEME</ion-title>
+    <ion-buttons right class="hidden-lg-up" padding-right>
+      <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
+        <ion-icon name="book"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
+  <div id="wrapper">
+    <div class="viewport">
+      <div class="cube">
+        <div class="side">
+          <div class="cube-image">1</div>
+        </div>
+        <div class="side">
+          <div class="cube-image">2</div>
+        </div>
+        <div class="side">
+          <div class="cube-image">3</div>
+        </div>
+        <div class="side">
+          <div class="cube-image">4</div>
+        </div>
+        <div class="side">
+          <div class="cube-image">5</div>
+        </div>
+        <div class="side">
+          <div class="cube-image active">6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- <canvas data-processing-sources="hello-web.pde"></canvas> -->
+  <!-- <h1>TO BE IMPLEMENTED</h1>
+  <h1>Processing.js Test</h1>
+  <p>Processing.js web-based sketch:</p>
+  <canvas data-processing-sources="kristall_100.pde"></canvas>
+  <canvas data-processing-sources="kristall_110.pde"></canvas>
+  <canvas data-processing-sources="kristall_111.pde"></canvas>
+  <canvas data-processing-sources="koordinatensystem.pde"></canvas>
+  <canvas data-processing-sources="kristall_animiert_zRot.pde"></canvas>
+  <canvas data-processing-sources="kristall_animiert_yRot.pde"></canvas>
+  <canvas data-processing-sources="kristall_animiert_xRot.pde"></canvas>
+  <canvas data-processing-sources="3d_kristall_yRot.pde"></canvas>
+    <input id="100" type="submit" name="button" value="100"/>
+    <input id="110" type="submit" name="button" value="110"/>
+    <input id="111" type="submit" name="button" value="111"/>
+    <input id="reset" type="submit" name="button" value="reset"/> -->
 </ion-content>

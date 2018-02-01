@@ -1,10 +1,25 @@
 page-profile-details {
+  ion-row  {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .col {
+    padding: 0;
+  }
+
+  .card-md, .card-ios, .card-wp {
+    width: auto;
+  }
+
   .item-md, .item-ios, .item-wp {
-    > div, .MathJax {
+    > div  {
       padding-left: 32px;
     }
 
-
+    .MathJax {
+      padding: 13px 0 13px 32px;
+    }
   }
 
   .item-divider-md {
@@ -12,5 +27,14 @@ page-profile-details {
     > div {
       padding-left: 16px;
     }
+  }
+
+  sub {
+    bottom: -0.6em;
+    padding-right: 3px;
+  }
+
+  sub.second, sup.second {
+    margin-left: -10px;
   }
 }

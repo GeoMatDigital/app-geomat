@@ -1,28 +1,94 @@
 <ion-header>
   <ion-navbar>
-    <ion-title center>GEO-MAT</ion-title>
-    <ion-buttons left>
-      <button ion-button menuToggle>
+    <ion-buttons left class="hidden-lg-up">
+      <button ion-button icon-only (click)="openSidemenu('mainMenu')">
         <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>GeoMat</ion-title>
+    <ion-buttons right class="hidden-lg-up" padding-right>
+      <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
+        <ion-icon name="book"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-card no-padding col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4>
-    <ion-card-content text-center no-padding>
-      <ion-row>
-        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="profilesPage">STECKBRIEFE</ion-col>
-        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="galleryPage">GALLERIE</ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="crystalsystemsPage">KRISTALL-SYSTEME</ion-col>
-        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="helperPage">BESTIMMUNGSHELFER</ion-col>
-      </ion-row>
-      <ion-row><ion-col ion-button full clear col-12 col-sm-6 [navPush]="selftestPage">SELBSTTEST</ion-col>
-        <ion-col ion-button full clear col-12 col-sm-6 [navPush]="glossaryPage">GLOSSAR</ion-col>
-      </ion-row>
-    </ion-card-content>
-  </ion-card>
+  <ion-row class="content">
+    <ion-col no-padding col-6>
+      <!--  col-md-4 offset-md-2 col-lg-3 offset-lg-3 col-xl-2 offset-xl-4 -->
+      <ion-card [navPush]="profilesPage">
+        <!-- <img src="../../assets/quiz/book.jpg"/> -->
+        <ion-icon name="bookmarks"></ion-icon>
+        <ion-card-content>
+          <ion-card-title text-center>
+            STECKBRIEFE
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col no-padding col-6>
+      <!-- [navPush]="galleryPage" -->
+      <ion-card class="disabled">
+        <ion-icon name="images"></ion-icon>
+        <ion-card-content>
+          <ion-card-title text-center>
+            GALERIE
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col no-padding col-6>
+      <ion-card [navPush]="crystalsystemsPage" class="disabled">
+        <ion-icon name="cube"></ion-icon>
+        <ion-card-content>
+          <ion-card-title text-center>
+            KRISTALL-<br>SYSTEME
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col no-padding col-6>
+      <ion-card [navPush]="helperPage">
+        <ion-icon name="checkbox-outline"></ion-icon>
+        <ion-card-content>
+          <ion-card-title text-center>
+            BESTIMMUNGS<br>HELFER
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col no-padding col-6>
+      <!-- [navPush]="quizPage" -->
+      <ion-card no-margin [navPush]="quizPage">
+        <ion-icon name="help"></ion-icon>
+        <ion-card-content>
+          <ion-card-title text-center>
+            SELBSTTEST
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col no-padding col-6>
+      <!-- [navPush]="glossaryPage" -->
+      <ion-card no-margin [navPush]="infoPage">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-card-content>
+          <ion-card-title text-center>
+            INFORMATION
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>
+ <ion-footer clean (click)="onFeedback()">
+  <ion-toolbar>
+    <ion-title text-center>Gib uns Feedback.</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <title>Ionic App</title>
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>GeoMat</title>
+  <!-- enable this for mobile-device support -->
+  <!-- <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+  <meta name="viewport" content=" width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
 
@@ -12,25 +14,23 @@
   <meta name="theme-color" content="#4e8ef7">
 
   <!-- cordova.js required for cordova apps -->
-  <script src="cordova.js"></script>
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    showProcessingMessages: false,
-    tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
-    });
-  </script>
+  <!-- https://stackoverflow.com/questions/41159763/how-to-integrate-mathjax-with-ionic2 -->
+  <!-- <script src="cordova.js"></script> -->
 
-  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML">
-  </script>
-  <!-- un-comment this code to enable service worker
-  <script>
+  <!-- <script src="assets/crystalsystems/processing-1.4.8.min.js"></script> -->
+
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+  <!-- <script src="assets/crystalsystems/d3.custom.js"></script> -->
+  <!-- <script src="assets/crystalsystems/processing.js"></script> -->
+  <!-- un-comment this code to enable service worker -->
+  <script type="text/javascript">
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
+               .then(() => console.log('service worker installed'))
+               .catch(err => console.error('Error', err));
     }
-  </script>-->
+  </script>
 
   <link href="build/main.css" rel="stylesheet">
 

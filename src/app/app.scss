@@ -14,3 +14,53 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.content .scroll-content {
+  overflow-y: auto;
+}
+
+.selectable {
+  &:hover{
+    cursor: pointer;
+  }
+
+  -webkit-user-select: text;
+
+  -moz-user-select: text;
+
+  -ms-user-select: text;
+
+  user-select: text;
+
+}
+
+.split-pane-md, .split-pane-ios, .split-pane-wp {
+  &.split-pane-visible  {
+    > .split-pane-side {
+      max-width: 100%;
+    }
+
+    > ion-menu.split-pane-side {
+      max-width: 300px;
+    }
+  }
+
+  @media (min-width: 992px) {
+
+    .hidden-lg-up {
+      display: none !important;
+    }
+
+    .sidemenu-enabled{
+      display: block;
+      > .menu-inner {
+        left: 0;
+        right: 0;
+        width: auto;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+      }
+    }
+  }
+}
