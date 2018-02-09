@@ -1,9 +1,12 @@
 page-quiz {
-.rightanswer {
-  background-color: rgba(50, 219, 100, 0.11);
-}
+  .rightanswer {
+    background-color: rgba(50, 219, 100, 0.11);
+  }
   .wronganswer {
     background-color: rgba(255, 69, 0, 0.1);
   }
 
+}
+.progress-icon {
+  font-size: 35px !important; //icon size for progress bar in quiz
 }

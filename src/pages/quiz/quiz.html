@@ -21,11 +21,11 @@
 
         <ion-card>
           <ion-card-header>
-            Question {{i+1}}
+           {{question.tags[0]}}
           </ion-card-header>
           <ion-card-content>
             {{question.qtext}}
-            <div *ngIf="hasAnswered">{{answerChecking}}</div>
+            <div *ngIf="showAnswers">{{answerChecking}}</div>
           </ion-card-content>
         </ion-card>
       <!--<flash-card [isFlipped]="flashCardFlipped">
@@ -37,20 +37,20 @@
 
       <ion-list no-lines radio-group>
 
-        <ion-item *ngFor="let answer of question.answers; let i = index;"
-                  [class.wronganswer]="!answer.correct&&flashCardFlipped" [class.rightanswer]="answer.correct&&flashCardFlipped">
+        <ion-item text-wrap *ngFor="let answer of question.answers; let i = index;"
+                  [class.wronganswer]="!answer.correct && showAnswers" [class.rightanswer]="answer.correct && showAnswers">
           <ion-label>{{i+1}}. {{answer.atext}}</ion-label>
-          <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+          <ion-checkbox item-right (ionChange)="selectAnswer(answer, question, $event)" [checked]="answer.selected" [disabled]="showAnswers"></ion-checkbox>
         </ion-item>
 
       </ion-list>
-      <!-- Float the icon left -->
+      <!--&lt;!&ndash; Float the icon left &ndash;&gt;
       <button ion-button icon-left (click)="lastSlide()">
         <ion-icon name=""></ion-icon>
         zurück
       </button>
 
-      <!-- Float the icon right -->
+      &lt;!&ndash; Float the icon right &ndash;&gt;
       <button ion-button icon-right (click)="nextSlide()">
         vorwärts
         <ion-icon name=""></ion-icon>
@@ -59,7 +59,21 @@
     <ion-slide>
       <h2>Final Score: {{score}}</h2>
 
-      <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>
+      <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>-->
+
+      <ion-footer>
+        <button ion-button (click)="checkAnswer(question.answers)"> Lösungen anzeigen </button>
+        <p></p>
+        <button ion-button clear (click)="lastSlide()">
+          <ion-icon class="progress-icon" name="ios-arrow-dropleft-circle" ></ion-icon>
+        </button>
+        <button width="80%">
+          <progress-bar [progress]="loadProgress(i)" [question]="i" [total_questions]="questions.length"></progress-bar>
+        </button>
+        <button ion-button clear (click)="nextSlide()">
+          <ion-icon class="progress-icon" name="ios-arrow-dropright-circle"  ></ion-icon>
+        </button>
+      </ion-footer>
 
     </ion-slide>
 

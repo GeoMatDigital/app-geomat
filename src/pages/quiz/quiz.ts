@@ -14,10 +14,12 @@ import { QuizDataProvider } from '../../providers/quiz-data/quiz-data';
 })
 export class QuizPage {
 
-  @ViewChild('slides') slides: any;
+  @ViewChild('slides')
+  slides: any;
 
-  hasAnswered: boolean = false;
+  showAnswers: boolean = false;
   score: number = 0;
+  progress_num: number;
 
 
   slideOptions: any;
@@ -31,16 +33,10 @@ export class QuizPage {
    * cosntructor()
    * @param _menuService
    */
-  constructor(private _menuService: MenuService, public dataService: QuizDataProvider) {}
-
-  /**
-   * Opens requested sidemenu, deactivates others
-   * @param activeMenu
-   */
-  openSidemenu(activeMenu) {
-    this._menuService.openSidemenu(activeMenu);
+  constructor(private _menuService: MenuService, public dataService: QuizDataProvider) {
 
   }
+
   ionViewDidLoad() {
 
     this.slides.lockSwipes(true);
@@ -54,12 +50,20 @@ export class QuizPage {
         return question;
 
       });
-
       this.questions = data;
-
     });
 
   }
+
+  /**
+   * Opens requested sidemenu, deactivates others
+   * @param activeMenu
+   */
+  openSidemenu(activeMenu) {
+    this._menuService.openSidemenu(activeMenu);
+
+  }
+
 
   randomizeAnswers(rawAnswers: any[]): any[] {
 
@@ -75,35 +79,16 @@ export class QuizPage {
   }
 
   nextSlide(){
-    this.flashCardFlipped = false;
-    this.hasAnswered = false;
+    this.showAnswers = false;
     this.slides.lockSwipes(false);
+    console.log("nextSlide()");
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
 
   lastSlide(){
-    this.flashCardFlipped = true;
     this.slides.lockSwipes(false);
     this.slides.slidePrev();
-  }
-
-  selectAnswer(answer, question){
-    //answer.selected = true;
-    this.hasAnswered = true;
-    // if (question.qtype == "Single Choice") {
-    // the answer text inside the ionic card is selected
-      if (answer.correct) {
-        this.answerChecking = answer.feedback_correct;
-      } else {
-        this.answerChecking = answer.feedback_incorrect;
-      }
-
-    this.flashCardFlipped = true;
-
-    if(answer.correct){
-      this.score++;
-    }
   }
 
 
@@ -112,6 +97,25 @@ export class QuizPage {
     this.slides.lockSwipes(false);
     this.slides.slideTo(1, 1000);
     this.slides.lockSwipes(true);
+  }
+
+  // progress-bar animation
+  loadProgress(curr_question_number) {
+    curr_question_number = curr_question_number/84*100;
+
+    return curr_question_number;
+  }
+
+  // answer selection method, sets value for checkAnswer method
+  selectAnswer(answer, question, checkbox) {
+    console.log(checkbox.checked);
+    console.log("Antwor: t" + answer);
+    console.log("Frage: " + question)
+  }
+
+  //check given Answer if correct or wrong
+  checkAnswer(){
+    return this.showAnswers = true;
   }
 
 }
