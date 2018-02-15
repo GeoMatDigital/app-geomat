@@ -8,8 +8,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-//import {ComponentsModule} from "../components/components.module";
-//import FlashCard from "../components/flash-card/flash-card";
 import { CrystalsystemsPage } from '../pages/crystalsystems/crystalsystems';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { HelperPage } from '../pages/helper/helper';
@@ -35,7 +33,6 @@ import { GlossaryService } from '../services/glossary';
 import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
 import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
 import { MenuService } from '../services/menu';
-// import { FeedbackPage } from '../pages/feedback/feedback';
 import { FeedbackPageModule } from '../pages/feedback/feedback.module';
 import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
 
@@ -44,7 +41,7 @@ import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
     MyApp,
     HomePage,
     ProfileDetailsPage,
-    GlossaryPage
+    GlossaryPage,
 
   ],
   imports: [
@@ -60,7 +57,7 @@ import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
     Profiles1PageModule,
     Profiles2PageModule,
     QuizPageModule,
-    InfoPageModule
+    InfoPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
