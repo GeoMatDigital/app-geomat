@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 import { MenuService } from '../../services/menu';
-// import { NavController } from 'ionic-angular';
 import { QuizDataProvider } from '../../providers/quiz-data/quiz-data';
 
 /**
@@ -17,24 +16,23 @@ export class QuizPage {
   @ViewChild('slides')
   slides: any;
 
-  showAnswers: boolean = false;
+  showAnswers: boolean[] = [false];
+  answered: boolean = false;
+  checked:boolean[] = [false, false, false , false, false, false ,false, false, false, false];
   score: number = 0;
-  progress_num: number;
-
-
-  slideOptions: any;
   questions: any;
-  flashCardFlipped: boolean = false;
-  makegreen: boolean = false;
-  makered: boolean = false;
-  answerChecking: string = "";
 
   /**
    * cosntructor()
    * @param _menuService
    */
   constructor(private _menuService: MenuService, public dataService: QuizDataProvider) {
-
+    let _i:number = 0;
+    while (_i < 99) {
+      let value = false;
+      this.showAnswers.push(value);
+      _i++
+    }
   }
 
   ionViewDidLoad() {
@@ -45,14 +43,13 @@ export class QuizPage {
 
       data.map((question) => {
 
-        let originalOrder = question.answers;
-        question.answers = this.randomizeAnswers(originalOrder);
+        let originalOrderAnswers = question.answers;
+        question.answers = this.randomize(originalOrderAnswers);
         return question;
 
       });
-      this.questions = data;
+      this.questions = this.randomize(data);
     });
-
   }
 
   /**
@@ -65,23 +62,22 @@ export class QuizPage {
   }
 
 
-  randomizeAnswers(rawAnswers: any[]): any[] {
+  randomize(rawInput: any[]): any[] {
 
-    for (let i = rawAnswers.length - 1; i > 0; i--) {
+    for (let i = rawInput.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
-      let temp = rawAnswers[i];
-      rawAnswers[i] = rawAnswers[j];
-      rawAnswers[j] = temp;
+      let temp = rawInput[i];
+      rawInput[i] = rawInput[j];
+      rawInput[j] = temp;
     }
 
-    return rawAnswers;
+    return rawInput;
 
   }
 
   nextSlide(){
-    this.showAnswers = false;
+    this.answered = false;
     this.slides.lockSwipes(false);
-    console.log("nextSlide()");
     this.slides.slideNext();
     this.slides.lockSwipes(true);
   }
@@ -92,13 +88,6 @@ export class QuizPage {
   }
 
 
-  restartQuiz() {
-    this.score = 0;
-    this.slides.lockSwipes(false);
-    this.slides.slideTo(1, 1000);
-    this.slides.lockSwipes(true);
-  }
-
   // progress-bar animation
   loadProgress(curr_question_number) {
     curr_question_number = curr_question_number/84*100;
@@ -108,14 +97,14 @@ export class QuizPage {
 
   // answer selection method, sets value for checkAnswer method
   selectAnswer(answer, question, checkbox) {
-    console.log(checkbox.checked);
-    console.log("Antwor: t" + answer);
-    console.log("Frage: " + question)
+    this.checked[answer.id] = checkbox.checked;
   }
 
   //check given Answer if correct or wrong
-  checkAnswer(){
-    return this.showAnswers = true;
+  checkAnswer(answerselected){
+    this.showAnswers[this.slides.getActiveIndex()] = true;
+    this.answered = true;
+    return;
   }
 
 }

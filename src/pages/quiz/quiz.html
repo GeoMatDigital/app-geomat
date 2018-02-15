@@ -25,7 +25,6 @@
           </ion-card-header>
           <ion-card-content>
             {{question.qtext}}
-            <div *ngIf="showAnswers">{{answerChecking}}</div>
           </ion-card-content>
         </ion-card>
       <!--<flash-card [isFlipped]="flashCardFlipped">
@@ -37,10 +36,12 @@
 
       <ion-list no-lines radio-group>
 
-        <ion-item text-wrap *ngFor="let answer of question.answers; let i = index;"
-                  [class.wronganswer]="!answer.correct && showAnswers" [class.rightanswer]="answer.correct && showAnswers">
-          <ion-label>{{i+1}}. {{answer.atext}}</ion-label>
-          <ion-checkbox item-right (ionChange)="selectAnswer(answer, question, $event)" [checked]="answer.selected" [disabled]="showAnswers"></ion-checkbox>
+        <ion-item text-wrap *ngFor="let answer of question.answers; let j = index;"
+                  [class.wronganswer]="!answer.correct && showAnswers[i+1]" [class.rightanswer]="answer.correct && showAnswers[i+1]">
+          <ion-label class="keep-opacity">{{j+1}}. {{answer.atext}}</ion-label>
+          <ion-label class="keep-opacity" *ngIf="checked[answer.id] && answered && answer.correct"><ion-icon name="md-checkmark"></ion-icon>  {{answer.feedback_correct}}</ion-label>
+          <ion-label class="keep-opacity" *ngIf="checked[answer.id] && answered && !answer.correct"><ion-icon name="md-close"></ion-icon>  {{answer.feedback_incorrect}}</ion-label>
+          <ion-checkbox item-right (ionChange)="selectAnswer(answer, question, $event)" [disabled]="showAnswers[i+1]"></ion-checkbox>
         </ion-item>
 
       </ion-list>
@@ -62,17 +63,22 @@
       <button (click)="restartQuiz()" ion-button full color="primary">Start Again</button>-->
 
       <ion-footer>
-        <button ion-button (click)="checkAnswer(question.answers)"> Lösungen anzeigen </button>
-        <p></p>
-        <button ion-button clear (click)="lastSlide()">
+        <ion-grid>
+          <ion-row>
+        <button ion-button (click)="checkAnswer(question.answers)" class="centering"> Lösungen anzeigen </button>
+          </ion-row>
+          <ion-row>
+        <button ion-button clear (click)="lastSlide()" class="progress-bar-next centering">
           <ion-icon class="progress-icon" name="ios-arrow-dropleft-circle" ></ion-icon>
         </button>
-        <button width="80%">
+        <button class="progress-bar-button centering keep-opacity" [disabled]="true" >
           <progress-bar [progress]="loadProgress(i)" [question]="i" [total_questions]="questions.length"></progress-bar>
         </button>
-        <button ion-button clear (click)="nextSlide()">
+        <button ion-button clear (click)="nextSlide()" class="progress-bar-next centering">
           <ion-icon class="progress-icon" name="ios-arrow-dropright-circle"  ></ion-icon>
         </button>
+          </ion-row>
+        </ion-grid>
       </ion-footer>
 
     </ion-slide>
