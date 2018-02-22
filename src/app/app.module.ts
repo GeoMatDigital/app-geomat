@@ -35,6 +35,7 @@ import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-po
 import { MenuService } from '../services/menu';
 import { FeedbackPageModule } from '../pages/feedback/feedback.module';
 import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
+import {GalleryDataProvider} from "../providers/gallery-data/gallery-data";
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
     GlossaryService,
     MenuService,
     D3Service,
-    QuizDataProvider
+    QuizDataProvider,
+    GalleryDataProvider
   ]
 })
 export class AppModule {}
