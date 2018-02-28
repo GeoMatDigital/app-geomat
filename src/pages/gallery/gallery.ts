@@ -34,7 +34,7 @@ export class GalleryPage {
         return list;
       });
       for (let image of data) {
-        this.photos.push({url: image.image_file.small});
+        this.photos.push({url: image.image_file.large});
       }
     }).then(() =>
       this.datafetched());

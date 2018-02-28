@@ -82,6 +82,7 @@ export class QuizPage {
     this.slides.lockSwipes(true);
   }
 
+  // index-Bearbeitung
   lastSlide(){
     this.slides.lockSwipes(false);
     this.slides.slidePrev();
