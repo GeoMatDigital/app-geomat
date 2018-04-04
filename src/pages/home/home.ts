@@ -8,6 +8,8 @@ import { MenuService } from '../../services/menu';
 import { InfoPage } from '../info/info';
 import { ModalController } from 'ionic-angular';
 import { FeedbackPage } from '../feedback/feedback';
+import {GalleryModal} from "ionic-gallery-modal";
+import {GalleryDataProvider} from "../../providers/gallery-data/gallery-data";
 
 /**
  * Page for initial view
@@ -46,14 +48,41 @@ export class HomePage {
    */
   quizPage = QuizPage;
 
+  photos: any[] = [];
   /**
    * constructor()
    * @param menuCtrl
    */
-  constructor(private _menuService: MenuService, private modalCtrl: ModalController) {
-
+  constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider) {
   }
 
+  /*private openModal() {
+    this.dataService.load().then((data) => {
+
+      data.map((list) => {
+        return list;
+      });
+      for (let image of data) {
+        this.photos.push({url: image.image_file.small});
+      }
+    }).then(() =>
+      this.datafetched());
+  }
+
+  private datafetched() {
+
+
+    let closeIcon = 'md-close';
+    let initialSlide = 0;
+    console.log(this.photos);
+    let modal = this.modalCtrl.create(GalleryModal, {
+      photos: this.photos,
+      initialSlide: initialSlide,
+      closeIcon: closeIcon
+    });
+    modal.present();
+  }
+*/
   /**
    * Opens requested sidemenu
    * and deactivates other sidemenus

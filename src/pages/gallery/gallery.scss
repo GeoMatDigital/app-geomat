@@ -1,3 +1,42 @@
 page-gallery {
 
+    .image-container {
+      background-size: cover;
+    }
+
+    /*img {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+
+    img[data-src] {
+      opacity: 0;
+    }*/
+
+    @media (min-width: 0px) {
+      .images {
+        column-count: 2;
+      }
+    }
+
+    @media (min-width: 420px) {
+      .images {
+        column-count: 3;
+      }
+    }
+
+    @media (min-width: 720px) {
+      .images {
+        column-count: 4;
+      }
+    }
+
+    .one-image {
+      margin: 2px;
+    }
+
+}
+
+#gallery_images {
+  background: #32db64;
 }

@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title class="selectable" *ngIf="profile.variety">{{ profile.variety | uppercase }}</ion-title>
-    <ion-title class="selectable" *ngIf="!profile.variety">{{ profile.trivial_name | uppercase }}</ion-title>
+    <ion-title class="selectable" *ngIf="!profile.variety">{{ profile.minerals | uppercase }}</ion-title>
     <ion-buttons right class="hidden-lg-up" padding-right>
       <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
         <ion-icon name="book"></ion-icon>

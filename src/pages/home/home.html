@@ -18,7 +18,7 @@
   <ion-row class="content">
     <ion-col no-padding col-6>
       <!--  col-md-4 offset-md-2 col-lg-3 offset-lg-3 col-xl-2 offset-xl-4 -->
-      <ion-card [navPush]="profilesPage">
+      <ion-card tappable="true" [navPush]="profilesPage">
         <!-- <img src="../../assets/quiz/book.jpg"/> -->
         <ion-icon name="bookmarks"></ion-icon>
         <ion-card-content>
@@ -30,7 +30,7 @@
     </ion-col>
     <ion-col no-padding col-6>
       <!-- [navPush]="galleryPage" -->
-      <ion-card class="disabled">
+      <ion-card tappable="true" [navPush]="galleryPage">
         <ion-icon name="images"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -42,7 +42,7 @@
   </ion-row>
   <ion-row>
     <ion-col no-padding col-6>
-      <ion-card [navPush]="crystalsystemsPage" class="disabled">
+      <ion-card tappable="true" [navPush]="crystalsystemsPage" class="disabled">
         <ion-icon name="cube"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -52,7 +52,7 @@
       </ion-card>
     </ion-col>
     <ion-col no-padding col-6>
-      <ion-card [navPush]="helperPage">
+      <ion-card tappable="true" [navPush]="helperPage">
         <ion-icon name="checkbox-outline"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -65,7 +65,7 @@
   <ion-row>
     <ion-col no-padding col-6>
       <!-- [navPush]="quizPage" -->
-      <ion-card no-margin [navPush]="quizPage">
+      <ion-card tappable="true" no-margin [navPush]="quizPage">
         <ion-icon name="help"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -76,7 +76,7 @@
     </ion-col>
     <ion-col no-padding col-6>
       <!-- [navPush]="glossaryPage" -->
-      <ion-card no-margin [navPush]="infoPage">
+      <ion-card tappable="true" no-margin [navPush]="infoPage">
         <ion-icon name="information-circle"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>
@@ -87,7 +87,7 @@
     </ion-col>
   </ion-row>
 </ion-content>
- <ion-footer clean (click)="onFeedback()">
+ <ion-footer clean tappable="true" (click)="onFeedback()">
   <ion-toolbar>
     <ion-title text-center>Gib uns Feedback.</ion-title>
   </ion-toolbar>
