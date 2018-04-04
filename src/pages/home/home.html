@@ -30,7 +30,7 @@
     </ion-col>
     <ion-col no-padding col-6>
       <!-- [navPush]="galleryPage" -->
-      <ion-card tappable="true" (click)="openModal()">
+      <ion-card tappable="true" [navPush]="galleryPage">
         <ion-icon name="images"></ion-icon>
         <ion-card-content>
           <ion-card-title text-center>

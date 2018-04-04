@@ -56,7 +56,7 @@ export class HomePage {
   constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider) {
   }
 
-  private openModal() {
+  /*private openModal() {
     this.dataService.load().then((data) => {
 
       data.map((list) => {
@@ -82,7 +82,7 @@ export class HomePage {
     });
     modal.present();
   }
-
+*/
   /**
    * Opens requested sidemenu
    * and deactivates other sidemenus

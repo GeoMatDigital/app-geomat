@@ -36,6 +36,8 @@ import { MenuService } from '../services/menu';
 import { FeedbackPageModule } from '../pages/feedback/feedback.module';
 import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
 import {GalleryDataProvider} from "../providers/gallery-data/gallery-data";
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import {GalleryDataProvider} from "../providers/gallery-data/gallery-data";
     Profiles2PageModule,
     QuizPageModule,
     InfoPageModule,
+    LazyLoadImageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

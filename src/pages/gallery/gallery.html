@@ -9,6 +9,15 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
+  <ion-grid>
+    <ion-row lazy-load-images>
+      <ion-col col-6 col-md-4 col-xl-3 *ngFor="let imageUrl of photos">
+        <div class="image-container">
+          <img src="{{ loading_pic }}" [attr.data-src]="imageUrl">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

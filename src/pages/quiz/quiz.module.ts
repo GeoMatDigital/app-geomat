@@ -11,7 +11,7 @@ import {ComponentsModule} from "../../components/components.module";
   ],
   imports: [
     IonicPageModule.forChild(QuizPage),
-    ComponentsModule
+    ComponentsModule,
   ],
 })
 export class QuizPageModule {}
