@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import { CrystalsystemsPage } from '../crystalsystems/crystalsystems';
 import { ProfilesPage } from '../profiles/profiles';
 import { GalleryPage } from '../gallery/gallery';
@@ -44,16 +44,37 @@ export class HomePage {
    */
   helperPage = HelperPage;
   /**
-   * Stores page for quiz (not yet implemented)
+   * Stores page for quiz (Gallerie)
    */
   quizPage = QuizPage;
 
-  photos: any[] = [];
+  public photos: any[] = [];
+  anzahl: any[];
+  @ViewChild('gallery_images') gallery_images;
+  opacity: number;
+  loading_pic = "assets/gallery/Loading_icon.gif";
+  list: Array<object> = [];
   /**
    * constructor()
    * @param menuCtrl
    */
   constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider) {
+    this.opacity = 0;
+    this.anzahl = Array(114).fill(4);
+    this.dataService.load().then((data) => {
+      data.map((photos) => {
+        return photos;
+      });
+      for (let image of data) {
+        this.photos.push(image.image_file);
+      }
+      this.opacity = 1;
+    }).then(() => {
+      for (let image of this.photos){
+        this.list.push({url: image.large});
+      }
+    });
+    console.log(this.anzahl);
   }
 
   /*private openModal() {

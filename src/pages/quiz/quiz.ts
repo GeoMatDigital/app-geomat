@@ -21,6 +21,7 @@ export class QuizPage {
   checked:boolean[] = [false, false, false , false, false, false ,false, false, false, false];
   score: number = 0;
   questions: any;
+  buttontext: string;
 
   /**
    * cosntructor()
@@ -79,6 +80,7 @@ export class QuizPage {
     this.answered = false;
     this.slides.lockSwipes(false);
     this.slides.slideNext();
+    this.buttontext = "Lösung anzeigen";
     this.slides.lockSwipes(true);
   }
 
@@ -90,9 +92,8 @@ export class QuizPage {
 
 
   // progress-bar animation
-  loadProgress(curr_question_number) {
-    curr_question_number = curr_question_number/84*100;
-
+  loadProgress(curr_question_number, length) {
+    curr_question_number = curr_question_number/length*100;
     return curr_question_number;
   }
 
@@ -103,9 +104,14 @@ export class QuizPage {
 
   //check given Answer if correct or wrong
   checkAnswer(answerselected){
-    this.showAnswers[this.slides.getActiveIndex()] = true;
-    this.answered = true;
-    return;
+    if (this.buttontext == "nächste Frage") {
+      this.nextSlide()
+    } else {
+      this.showAnswers[this.slides.getActiveIndex()] = true;
+      this.answered = true;
+      this.buttontext = "nächste Frage";
+      return;
+    }
   }
 
 }
