@@ -89,7 +89,9 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     MenuService,
     D3Service,
     QuizDataProvider,
-    GalleryDataProvider
+    GalleryDataProvider,
+    HomePage,
+    GalleryPage
   ]
 })
 export class AppModule {}

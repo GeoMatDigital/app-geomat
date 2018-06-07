@@ -6,7 +6,7 @@ import { QuizPage } from '../quiz/quiz';
 import { HelperPage } from '../helper/helper';
 import { MenuService } from '../../services/menu';
 import { InfoPage } from '../info/info';
-import { ModalController } from 'ionic-angular';
+import {IonicPage, ModalController} from 'ionic-angular';
 import { FeedbackPage } from '../feedback/feedback';
 import {GalleryModal} from "ionic-gallery-modal";
 import {GalleryDataProvider} from "../../providers/gallery-data/gallery-data";
@@ -14,6 +14,7 @@ import {GalleryDataProvider} from "../../providers/gallery-data/gallery-data";
 /**
  * Page for initial view
  */
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -51,16 +52,18 @@ export class HomePage {
   public photos: any[] = [];
   anzahl: any[];
   @ViewChild('gallery_images') gallery_images;
-  opacity: number;
+  opacity: any;
   loading_pic = "assets/gallery/Loading_icon.gif";
   list: Array<object> = [];
+  public foto_anzahl: number;
+  data: any;
+
+
   /**
    * constructor()
    * @param menuCtrl
    */
   constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider) {
-    this.opacity = 0;
-    this.anzahl = Array(114).fill(4);
     this.dataService.load().then((data) => {
       data.map((photos) => {
         return photos;
@@ -68,13 +71,11 @@ export class HomePage {
       for (let image of data) {
         this.photos.push(image.image_file);
       }
+      console.log("Home: " + this.photos.length);
       this.opacity = 1;
     }).then(() => {
-      for (let image of this.photos){
-        this.list.push({url: image.large});
-      }
+      this.anzahl = this.photos;
     });
-    console.log(this.anzahl);
   }
 
   /*private openModal() {
