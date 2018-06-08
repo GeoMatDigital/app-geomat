@@ -1,0 +1,36 @@
+<!--
+  Generated template for the NewProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>STECKBRIEFE</ion-title>
+    <ion-buttons right class="hidden-lg-up" padding-right>
+      <button ion-button icon-start icon-only (click)="openSidemenu('glossaryMenu')">
+        <ion-icon name="book"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-card no-margin>
+        <ion-card-content no-padding>
+          <ion-list no-lines>
+            <ion-item no-padding *ngFor="let profile of profiles" >
+              <ion-thumbnail item-start>
+                <img src="assets/profiles/{{image_name(profile)}}_80.jpg">
+              </ion-thumbnail>
+              <p>{{profile}}</p>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -10,11 +10,12 @@ import {IonicPage, ModalController} from 'ionic-angular';
 import { FeedbackPage } from '../feedback/feedback';
 import {GalleryModal} from "ionic-gallery-modal";
 import {GalleryDataProvider} from "../../providers/gallery-data/gallery-data";
+import {NewProfilePage} from "../new-profile/new-profile";
+import {NewProfileserviceProvider} from "../../providers/new-profileservice/new-profileservice";
 
 /**
  * Page for initial view
  */
-@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -31,11 +32,11 @@ export class HomePage {
   /**
    * Stores page for glossary (not yet imlemented, because glossary viewable via sidemenu and popover)
    */
-  // glossaryPage = GlossaryPage;
+  // glossaryPage = Ne;
   /**
    * Stores page for 'about us'
    */
-  infoPage = InfoPage;
+  infoPage = NewProfilePage;
   /**
    * Stores page for gallery (not yet implemented)
    */
@@ -63,7 +64,7 @@ export class HomePage {
    * constructor()
    * @param menuCtrl
    */
-  constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider) {
+  constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider, public newProfile: NewProfileserviceProvider) {
     this.dataService.load().then((data) => {
       data.map((photos) => {
         return photos;

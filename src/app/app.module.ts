@@ -37,6 +37,9 @@ import { FeedbackPageModule } from '../pages/feedback/feedback.module';
 import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
 import {GalleryDataProvider} from "../providers/gallery-data/gallery-data";
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { NewProfileserviceProvider } from '../providers/new-profileservice/new-profileservice';
+import {NewProfilePage} from "../pages/new-profile/new-profile";
+import {NewProfilePageModule} from "../pages/new-profile/new-profile.module";
 
 
 @NgModule({
@@ -56,6 +59,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     GlossaryPopoverPageModule,
     FeedbackPageModule,
     HelperPageModule,
+    NewProfilePageModule,
     ProfilesPageModule,
     Profiles1PageModule,
     Profiles2PageModule,
@@ -72,12 +76,13 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     GlossaryPage,
     GlossaryPopoverPage,
     HelperPage,
+    NewProfilePage,
     ProfileDetailsPage,
     ProfilesPage,
     Profiles1Page,
     Profiles2Page,
     QuizPage,
-    InfoPage
+    InfoPage,
   ],
   providers: [
     StatusBar,
@@ -91,7 +96,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     QuizDataProvider,
     GalleryDataProvider,
     HomePage,
-    GalleryPage
+    GalleryPage,
+    NewProfileserviceProvider,
   ]
 })
 export class AppModule {}

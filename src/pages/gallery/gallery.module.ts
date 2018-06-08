@@ -13,8 +13,7 @@ import {HomePage} from "../home/home";
   imports: [
     IonicPageModule.forChild(GalleryPage),
     ionicGalleryModal.GalleryModalModule,
-    LazyLoadImagesModule,
-    HomePage
+    LazyLoadImagesModule
   ],
   providers: [
     {
