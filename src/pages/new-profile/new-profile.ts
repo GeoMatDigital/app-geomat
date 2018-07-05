@@ -8,6 +8,7 @@ import {Profile} from "../../models/profile";
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
+ *
  */
 
 @IonicPage()
@@ -15,21 +16,27 @@ import {Profile} from "../../models/profile";
   selector: 'page-new-profile',
   templateUrl: 'new-profile.html',
 })
+
 export class NewProfilePage {
   profiles: any[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public profileProvider: NewProfileserviceProvider) {
   //profileProvider.getProfiles().subscribe(data => (this.profile_list = data));
   //console.log(this.profile_list);
-    this.profiles = profileProvider.profile_list;
+    this.profiles = profileProvider.profile_data[0];
     console.log(this.profiles)
   }
 
+  // change the given json-name of the mineral according to fit thumbnail images
   image_name(full_name){
+    console.log(full_name);
     full_name = full_name.slice(0, 5);
     return full_name
   }
 
+  nextProfile(profile_name){
+    console.log(profile_name);
+  }
   /*onProfile(systematics: string, imagePath: string = null) {
     if (this._profiles) {
       let profiles = this._profiles.filter((profile: Profile): boolean => {

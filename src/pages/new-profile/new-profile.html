@@ -22,12 +22,7 @@
       <ion-card no-margin>
         <ion-card-content no-padding>
           <ion-list no-lines>
-            <ion-item no-padding *ngFor="let profile of profiles" >
-              <ion-thumbnail item-start>
-                <img src="assets/profiles/{{image_name(profile)}}_80.jpg">
-              </ion-thumbnail>
-              <p>{{profile}}</p>
-            </ion-item>
+            <profile-list></profile-list>
           </ion-list>
         </ion-card-content>
       </ion-card>

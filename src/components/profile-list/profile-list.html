@@ -1,0 +1,7 @@
+<!-- Generated template for the ProfileListComponent component -->
+<ion-item no-padding *ngFor="let profile of profiles" (click)="nextProfile(profile)">
+  <ion-thumbnail item-start>
+    <img src="assets/profiles/{{image_name(profile)}}_80.jpg">
+  </ion-thumbnail>
+  <p>{{profile}}</p>
+</ion-item>

@@ -12,6 +12,7 @@ import {GalleryModal} from "ionic-gallery-modal";
 import {GalleryDataProvider} from "../../providers/gallery-data/gallery-data";
 import {NewProfilePage} from "../new-profile/new-profile";
 import {NewProfileserviceProvider} from "../../providers/new-profileservice/new-profileservice";
+import { LoadingController } from 'ionic-angular';
 
 /**
  * Page for initial view
@@ -64,21 +65,34 @@ export class HomePage {
    * constructor()
    * @param menuCtrl
    */
-  constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider, public newProfile: NewProfileserviceProvider) {
-    this.dataService.load().then((data) => {
-      data.map((photos) => {
-        return photos;
-      });
-      for (let image of data) {
-        this.photos.push(image.image_file);
-      }
-      console.log("Home: " + this.photos.length);
-      this.opacity = 1;
-    }).then(() => {
-      this.anzahl = this.photos;
-    });
+  constructor(private _menuService: MenuService, private modalCtrl: ModalController,
+              private dataService: GalleryDataProvider, public newProfile: NewProfileserviceProvider,) {
+    //this.ionViewLoaded();
+
   }
 
+  /*ionViewLoaded(){
+    let loader = this.loading.create({
+      content: 'Lade aktuellste Daten...',
+    });
+
+    loader.present().then(() => {
+      this.dataService.load().then((data) => {
+        data.map((photos) => {
+          return photos;
+        });
+        for (let image of data) {
+          this.photos.push(image.image_file);
+        }
+        console.log("Home: " + this.photos.length);
+        this.opacity = 1;
+      }).then(() => {
+        this.anzahl = this.photos;
+      });
+      loader.dismiss();
+    });
+  }
+*/
   /*private openModal() {
     this.dataService.load().then((data) => {
 

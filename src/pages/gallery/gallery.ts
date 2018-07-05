@@ -24,18 +24,16 @@ export class GalleryPage {
   opacity: number;
   loading_pic = "assets/gallery/Loading_icon.gif";
   list: Array<object> = [];
-  _homepage: HomePage;
 
   constructor(private _menuService: MenuService, public dataService: GalleryDataProvider, private modalCtrl: ModalController) {
     this.opacity = 0;
     // this.photos = this.dataService.photos;
-    console.log(this._homepage.photos.length);
     this.dataService.load().then((data) => {
       data.map((photos) => {
         return photos;
       });
       for (let image of data) {
-        this.photos.push(image.image_file);
+        this.photos.push(image);
       }
       this.anzahl = this.photos;
       this.opacity = 1;
@@ -51,7 +49,7 @@ export class GalleryPage {
   getPicture(index) {
     if (this.photos.length != 0) {
 //      console.log("Pictures loaded");
-      return this.photos[index].small
+      return this.photos[index].image_file.small
     }
     else {
 //      console.log("No Picture");

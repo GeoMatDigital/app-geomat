@@ -16,6 +16,7 @@
         <div class="image-container">
           <img tappable="true" src="{{ loading_pic }}" [attr.data-src]="getPicture(i)" (click)="openpic(i)">
         </div>
+        <h3>{{photos[i].handpiece.name}}</h3>
       </ion-col>
     </ion-row>
   </ion-grid>

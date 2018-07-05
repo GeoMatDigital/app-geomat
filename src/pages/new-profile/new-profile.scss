@@ -1,3 +1,57 @@
 page-new-profile {
+  ion-row  {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
+  .col {
+    padding: 0;
+  }
+
+  .card-md, .card-ios, .card-wp {
+    width: auto;
+  }
+
+  .item-md,
+  .item-ios,
+  .item-wp {
+    p {
+      font-size: 1.6rem;
+      padding-left: 16px;
+    }
+
+    ion-thumbnail[item-start]{
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.disabled{
+      p {
+        color: #999;
+      }
+      ion-thumbnail[item-start]{
+        text-align: center;
+        background-color: #ddd;
+        .icon-md, .icon-ions, .icon-wp {
+          line-height: 80px;
+          height: 80px;
+          vertical-align: center;
+          font-size: 80px;
+          color: color($colors, light);
+        }
+      }
+      &:hover {
+        cursor: not-allowed;
+      }
+
+      background-color:rgba(158,158,158,0.1);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color:rgba(158,158,158,0.1);
+    }
+  }
 }
