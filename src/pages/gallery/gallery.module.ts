@@ -4,6 +4,7 @@ import { GalleryPage } from './gallery';
 import * as ionicGalleryModal from 'ionic-gallery-modal';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import {LazyLoadImagesModule} from "ngx-lazy-load-images";
+import {HomePage} from "../home/home";
 
 @NgModule({
   declarations: [

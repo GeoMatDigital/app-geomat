@@ -6,10 +6,13 @@ import { QuizPage } from '../quiz/quiz';
 import { HelperPage } from '../helper/helper';
 import { MenuService } from '../../services/menu';
 import { InfoPage } from '../info/info';
-import { ModalController } from 'ionic-angular';
+import {IonicPage, ModalController} from 'ionic-angular';
 import { FeedbackPage } from '../feedback/feedback';
 import {GalleryModal} from "ionic-gallery-modal";
 import {GalleryDataProvider} from "../../providers/gallery-data/gallery-data";
+import {NewProfilePage} from "../new-profile/new-profile";
+import {NewProfileserviceProvider} from "../../providers/new-profileservice/new-profileservice";
+import { LoadingController } from 'ionic-angular';
 
 /**
  * Page for initial view
@@ -30,11 +33,11 @@ export class HomePage {
   /**
    * Stores page for glossary (not yet imlemented, because glossary viewable via sidemenu and popover)
    */
-  // glossaryPage = GlossaryPage;
+  // glossaryPage = Ne;
   /**
    * Stores page for 'about us'
    */
-  infoPage = InfoPage;
+  infoPage = NewProfilePage;
   /**
    * Stores page for gallery (not yet implemented)
    */
@@ -51,32 +54,45 @@ export class HomePage {
   public photos: any[] = [];
   anzahl: any[];
   @ViewChild('gallery_images') gallery_images;
-  opacity: number;
+  opacity: any;
   loading_pic = "assets/gallery/Loading_icon.gif";
   list: Array<object> = [];
+  public foto_anzahl: number;
+  data: any;
+
+
   /**
    * constructor()
    * @param menuCtrl
    */
-  constructor(private _menuService: MenuService, private modalCtrl: ModalController, private dataService: GalleryDataProvider) {
-    this.opacity = 0;
-    this.anzahl = Array(114).fill(4);
-    this.dataService.load().then((data) => {
-      data.map((photos) => {
-        return photos;
-      });
-      for (let image of data) {
-        this.photos.push(image.image_file);
-      }
-      this.opacity = 1;
-    }).then(() => {
-      for (let image of this.photos){
-        this.list.push({url: image.large});
-      }
-    });
-    console.log(this.anzahl);
+  constructor(private _menuService: MenuService, private modalCtrl: ModalController,
+              private dataService: GalleryDataProvider, public newProfile: NewProfileserviceProvider,) {
+    //this.ionViewLoaded();
+
   }
 
+  /*ionViewLoaded(){
+    let loader = this.loading.create({
+      content: 'Lade aktuellste Daten...',
+    });
+
+    loader.present().then(() => {
+      this.dataService.load().then((data) => {
+        data.map((photos) => {
+          return photos;
+        });
+        for (let image of data) {
+          this.photos.push(image.image_file);
+        }
+        console.log("Home: " + this.photos.length);
+        this.opacity = 1;
+      }).then(() => {
+        this.anzahl = this.photos;
+      });
+      loader.dismiss();
+    });
+  }
+*/
   /*private openModal() {
     this.dataService.load().then((data) => {
 

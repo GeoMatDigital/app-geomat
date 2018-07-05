@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class GalleryDataProvider {
   data: any;
-  photos: any[] = [];
+  public photos: any[] = [];
   opacity: any;
   public foto_anzahl: number;
 
@@ -31,17 +31,7 @@ export class GalleryDataProvider {
 
   }
   constructor(public http: Http) {
-    this.load().then((data) => {
-      data.map((photos) => {
-        return photos;
-      });
-      for (let image of data) {
-        this.photos.push(image.image_file);
-      }
-      this.opacity = 1;
-    }).then(() => {
-      this.foto_anzahl = this.photos.length;
-    });
+
   }
 
 
