@@ -22,7 +22,7 @@ export class GalleryDataProvider {
     }
 
     return new Promise(resolve => {
-      this.http.get(`${process.env.API_URL}/photograph_list`).map(res => res.json()).subscribe(data => {
+      this.http.get(`${process.env.API_URL}/photograph`).map(res => res.json()).subscribe(data => {
         this.data = data;
         resolve(this.data);
       });
