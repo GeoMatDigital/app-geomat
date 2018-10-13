@@ -28,7 +28,7 @@ export class NewProfileserviceProvider {
   }
 
   ionViewLoaded() {
-    this.loader = this.loading.create({
+    /*this.loader = this.loading.create({
       content: 'Lade aktuellste Daten...',
     });
 
@@ -94,7 +94,7 @@ export class NewProfileserviceProvider {
           }
         }
       });
-      }
+      }*/
   }
 }
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import { IonicPage, ModalController } from 'ionic-angular';
 import { MenuService } from '../../services/menu';
+import { FeedbackPage } from '../feedback/feedback';
 
 /**
  * Contains static info about the app and their developer
@@ -16,7 +17,7 @@ export class InfoPage {
    * constructor()
    * @param _menuService
    */
-  constructor(private _menuService: MenuService) { }
+  constructor(private _menuService: MenuService, private modalCtrl: ModalController) { }
 
   /**
    * Opens requested sidemenu, deactivates others
@@ -24,5 +25,10 @@ export class InfoPage {
    */
   openSidemenu(activeMenu) {
     this._menuService.openSidemenu(activeMenu);
+  }
+  
+  onFeedback() {
+    const modal = this.modalCtrl.create(FeedbackPage);
+    modal.present();
   }
 }

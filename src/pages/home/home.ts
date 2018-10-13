@@ -37,7 +37,8 @@ export class HomePage {
   /**
    * Stores page for 'about us'
    */
-  infoPage = NewProfilePage;
+  //infoPage = NewProfilePage;
+  infoPage = InfoPage;
   /**
    * Stores page for gallery (not yet implemented)
    */

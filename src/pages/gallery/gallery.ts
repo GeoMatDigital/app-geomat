@@ -39,7 +39,7 @@ export class GalleryPage {
       this.opacity = 1;
     }).then(() => {
     for (let image of this.photos){
-      this.list.push({url: image.large});
+      this.list.push({url: image.image_file.large});
     }
     });
 
