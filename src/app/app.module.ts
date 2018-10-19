@@ -28,7 +28,9 @@ import { QuizPageModule } from '../pages/quiz/quiz.module';
 import { HelpersService } from '../services/helpers';
 import { D3Service } from 'd3-ng2-service';
 import { InfoPage } from '../pages/info/info';
+import { PrivacyPage } from '../pages/privacy/privacy';
 import { InfoPageModule } from '../pages/info/info.module';
+import { PrivacyPageModule } from '../pages/privacy/privacy.module';
 import { GlossaryService } from '../services/glossary';
 import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
 import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
@@ -65,6 +67,7 @@ import {NewProfilePageModule} from "../pages/new-profile/new-profile.module";
     Profiles2PageModule,
     QuizPageModule,
     InfoPageModule,
+    PrivacyPageModule,
     LazyLoadImageModule
   ],
   bootstrap: [IonicApp],
@@ -83,6 +86,7 @@ import {NewProfilePageModule} from "../pages/new-profile/new-profile.module";
     Profiles2Page,
     QuizPage,
     InfoPage,
+    PrivacyPage
   ],
   providers: [
     StatusBar,
