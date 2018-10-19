@@ -11,6 +11,8 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
+ionic.config.json
+package-lock.json
 
 .travis.yml.backup
 data.ts
@@ -23,6 +25,7 @@ documentation/
 coverage/
 dist/
 node_modules/
+typings/
 tmp/
 temp/
 hooks/
