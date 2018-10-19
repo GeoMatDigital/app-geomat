@@ -83,10 +83,17 @@ export class MyApp {
    * @param page
    */
   onLoad(page: any) {
-    this.nav.setRoot(page);
+    console.log(page);
+    if(page == HomePage){
+      this.nav.setRoot(page);
+    }
+    else{
+      this.nav.push(page);
+    }
     this.menuCtrl.close();
   }
-
+  
+  
   /**
    * Sets side-menu 'main-menu' as active
    * and sets 'glossar' inactive if on mobile view
