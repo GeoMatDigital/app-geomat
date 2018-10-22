@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { InfoPage } from '../pages/info/info';
+import { PrivacyPage } from '../pages/privacy/privacy';
 import { GlossaryPage } from '../pages/glossary/glossary';
 
 /**
@@ -28,6 +29,12 @@ export class MyApp {
    * stores the initial view
    */
   homePage = HomePage;
+
+  /**
+   * stores the initial view
+   */
+  privacyPage = PrivacyPage;
+
 
   /**
    * stores current active menu
@@ -76,10 +83,17 @@ export class MyApp {
    * @param page
    */
   onLoad(page: any) {
-    this.nav.setRoot(page);
+    console.log(page);
+    if(page == HomePage){
+      this.nav.setRoot(page);
+    }
+    else{
+      this.nav.push(page);
+    }
     this.menuCtrl.close();
   }
-
+  
+  
   /**
    * Sets side-menu 'main-menu' as active
    * and sets 'glossar' inactive if on mobile view

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, ModalController } from 'ionic-angular';
 import { MenuService } from '../../services/menu';
 import { FeedbackPage } from '../feedback/feedback';
+import { PrivacyPage } from '../privacy/privacy';
 
 /**
  * Contains static info about the app and their developer
@@ -13,11 +14,15 @@ import { FeedbackPage } from '../feedback/feedback';
 })
 export class InfoPage {
 
+  _privacypage = PrivacyPage;
+
   /**
    * constructor()
    * @param _menuService
+   * @param _modalCtrl
    */
-  constructor(private _menuService: MenuService, private modalCtrl: ModalController) { }
+  constructor(private _menuService: MenuService, private _modalCtrl: ModalController) { }
+
 
   /**
    * Opens requested sidemenu, deactivates others
@@ -28,7 +33,7 @@ export class InfoPage {
   }
   
   onFeedback() {
-    const modal = this.modalCtrl.create(FeedbackPage);
+    const modal = this._modalCtrl.create(FeedbackPage);
     modal.present();
   }
 }
