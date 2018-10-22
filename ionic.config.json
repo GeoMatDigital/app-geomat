@@ -1,0 +1,8 @@
+{
+  "name": "geomat",
+  "app_id": "ea8923b3",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
