@@ -9,7 +9,16 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
-  <h1>TO BE IMPLEMENTED</h1>
+  <ion-grid>
+    <ion-row lazy-load-images>
+      <ion-col col-6 col-md-4 col-xl-3 *ngFor="let count of anzahl; let i = index; ">
+        <div class="image-container">
+          <img tappable="true" src="{{ loading_pic }}" [attr.data-src]="getPicture(i)" (click)="openpic(i)">
+        </div>
+        <h3>{{photos[i].handpiece.name}}</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>

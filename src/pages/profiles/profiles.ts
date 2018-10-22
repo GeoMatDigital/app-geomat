@@ -46,6 +46,7 @@ export class ProfilesPage {
    * Navigates to specific profile-group (e.g. minerals of "elements")
    */
   onProfile(systematics: string, imagePath: string = null) {
+    console.log(this._profiles);
     if (this._profiles) {
       let profiles = this._profiles.filter((profile: Profile): boolean => {
         return profile.systematics == systematics;

@@ -8,8 +8,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-//import {ComponentsModule} from "../components/components.module";
-//import FlashCard from "../components/flash-card/flash-card";
 import { CrystalsystemsPage } from '../pages/crystalsystems/crystalsystems';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { HelperPage } from '../pages/helper/helper';
@@ -30,21 +28,28 @@ import { QuizPageModule } from '../pages/quiz/quiz.module';
 import { HelpersService } from '../services/helpers';
 import { D3Service } from 'd3-ng2-service';
 import { InfoPage } from '../pages/info/info';
+import { PrivacyPage } from '../pages/privacy/privacy';
 import { InfoPageModule } from '../pages/info/info.module';
+import { PrivacyPageModule } from '../pages/privacy/privacy.module';
 import { GlossaryService } from '../services/glossary';
 import { GlossaryPopoverPage } from '../pages/glossary-popover/glossary-popover';
 import { GlossaryPopoverPageModule } from '../pages/glossary-popover/glossary-popover.module';
 import { MenuService } from '../services/menu';
-// import { FeedbackPage } from '../pages/feedback/feedback';
 import { FeedbackPageModule } from '../pages/feedback/feedback.module';
 import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
+import {GalleryDataProvider} from "../providers/gallery-data/gallery-data";
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { NewProfileserviceProvider } from '../providers/new-profileservice/new-profileservice';
+import {NewProfilePage} from "../pages/new-profile/new-profile";
+import {NewProfilePageModule} from "../pages/new-profile/new-profile.module";
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProfileDetailsPage,
-    GlossaryPage
+    GlossaryPage,
 
   ],
   imports: [
@@ -56,11 +61,14 @@ import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
     GlossaryPopoverPageModule,
     FeedbackPageModule,
     HelperPageModule,
+    NewProfilePageModule,
     ProfilesPageModule,
     Profiles1PageModule,
     Profiles2PageModule,
     QuizPageModule,
-    InfoPageModule
+    InfoPageModule,
+    PrivacyPageModule,
+    LazyLoadImageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -71,12 +79,14 @@ import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
     GlossaryPage,
     GlossaryPopoverPage,
     HelperPage,
+    NewProfilePage,
     ProfileDetailsPage,
     ProfilesPage,
     Profiles1Page,
     Profiles2Page,
     QuizPage,
-    InfoPage
+    InfoPage,
+    PrivacyPage
   ],
   providers: [
     StatusBar,
@@ -87,7 +97,11 @@ import { QuizDataProvider } from '../providers/quiz-data/quiz-data';
     GlossaryService,
     MenuService,
     D3Service,
-    QuizDataProvider
+    QuizDataProvider,
+    GalleryDataProvider,
+    HomePage,
+    GalleryPage,
+    NewProfileserviceProvider,
   ]
 })
 export class AppModule {}

@@ -1,7 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 import { MenuService } from '../../services/menu';
-// import { NavController } from 'ionic-angular';
 import { QuizDataProvider } from '../../providers/quiz-data/quiz-data';
 
 /**
@@ -14,24 +13,45 @@ import { QuizDataProvider } from '../../providers/quiz-data/quiz-data';
 })
 export class QuizPage {
 
-  @ViewChild('slides') slides: any;
+  @ViewChild('slides')
+  slides: any;
 
-  hasAnswered: boolean = false;
+  showAnswers: boolean[] = [false];
+  answered: boolean = false;
+  checked:boolean[] = [false, false, false , false, false, false ,false, false, false, false];
   score: number = 0;
-
-
-  slideOptions: any;
   questions: any;
-  flashCardFlipped: boolean = false;
-  makegreen: boolean = false;
-  makered: boolean = false;
-  answerChecking: string = "";
+  buttontext: string;
 
   /**
    * cosntructor()
    * @param _menuService
    */
-  constructor(private _menuService: MenuService, public dataService: QuizDataProvider) {}
+  constructor(private _menuService: MenuService, public dataService: QuizDataProvider) {
+    let _i:number = 0;
+    while (_i < 99) {
+      let value = false;
+      this.showAnswers.push(value);
+      _i++
+    }
+  }
+
+  ionViewDidLoad() {
+
+    this.slides.lockSwipes(true);
+
+    this.dataService.load().then((data) => {
+
+      data.map((question) => {
+
+        let originalOrderAnswers = question.answers;
+        question.answers = this.randomize(originalOrderAnswers);
+        return question;
+
+      });
+      this.questions = this.randomize(data);
+    });
+  }
 
   /**
    * Opens requested sidemenu, deactivates others
@@ -41,77 +61,57 @@ export class QuizPage {
     this._menuService.openSidemenu(activeMenu);
 
   }
-  ionViewDidLoad() {
 
-    this.slides.lockSwipes(true);
 
-    this.dataService.load().then((data) => {
+  randomize(rawInput: any[]): any[] {
 
-      data.map((question) => {
-
-        let originalOrder = question.answers;
-        question.answers = this.randomizeAnswers(originalOrder);
-        return question;
-
-      });
-
-      this.questions = data;
-
-    });
-
-  }
-
-  randomizeAnswers(rawAnswers: any[]): any[] {
-
-    for (let i = rawAnswers.length - 1; i > 0; i--) {
+    for (let i = rawInput.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
-      let temp = rawAnswers[i];
-      rawAnswers[i] = rawAnswers[j];
-      rawAnswers[j] = temp;
+      let temp = rawInput[i];
+      rawInput[i] = rawInput[j];
+      rawInput[j] = temp;
     }
 
-    return rawAnswers;
+    return rawInput;
 
   }
 
   nextSlide(){
-    this.flashCardFlipped = false;
-    this.hasAnswered = false;
+    this.answered = false;
     this.slides.lockSwipes(false);
     this.slides.slideNext();
+    this.buttontext = "Lösung anzeigen";
     this.slides.lockSwipes(true);
   }
 
+  // index-Bearbeitung
   lastSlide(){
-    this.flashCardFlipped = true;
     this.slides.lockSwipes(false);
     this.slides.slidePrev();
   }
 
-  selectAnswer(answer, question){
-    //answer.selected = true;
-    this.hasAnswered = true;
-    // if (question.qtype == "Single Choice") {
-    // the answer text inside the ionic card is selected
-      if (answer.correct) {
-        this.answerChecking = answer.feedback_correct;
-      } else {
-        this.answerChecking = answer.feedback_incorrect;
-      }
 
-    this.flashCardFlipped = true;
-
-    if(answer.correct){
-      this.score++;
-    }
+  // progress-bar animation
+  loadProgress(curr_question_number, length) {
+    curr_question_number = curr_question_number/length*100;
+    return curr_question_number;
   }
 
+  // answer selection method, sets value for checkAnswer method
+  selectAnswer(answer, question, checkbox) {
+    this.checked[answer.id] = checkbox.checked;
+  }
 
-  restartQuiz() {
-    this.score = 0;
-    this.slides.lockSwipes(false);
-    this.slides.slideTo(1, 1000);
-    this.slides.lockSwipes(true);
+  //check given Answer if correct or wrong
+  checkAnswer(answerselected){
+    if (this.buttontext == "nächste Frage") {
+      this.nextSlide()
+    } else {
+      this.showAnswers[this.slides.getActiveIndex()] = true;
+      this.answered = true;
+      this.buttontext = "nächste Frage";
+      return;
+    }
   }
 
 }

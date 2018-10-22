@@ -5,6 +5,7 @@ const dotenv = require('dotenv-webpack');
 
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const API_URL = process.env.API_URL;
+const API_URL2 = process.env.API_URL2;
 const SENTRY_DSN = process.env.SENTRY_DSN;
 
 const environmentVariables = {
@@ -27,6 +28,7 @@ const environmentVariables = {
         'ENV': JSON.stringify(ENV),
         'NODE_ENV': JSON.stringify(ENV),
         'API_URL' : JSON.stringify(API_URL),
+        'API_URL2' : JSON.stringify(API_URL2),
         'SENTRY_DSN': JSON.stringify(SENTRY_DSN)
       }
     })

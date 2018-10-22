@@ -1,3 +1,17 @@
-page-info {
+.footer {
+    &:hover {
+      cursor: pointer;
+    }
+    .toolbar-md,
+    .toolbar-ios,
+    .toolbar-wp {
+      min-height: auto;
+    }
 
-}
+    .toolbar-title-md,
+    .toolbar-title-ios,
+    .toolbar-title-wp {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
